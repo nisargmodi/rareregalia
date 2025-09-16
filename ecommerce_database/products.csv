@@ -1,127 +1,97 @@
 product_id,product_name,product_description,category,subcategory,base_price,featured,status,created_date
-1,Radiant Embrace Chain,,Necklaces,Necklaces,,0,active,2025-09-15
-2,Crownlight Diamond Lariat,,Jewelry,Necklaces,,0,active,2025-09-15
-3,Celesto Ring,,Rings,Uncategorized,,0,active,2025-09-15
-4,Lumière Gold Tennis Bracelet,,Bracelets,"Bracelet, Bracelet > Tennis Bracelet",,0,active,2025-09-15
-5,Infinity Grace Dangler Earrings,,Rings,Uncategorized,,0,active,2025-09-15
-6,Stellar Spark Dangler Earrings,"<img class=""alignnone size-medium wp-image-2822"" src=""https://rareregalia.com/wp-content/uploads/2025/07/17033-R3-300x300.jpg"" alt="""" width=""300"" height=""300"" />",Rings,Uncategorized,,0,active,2025-09-15
-7,Blossom Aura Dangler Earrings,,Rings,Uncategorized,,0,active,2025-09-15
-8,Luna Halo Dangler Earrings,,Rings,Uncategorized,,0,active,2025-09-15
-9,Eternal Love Dangler Earrings,,Rings,Uncategorized,,0,active,2025-09-15
-10,Celeste Curve Dangler Earrings,,Rings,Uncategorized,,0,active,2025-09-15
-11,LoveLine Dangler Earrings,,Rings,Uncategorized,,0,active,2025-09-15
-12,Eterna Luxe Hoop Earrings,,Rings,Uncategorized,,0,active,2025-09-15
-13,Radiant Eternity Hoop Earrings,,Rings,Uncategorized,,0,active,2025-09-15
-14,Infinity Spark Hoop Earrings,,Rings,Uncategorized,,0,active,2025-09-15
-15,GlowVault Huggie Earrings,,Rings,Uncategorized,,0,active,2025-09-15
-16,Starlight Rows Huggie Earrings,,Rings,Uncategorized,,0,active,2025-09-15
-17,Luna Arc Hoops,,Jewelry,Uncategorized,,0,active,2025-09-15
-18,Aurora Luxe Hoops,,Jewelry,Uncategorized,,0,active,2025-09-15
-19,Celestia Spark Hoops,,Jewelry,Uncategorized,,0,active,2025-09-15
-20,Luna Dew Hoops,,Jewelry,Uncategorized,,0,active,2025-09-15
-21,Soleil Spark Hoops,,Jewelry,Uncategorized,,0,active,2025-09-15
-22,Vow Radiance,,Jewelry,Uncategorized,,0,active,2025-09-15
-23,Celeste Drop Earrings,,Rings,Uncategorized,,0,active,2025-09-15
-24,Aurora Halo Drops,,Jewelry,Uncategorized,,0,active,2025-09-15
-25,Elysian Bloom Earrings,,Rings,Uncategorized,,0,active,2025-09-15
-26,Celeste Flora Earring,,Rings,Uncategorized,,0,active,2025-09-15
-27,Aurora Royale Earring,,Rings,Uncategorized,,0,active,2025-09-15
-28,Celeste Loops Earrings,,Rings,Uncategorized,,0,active,2025-09-15
-29,Orla Spark Earring,,Rings,Uncategorized,,0,active,2025-09-15
-30,Pixel love pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-31,Soul Spark Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-32,Half of My Heart Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-33,Trinity of Love Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-34,Entwined Hearts Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-35,Edge of Heart Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-36,HeartSwing Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-37,Aurelia Glow Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-38,Regal Radiance,,Jewelry,Necklaces,,0,active,2025-09-15
-39,Eternal Glow,,Jewelry,Necklaces,,0,active,2025-09-15
-40,Lustre Drop,,Jewelry,Necklaces,,0,active,2025-09-15
-41,Celeste Amour,,Jewelry,Uncategorized,,0,active,2025-09-15
-42,Luna Frame Pendant,,Necklaces,Uncategorized,,0,active,2025-09-15
-43,Solara Link Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-44,Vertaire Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-45,Lustre Loop Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-46,Aurelia Halo Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-47,Everglow Dancing Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-48,Kinetic Sparkle Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-49,Rhythm Rose Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-50,Harmony Sway Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-51,Celestial Charm Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-52,Luminance Locket Pendent,,Jewelry,Necklaces,,0,active,2025-09-15
-53,Solitaire Serenade Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-54,Starlight Radiance Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-55,Eternal Sparkle Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-56,Infinity Halo Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-57,Circling Radiance Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-58,Teardrop Embrace Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-59,Cascade of Radiance Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-60,Classic Grace Pendant,,Necklaces,Necklaces,,0,active,2025-09-15
-61,Eterna Oval,,Jewelry,Rings,,0,active,2025-09-15
-62,Radiant Whisper,,Jewelry,Rings,,0,active,2025-09-15
-63,Lustrous Bloom,,Jewelry,Rings,,0,active,2025-09-15
-64,Celestial Grandeu,,Jewelry,Rings,,0,active,2025-09-15
-65,Radiant Vow,,Jewelry,Rings,,0,active,2025-09-15
-66,Eternal Grace,,Jewelry,Rings,,0,active,2025-09-15
-67,Radiant Embrace,,Jewelry,Rings,,0,active,2025-09-15
-68,Celeste Solitaire,,Jewelry,Rings,,0,active,2025-09-15
-69,Aurora Embrace,,Jewelry,Rings,,0,active,2025-09-15
-70,Radiant Embrace,,Jewelry,Rings,,0,active,2025-09-15
-71,Celeste Halo,,Jewelry,Rings,,0,active,2025-09-15
-72,Aegis Bold,,Jewelry,Rings,,0,active,2025-09-15
-73,Aura Band,,Jewelry,Rings,,0,active,2025-09-15
-74,Everlume Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-75,Regalia Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-76,Aurora Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-77,Elysia Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-78,Solara Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-79,Aurora Grace Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-80,Amour Éternel Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-81,Celeste Tear Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-82,Celeste Glow Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-83,Regal Radiance Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-84,Celestia Flow Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-85,Eterna Oval Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-86,Aurora Emerald Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-87,Radiant Rose Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-88,Golden Horizon Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-89,Eternal Embrace Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-90,Tear of Eternity Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-91,Rose Glow Halo Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-92,Eternal Oval Halo Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-93,Heart of Radiance Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-94,The Nova Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-95,The Adeline Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-96,The Lumina Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-97,The Adora Engagement Ring,,Rings,Rings,,0,active,2025-09-15
-98,The Duet Ring,,Rings,Rings,,0,active,2025-09-15
-99,The Lumina Ring,,Rings,Rings,,0,active,2025-09-15
-100,The Serenity Ring,,Rings,Rings,,0,active,2025-09-15
-101,The Harmony Ring,,Rings,Rings,,0,active,2025-09-15
-102,The Embrace Ring,,Rings,Rings,,0,active,2025-09-15
-103,The Apex Ring,,Rings,Rings,,0,active,2025-09-15
-104,The Duet Ring,,Rings,Rings,,0,active,2025-09-15
-105,The Sweetheart Ring,,Rings,Rings,,0,active,2025-09-15
-106,The Double star Ring,,Rings,Rings,,0,active,2025-09-15
-107,The Harmony Ring,,Rings,Rings,,0,active,2025-09-15
-108,Eternal Duo Ring,,Rings,Rings,,0,active,2025-09-15
-109,Twin Radiance,,Jewelry,Rings,,0,active,2025-09-15
-110,Mirrored Grace Ring,,Rings,Rings,,0,active,2025-09-15
-111,Eternal Harmony Ring,,Rings,Rings,,0,active,2025-09-15
-112,Radiant Duo Ring,,Rings,Rings,,0,active,2025-09-15
-113,Tear &amp; Glow Ring,,Rings,Rings,,0,active,2025-09-15
-114,Marquise &amp; Emerald Harmony Ring,,Rings,Rings,,0,active,2025-09-15
-115,Emerald &amp; Marquise Fusion,,Jewelry,Rings,,0,active,2025-09-15
-116,Twin Emerald Grace,,Jewelry,Rings,,0,active,2025-09-15
-117,Celeste Ring,,Rings,Rings,,0,active,2025-09-15
-118,Kinship Ring,,Rings,Rings,,0,active,2025-09-15
-119,Echo Ring,,Rings,Rings,,0,active,2025-09-15
-120,Serenity Ring,,Rings,Rings,,0,active,2025-09-15
-121,Odyssey Ring,,Rings,Rings,,0,active,2025-09-15
-122,Duet Ring,,Rings,Rings,,0,active,2025-09-15
-123,Cascada Earring,,Rings,earring,,0,active,2025-09-15
-124,Ascend Earrings,,Rings,earring,,0,active,2025-09-15
-125,Cushion Cut Diamond Stud Earrings,,Rings,earring,,0,active,2025-09-15
-126,Brilliant Oval Diamond Studs,,Earrings,earring,,0,active,2025-09-15
+1-0111,Celesto Ring,,Rings,,,0,active,2025-09-15
+2-14078,Lumière Gold Tennis Bracelet,,"Bracelet, Bracelet > Tennis Bracelet",,,0,active,2025-09-15
+3-17026,Infinity Grace Dangler Earrings,,Earrings,,,0,active,2025-09-15
+4-17033,Stellar Spark Dangler Earrings,"<img class=""alignnone size-medium wp-image-2822"" src=""https://rareregalia.com/wp-content/uploads/2025/07/17033-R3-300x300.jpg"" alt="""" width=""300"" height=""300"" />",Earrings,,,0,active,2025-09-15
+5-17035,Blossom Aura Dangler Earrings,,Earrings,,,0,active,2025-09-15
+6-17045,Luna Halo Dangler Earrings,,Earrings,,,0,active,2025-09-15
+7-17046,Eternal Love Dangler Earrings,,Earrings,,,0,active,2025-09-15
+8-17051,Celeste Curve Dangler Earrings,,Earrings,,,0,active,2025-09-15
+9-17082,LoveLine Dangler Earrings,,Earrings,,,0,active,2025-09-15
+10-17001,Eterna Luxe Hoop Earrings,,Earrings,,,0,active,2025-09-15
+11-17002,Radiant Eternity Hoop Earrings,,Earrings,,,0,active,2025-09-15
+12-17005,Infinity Spark Hoop Earrings,,Earrings,,,0,active,2025-09-15
+13-17007,GlowVault Huggie Earrings,,Earrings,,,0,active,2025-09-15
+14-17012,Starlight Rows Huggie Earrings,,Earrings,,,0,active,2025-09-15
+15-17017,Luna Arc Hoops,,Earrings,,,0,active,2025-09-15
+16-17021,Aurora Luxe Hoops,,Earrings,,,0,active,2025-09-15
+17-17022,Celestia Spark Hoops,,Earrings,,,0,active,2025-09-15
+18-17023,Luna Dew Hoops,,Earrings,,,0,active,2025-09-15
+19-17027,Soleil Spark Hoops,,Earrings,,,0,active,2025-09-15
+20-16003,Vow Radiance,,Uncategorized,,,0,active,2025-09-15
+21-16019,Celeste Drop Earrings,,Earrings,,,0,active,2025-09-15
+22-16020,Aurora Halo Drops,,Earrings,,,0,active,2025-09-15
+23-16034,Elysian Bloom Earrings,,Earrings,,,0,active,2025-09-15
+24-16034,Celeste Flora Earring,,Earrings,,,0,active,2025-09-15
+25-17037,Aurora Royale Earring,,Earrings,,,0,active,2025-09-15
+26-17051,Celeste Loops Earrings,,Earrings,,,0,active,2025-09-15
+27-17073,Orla Spark Earring,,Earrings,,,0,active,2025-09-15
+28-18048,Pixel love pendant,,Pendants,,,0,active,2025-09-15
+29-18049,Soul Spark Pendant,,Pendants,,,0,active,2025-09-15
+30-18004,Half of My Heart Pendant,,Pendants,,,0,active,2025-09-15
+31-18013,Trinity of Love Pendant,,Pendants,,,0,active,2025-09-15
+32-18037,Entwined Hearts Pendant,,Pendants,,,0,active,2025-09-15
+33-18047,Edge of Heart Pendant,,Pendants,,,0,active,2025-09-15
+34-18050,HeartSwing Pendant,,Pendants,,,0,active,2025-09-15
+35-15045,Aurelia Glow Pendant,,Pendants,,,0,active,2025-09-15
+36-15046,Regal Radiance,,Pendants,,,0,active,2025-09-15
+37-15048,Eternal Glow,,Pendants,,,0,active,2025-09-15
+38-15050,Lustre Drop,,Pendants,,,0,active,2025-09-15
+39-15051,Celeste Amour,,Uncategorized,,,0,active,2025-09-15
+40-1201,Luna Frame Pendant,,Pendants,,,0,active,2025-09-15
+41-1203,Solara Link Pendant,,Pendants,,,0,active,2025-09-15
+42-1204,Vertaire Pendant,,Pendants,,,0,active,2025-09-15
+43-1207,Lustre Loop Pendant,,Pendants,,,0,active,2025-09-15
+44-1208,Aurelia Halo Pendant,,Pendants,,,0,active,2025-09-15
+45-1210,Everglow Dancing Pendant,,Pendants,,,0,active,2025-09-15
+46-1226,Kinetic Sparkle Pendant,,Pendants,,,0,active,2025-09-15
+47-1228,Rhythm Rose Pendant,,Pendants,,,0,active,2025-09-15
+48-1229,Harmony Sway Pendant,,Pendants,,,0,active,2025-09-15
+49-1245,Celestial Charm Pendant,,Pendants,,,0,active,2025-09-15
+50-1259,Luminance Locket Pendent,,Pendants,,,0,active,2025-09-15
+51-1262,Solitaire Serenade Pendant,,Pendants,,,0,active,2025-09-15
+52-15001,Starlight Radiance Pendant,,Pendants,,,0,active,2025-09-15
+53-15002,Eternal Sparkle Pendant,,Pendants,,,0,active,2025-09-15
+54-15003,Infinity Halo Pendant,,Pendants,,,0,active,2025-09-15
+55-15005,Circling Radiance Pendant,,Pendants,,,0,active,2025-09-15
+56-15019,Teardrop Embrace Pendant,,Pendants,,,0,active,2025-09-15
+57-15020,Cascade of Radiance Pendant,,Pendants,,,0,active,2025-09-15
+58-15035,Classic Grace Pendant,,Pendants,,,0,active,2025-09-15
+59-0016,Eterna Oval,,Rings,,,0,active,2025-09-15
+60-0024,Radiant Whisper,,Rings,,,0,active,2025-09-15
+61-0025,Lustrous Bloom,,Rings,,,0,active,2025-09-15
+62-0103,Celestial Grandeu,,Rings,,,0,active,2025-09-15
+63-0111,Radiant Vow,,Rings,,,0,active,2025-09-15
+64-0132,Eternal Grace,,Rings,,,0,active,2025-09-15
+65-0133,Radiant Embrace,,Rings,,,0,active,2025-09-15
+66-0134,Celeste Solitaire,,Rings,,,0,active,2025-09-15
+67-0139,Aurora Embrace,,Rings,,,0,active,2025-09-15
+68-0135,Radiant Embrace,,Rings,,,0,active,2025-09-15
+69-0162,Celeste Halo,,Rings,,,0,active,2025-09-15
+70-0184,Aegis Bold,,Rings,,,0,active,2025-09-15
+71-0631,Aura Band,,Rings,,,0,active,2025-09-15
+72-19001,Everlume Engagement Ring,,Rings,,,0,active,2025-09-15
+73-19002,Regalia Engagement Ring,,Rings,,,0,active,2025-09-15
+74-19003,Aurora Engagement Ring,,Rings,,,0,active,2025-09-15
+75-19004,Elysia Engagement Ring,,Rings,,,0,active,2025-09-15
+76-19005,Solara Engagement Ring,,Rings,,,0,active,2025-09-15
+77-19007,Aurora Grace Engagement Ring,,Rings,,,0,active,2025-09-15
+78-19008,Amour Éternel Engagement Ring,,Rings,,,0,active,2025-09-15
+79-19010,Celeste Tear Engagement Ring,,Rings,,,0,active,2025-09-15
+80-19011,Celeste Glow Engagement Ring,,Rings,,,0,active,2025-09-15
+81-19012,Regal Radiance Engagement Ring,,Rings,,,0,active,2025-09-15
+82-19013,Celestia Flow Engagement Ring,,Rings,,,0,active,2025-09-15
+83-19014,Eterna Oval Engagement Ring,,Rings,,,0,active,2025-09-15
+84-19015,Aurora Emerald Engagement Ring,,Rings,,,0,active,2025-09-15
+85-19016,Radiant Rose Engagement Ring,,Rings,,,0,active,2025-09-15
+86-19017,Golden Horizon Engagement Ring,,Rings,,,0,active,2025-09-15
+87-19018,Eternal Embrace Engagement Ring,,Rings,,,0,active,2025-09-15
+88-19020,Tear of Eternity Engagement Ring,,Rings,,,0,active,2025-09-15
+89-19023,Rose Glow Halo Engagement Ring,,Rings,,,0,active,2025-09-15
+90-19024,Eternal Oval Halo Engagement Ring,,Rings,,,0,active,2025-09-15
+91-19028,Heart of Radiance Engagement Ring,,Rings,,,0,active,2025-09-15
+92-19030,The Nova Engagement Ring,,Rings,,,0,active,2025-09-15
+93-19033,The Adeline Engagement Ring,,Rings,,,0,active,2025-09-15
+94-19034,The Lumina Engagement Ring,,Rings,,,0,active,2025-09-15
+95-19038,The Adora Engagement Ring,,Rings,,,0,active,2025-09-15
+96-16004,Cascada Earring,,earring,,,0,active,2025-09-15
