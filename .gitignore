@@ -99,3 +99,5 @@ dist/
 !*.sql
 !*.txt
 !.gitignore
+# Private keys (never commit)
+ecommerce-website/id_ed25519_nisarg
