@@ -6,34 +6,34 @@ export interface Product {
   name: string;
   variantName: string;
   category: string;
-  status: 'active' | 'inactive';
+  status: string; // More flexible to handle any status string
   metalType: string;
   metalKarat: string;
   size: string;
   priceINR: number;
-  basePrice?: number;
+  basePrice?: number | null;
   featured: boolean;
   stockQuantity: number;
   goldWeight: number;
-  goldPurity: string;
+  goldPurity?: string;
   goldWeightVendor: number;
-  diamondWeight: number;
-  diamondWeightVendor: number;
-  diamondCount: number;
-  diamondCountOther: number;
-  diamondShapes: string;
-  diamondSizes: string;
-  diamondCuts: string;
-  diamondQuality: string;
-  diamondShapeDetails: string;
-  makingCharges?: number;
-  primaryImage: string;
-  allImages: string[];
-  totalImages: number;
-  styleNumber: string;
-  description: string;
-  createdDate: string;
-  totalSpecs: number;
+  diamondWeight?: number;
+  diamondWeightVendor?: number;
+  diamondCount?: number;
+  diamondCountOther?: number;
+  diamondShapes?: string;
+  diamondSizes?: string;
+  diamondCuts?: string;
+  diamondQuality?: string;
+  diamondShapeDetails?: string;
+  makingCharges?: number | null;
+  primaryImage?: string;
+  allImages?: string[];
+  totalImages?: number;
+  styleNumber?: string;
+  description?: string;
+  createdDate?: string;
+  totalSpecs?: number;
 }
 
 export interface ProductFilters {

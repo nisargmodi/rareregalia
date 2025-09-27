@@ -4,8 +4,10 @@ import { useState, useMemo } from 'react';
 import { FunnelIcon, Squares2X2Icon, ListBulletIcon } from '@heroicons/react/24/outline';
 import { Product, Category, ProductFilters } from '@/types';
 import { ProductCard } from '@/components/products/ProductCard';
+import { ProductGroupCard } from '@/components/products/ProductGroupCard';
 import { ProductFiltersComponent } from '@/components/products/ProductFilters';
 import { filterProducts, getPriceRange } from '@/utils/productUtils';
+import { groupProductVariants, ProductGroup } from '@/utils/productVariants';
 
 interface ProductsPageClientProps {
   initialProducts: Product[];
@@ -23,26 +25,73 @@ export function ProductsPageClient({
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [isFiltersOpen, setIsFiltersOpen] = useState(false);
 
-  const filteredProducts = useMemo(() => {
-    let filtered = filterProducts(initialProducts, filters);
+  const filteredProductGroups = useMemo(() => {
+    // First group products into variants
+    const productGroups = groupProductVariants(initialProducts);
+    
+    // Filter the groups based on filters applied to their base variant
+    let filteredGroups = productGroups.filter(group => {
+      // Use the base variant to check against filters
+      const baseVariant = group.baseVariant;
+      
+      // Apply search query filter
+      if (filters.searchQuery) {
+        const searchLower = filters.searchQuery.toLowerCase();
+        const matchesSearch = 
+          group.name.toLowerCase().includes(searchLower) ||
+          group.category.toLowerCase().includes(searchLower) ||
+          (group.description && group.description.toLowerCase().includes(searchLower)) ||
+          baseVariant.metalType.toLowerCase().includes(searchLower);
+        if (!matchesSearch) return false;
+      }
+      
+      // Apply category filter
+      if (filters.category && filters.category.length > 0) {
+        if (!filters.category.includes(group.category)) return false;
+      }
+      
+      // Apply metal type filter - check if ANY variant matches
+      if (filters.metalType && filters.metalType.length > 0) {
+        const hasMatchingMetal = group.variants.some(variant => 
+          filters.metalType!.includes(variant.metalType)
+        );
+        if (!hasMatchingMetal) return false;
+      }
+      
+      // Apply price range filter - check if ANY variant falls in range
+      if (filters.priceRange) {
+        const [minPrice, maxPrice] = filters.priceRange;
+        const hasMatchingPrice = group.variants.some(variant => 
+          variant.priceINR >= minPrice && variant.priceINR <= maxPrice
+        );
+        if (!hasMatchingPrice) return false;
+      }
+      
+      return true;
+    });
     
     // Apply sorting
     switch (sortBy) {
       case 'name':
-        filtered.sort((a, b) => a.name.localeCompare(b.name));
+        filteredGroups.sort((a, b) => a.name.localeCompare(b.name));
         break;
       case 'price-low':
-        filtered.sort((a, b) => a.priceINR - b.priceINR);
+        filteredGroups.sort((a, b) => a.priceRange.min - b.priceRange.min);
         break;
       case 'price-high':
-        filtered.sort((a, b) => b.priceINR - a.priceINR);
+        filteredGroups.sort((a, b) => b.priceRange.max - a.priceRange.max);
         break;
       case 'newest':
-        filtered.sort((a, b) => new Date(b.createdDate).getTime() - new Date(a.createdDate).getTime());
+        // Sort by the newest variant in each group (use variantId as proxy for creation order)
+        filteredGroups.sort((a, b) => {
+          const aNewest = Math.max(...a.variants.map(v => v.variantId));
+          const bNewest = Math.max(...b.variants.map(v => v.variantId));
+          return bNewest - aNewest;
+        });
         break;
     }
     
-    return filtered;
+    return filteredGroups;
   }, [initialProducts, filters, sortBy]);
 
   const priceRange = getPriceRange(initialProducts);
@@ -101,7 +150,7 @@ export function ProductsPageClient({
           <div className="flex items-center justify-between mb-6 pb-4 border-b border-gray-200">
             <div className="flex items-center space-x-4">
               <p className="text-sm text-gray-600">
-                {filteredProducts.length} products found
+                {filteredProductGroups.length} product groups found
               </p>
             </div>
 
@@ -137,16 +186,16 @@ export function ProductsPageClient({
           </div>
 
           {/* Products Grid */}
-          {filteredProducts.length > 0 ? (
+          {filteredProductGroups.length > 0 ? (
             <div className={
               viewMode === 'grid' 
                 ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'
                 : 'space-y-6'
             }>
-              {filteredProducts.map((product) => (
-                <ProductCard
-                  key={product.id}
-                  product={product}
+              {filteredProductGroups.map((productGroup) => (
+                <ProductGroupCard
+                  key={productGroup.productId}
+                  productGroup={productGroup}
                   className={viewMode === 'list' ? 'flex' : ''}
                 />
               ))}
