@@ -1,0 +1,26 @@
+{
+  "totalProducts": 699,
+  "totalCategories": 5,
+  "priceRange": {
+    "min": 7635.0,
+    "max": 174092.0,
+    "average": 42887.08888888889
+  },
+  "metalTypes": [
+    "White Gold",
+    "Gold",
+    "Rose Gold",
+    "Yellow Gold"
+  ],
+  "metalKarats": [
+    "18kt",
+    "14kt"
+  ],
+  "categories": [
+    "Rings",
+    "Bracelet, Bracelet > Tennis Bracelet",
+    "Earrings",
+    "Pendants",
+    "Uncategorized"
+  ]
+}

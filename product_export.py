@@ -2,12 +2,13 @@
 """
 Product Export Tool
 Creates comprehensive product export with detailed vendor data extraction.
-Exports 10 unique products with complete specifications including gold weights,
+Exports products with complete specifications including gold weights,
 diamond details, and all technical specifications.
 """
 
 import pandas as pd
 import os
+import sys
 from pathlib import Path
 
 def main():
@@ -21,26 +22,54 @@ def main():
     
     print(f"Loaded {len(products_df)} products, {len(variants_df)} variants")
     
-    # Get 10 unique products that have variants
-    products_with_variants = products_df[products_df['product_id'].isin(variants_df['product_id'])].head(10)
+    # Check if user wants all products
+    export_all = False
+    limit = 10
+    if len(sys.argv) > 1:
+        if sys.argv[1].lower() in ['all', 'full', 'complete']:
+            export_all = True
+            print("Exporting ALL products with ALL variants")
+        else:
+            try:
+                limit = int(sys.argv[1])
+                print(f"Exporting {limit} products as requested")
+            except ValueError:
+                print("Invalid number provided, using default of 10 products")
+    
+    # Get products to export
+    if export_all:
+        products_with_variants = products_df[products_df['product_id'].isin(variants_df['product_id'])]
+        print(f"Found {len(products_with_variants)} products with variants to export")
+    else:
+        products_with_variants = products_df[products_df['product_id'].isin(variants_df['product_id'])]
+        
+        # Always include SKU 0025 if it exists
+        sku_0025_product = products_with_variants[products_with_variants['product_id'].str.contains('0025', na=False)]
+        if not sku_0025_product.empty:
+            # Ensure SKU 0025 is included
+            other_products = products_with_variants[~products_with_variants['product_id'].str.contains('0025', na=False)].head(limit-1)
+            products_with_variants = pd.concat([sku_0025_product, other_products]).head(limit)
+        else:
+            products_with_variants = products_with_variants.head(limit)
     
     comprehensive_data = []
     
     for _, product in products_with_variants.iterrows():
-        # Get the first variant for this product
+        # Get ALL variants for this product (not just the first one)
         product_variants = variants_df[variants_df['product_id'] == product['product_id']]
         if len(product_variants) == 0:
             continue
+        
+        # Process EACH variant separately
+        for _, variant in product_variants.iterrows():
             
-        variant = product_variants.iloc[0]
-        
-        # Get images for this variant
-        variant_images = images_df[images_df['variant_id'] == variant['variant_id']]
-        primary_image = variant_images[variant_images['is_primary'] == 1]['image_url'].iloc[0] if len(variant_images[variant_images['is_primary'] == 1]) > 0 else ""
-        all_images = "; ".join(variant_images['image_url'].dropna().astype(str).tolist())
-        
-        # Get technical specs for this variant
-        variant_specs = specs_df[specs_df['variant_id'] == variant['variant_id']]
+            # Get images for this variant
+            variant_images = images_df[images_df['variant_id'] == variant['variant_id']]
+            primary_image = variant_images[variant_images['is_primary'] == 1]['image_url'].iloc[0] if len(variant_images[variant_images['is_primary'] == 1]) > 0 else ""
+            all_images = "; ".join(variant_images['image_url'].dropna().astype(str).tolist())
+            
+            # Get technical specs for this variant
+            variant_specs = specs_df[specs_df['variant_id'] == variant['variant_id']]
         
         # Enhanced spec extraction with multiple patterns
         gold_weight_vendor = ""
@@ -233,7 +262,7 @@ def main():
     df = pd.DataFrame(comprehensive_data)
     
     # Save as CSV
-    csv_filename = "Product_Export.csv"
+    csv_filename = "Product_Export_Fixed.csv"
     df.to_csv(csv_filename, index=False, encoding='utf-8')
     print(f"Saved comprehensive data to {csv_filename}")
     
@@ -264,7 +293,7 @@ def main():
             adjusted_width = min(max_length + 2, 50)  # Cap at 50 chars
             ws.column_dimensions[column_letter].width = adjusted_width
         
-        excel_filename = "Product_Export.xlsx"
+        excel_filename = "Product_Export_Fixed.xlsx"
         wb.save(excel_filename)
         print(f"✅ Saved Excel file to {excel_filename}")
         

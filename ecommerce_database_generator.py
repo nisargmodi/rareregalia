@@ -12,11 +12,27 @@ import json
 from pathlib import Path
 from urllib.parse import urlparse
 
-def deduce_category(product_name, original_category):
+def deduce_category(product_name, original_category, vendor_file_info=None):
     """Deduce product category from name if original is generic, and standardize Necklaces to Pendants"""
     # Special case: Always change "Necklaces" to "Pendants"
     if original_category and original_category.lower() == 'necklaces':
         return 'Pendants'
+    
+    # Check vendor file for category hints
+    if vendor_file_info:
+        vendor_file_lower = vendor_file_info.lower()
+        # If vendor file contains earring-related terms, categorize as Earrings
+        if any(term in vendor_file_lower for term in ['earring', 'solitaire_earring', 'hoop', 'stud']):
+            return 'Earrings'
+        # If vendor file contains bracelet-related terms
+        elif any(term in vendor_file_lower for term in ['bracelet', 'tennis', 'bangle']):
+            return 'Bracelets'
+        # If vendor file contains pendant/necklace-related terms
+        elif any(term in vendor_file_lower for term in ['pendant', 'necklace', 'chain']):
+            return 'Pendants'
+        # If vendor file contains ring-related terms
+        elif any(term in vendor_file_lower for term in ['ring', 'band']):
+            return 'Rings'
     
     # For other existing categories, keep them as-is unless they're generic
     if original_category and original_category.lower() not in ['uncategorized', 'other', '']:
@@ -322,9 +338,12 @@ def create_ecommerce_database():
         
         print(f"OK: PROCESSING '{main_product['Name']}' - Found vendor data for SKU {extracted_sku}")
         
+        # Get vendor file information for intelligent categorization
+        vendor_file_info = batch_match.iloc[0]['batch_source'] if not batch_match.empty else None
+        
         # Use website categories with intelligent deduction for generic categories
         website_category = main_product.get('Categories', 'Uncategorized')
-        intelligent_category = deduce_category(main_product['Name'], website_category)
+        intelligent_category = deduce_category(main_product['Name'], website_category, vendor_file_info)
         
         # Create main product record using vendor SKU in product_id
         product_record = {
