@@ -171,12 +171,14 @@ export function ProductsPageClient({
               <div className="flex border border-gray-300 rounded-lg overflow-hidden">
                 <button
                   onClick={() => setViewMode('grid')}
+                  aria-label="Grid view"
                   className={`p-2 ${viewMode === 'grid' ? 'bg-primary-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'} transition-colors`}
                 >
                   <Squares2X2Icon className="h-4 w-4" />
                 </button>
                 <button
                   onClick={() => setViewMode('list')}
+                  aria-label="List view"
                   className={`p-2 ${viewMode === 'list' ? 'bg-primary-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'} transition-colors`}
                 >
                   <ListBulletIcon className="h-4 w-4" />

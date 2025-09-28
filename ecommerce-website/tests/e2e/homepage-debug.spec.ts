@@ -15,7 +15,7 @@ test.describe('Homepage Debug Tests', () => {
     });
 
     // Navigate to homepage
-    await page.goto('http://localhost:3003');
+  await page.goto('/');
 
     // Wait for the page to load completely
     await page.waitForLoadState('networkidle');

@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('Checkout Flow Tests', () => {
   test('checkout page loads and displays form', async ({ page }) => {
     // Go to a product page first
-    await page.goto('http://localhost:3003/products/0111-Ro-1');
+  await page.goto('/products/0111-Ro-1');
     
     // Add item to cart
     await page.click('button:has-text("Add to Cart")');
@@ -12,15 +12,16 @@ test.describe('Checkout Flow Tests', () => {
     await page.waitForTimeout(1000);
     
     // Go to checkout
-    await page.goto('http://localhost:3003/checkout');
+  await page.goto('/checkout');
     
     // Check that the checkout page loads properly
     await expect(page.locator('h1:has-text("Checkout")')).toBeVisible();
     
     // Check for form fields
-    await expect(page.locator('input[type="email"]')).toBeVisible();
-    await expect(page.locator('input[placeholder="First Name"]')).toBeVisible();
-    await expect(page.locator('input[placeholder="Last Name"]')).toBeVisible();
+    // Check for form fields (using labels instead of placeholders for robustness)
+    await expect(page.locator('label:has-text("Email Address") + input[type="email"]').first()).toBeVisible();
+    await expect(page.locator('label:has-text("First Name") + input')).toBeVisible();
+    await expect(page.locator('label:has-text("Last Name") + input')).toBeVisible();
     
     // Check for order summary
     await expect(page.locator('h2:has-text("Order Summary")')).toBeVisible();
@@ -33,7 +34,7 @@ test.describe('Checkout Flow Tests', () => {
 
   test('empty cart redirects to products', async ({ page }) => {
     // Go directly to checkout with empty cart
-    await page.goto('http://localhost:3003/checkout');
+  await page.goto('/checkout');
     
     // Should redirect or show empty cart message
     await expect(page.locator('h2:has-text("Your cart is empty")')).toBeVisible();

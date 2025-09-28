@@ -67,7 +67,8 @@ export function ProductGroupCard({ productGroup, className = '' }: ProductGroupC
     '/images/placeholder.jpg';
 
   return (
-    <Link href={`/products/${productGroup.productId}`} className={`group block ${className}`}>
+    // Added `product-card` class for test selectors consistency with ProductCard component
+    <Link href={`/products/${productGroup.productId}`} className={`product-card group block ${className}`} data-testid="product-group-card">
       <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
         {/* Product Image */}
         <div className="relative aspect-square overflow-hidden bg-gray-100">
