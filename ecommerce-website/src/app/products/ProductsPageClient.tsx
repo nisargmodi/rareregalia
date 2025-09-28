@@ -45,9 +45,14 @@ export function ProductsPageClient({
         if (!matchesSearch) return false;
       }
       
-      // Apply category filter
+      // Apply category filter (support id vs display name case-insensitive)
       if (filters.category && filters.category.length > 0) {
-        if (!filters.category.includes(group.category)) return false;
+        const groupCatLower = group.category.toLowerCase();
+        const matchesCategory = filters.category.some(cat => {
+          const catLower = cat.toLowerCase();
+          return catLower === groupCatLower || catLower === groupCatLower.replace(/\s+/g,'-');
+        });
+        if (!matchesCategory) return false;
       }
       
       // Apply metal type filter - check if ANY variant matches

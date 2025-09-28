@@ -19,9 +19,9 @@ test.describe('Checkout Flow Tests', () => {
     
     // Check for form fields
     // Check for form fields (using labels instead of placeholders for robustness)
-    await expect(page.locator('label:has-text("Email Address") + input[type="email"]').first()).toBeVisible();
-    await expect(page.locator('label:has-text("First Name") + input')).toBeVisible();
-    await expect(page.locator('label:has-text("Last Name") + input')).toBeVisible();
+  await expect(page.locator('label:has-text("Email Address")').locator('..').locator('input[type="email"]').first()).toBeVisible();
+  await expect(page.locator('label:has-text("First Name")').locator('..').locator('input')).toBeVisible();
+  await expect(page.locator('label:has-text("Last Name")').locator('..').locator('input')).toBeVisible();
     
     // Check for order summary
     await expect(page.locator('h2:has-text("Order Summary")')).toBeVisible();
