@@ -3,30 +3,24 @@
     "id": "rings",
     "name": "Rings",
     "slug": "rings",
-    "productCount": 328
-  },
-  {
-    "id": "bracelet-bracelet---tennis-bracelet",
-    "name": "Bracelet, Bracelet > Tennis Bracelet",
-    "slug": "bracelet-bracelet---tennis-bracelet",
-    "productCount": 6
+    "productCount": 414
   },
   {
     "id": "earrings",
     "name": "Earrings",
     "slug": "earrings",
-    "productCount": 63
+    "productCount": 246
   },
   {
     "id": "pendants",
     "name": "Pendants",
     "slug": "pendants",
-    "productCount": 278
+    "productCount": 234
   },
   {
-    "id": "uncategorized",
-    "name": "Uncategorized",
-    "slug": "uncategorized",
-    "productCount": 24
+    "id": "bracelets",
+    "name": "Bracelets",
+    "slug": "bracelets",
+    "productCount": 3
   }
 ]

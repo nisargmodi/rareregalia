@@ -25,11 +25,13 @@ export function ProductDetailClient({ productGroup, relatedProducts }: ProductDe
     // Convert variant back to product format for cart
     const productForCart: Product = {
       ...selectedVariant,
+      productId: productGroup.productId,
       name: productGroup.name,
       category: productGroup.category,
       description: productGroup.description || '',
       status: 'active',
       featured: productGroup.featured,
+      size: 'Standard',
       basePrice: null,
       goldWeightVendor: 0,
       diamondWeightVendor: 0,

@@ -109,7 +109,7 @@ export function ProductCard({ product, className = '' }: ProductCardProps) {
                 {product.metalType} • {product.metalKarat}
               </p>
               
-              {product.diamondWeight > 0 && (
+              {(product.diamondWeight && product.diamondWeight > 0) && (
                 <p className="text-xs text-gray-500">
                   {product.diamondWeight} ct diamonds
                 </p>
@@ -137,13 +137,13 @@ export function ProductCard({ product, className = '' }: ProductCardProps) {
           </div>
 
           {/* Quick Specs */}
-          {(product.goldWeight > 0 || product.diamondCount > 0) && (
+          {(product.goldWeight > 0 || (product.diamondCount && product.diamondCount > 0)) && (
             <div className="mt-3 pt-3 border-t border-gray-100">
               <div className="flex text-xs text-gray-500 space-x-4">
                 {product.goldWeight > 0 && (
                   <span>{product.goldWeight.toFixed(1)}g gold</span>
                 )}
-                {product.diamondCount > 0 && (
+                {(product.diamondCount && product.diamondCount > 0) && (
                   <span>{product.diamondCount} diamonds</span>
                 )}
               </div>
