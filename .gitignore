@@ -99,5 +99,12 @@ dist/
 !*.sql
 !*.txt
 !.gitignore
-# Private keys (never commit)
+
+# Private SSH Keys (never commit)
+id_ed25519_nisarg
+id_ed25519_nisarg.pub
 ecommerce-website/id_ed25519_nisarg
+*.pem
+*.key
+id_rsa*
+id_ed25519*
