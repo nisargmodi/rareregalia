@@ -22,10 +22,22 @@ This project contains a complete database architecture for Rare Regalia's jewelr
 │   ├── technical_specs.csv     # Technical specifications (5,108 specs)
 │   └── diamond_details.csv     # Diamond information (83 records)
 │
+├── inventory-generation/        # Inventory CSV generation scripts
+│   ├── generate_inventory_master.py  # Core generation logic
+│   ├── test_inventory_gen.py        # Main execution script
+│   ├── compare_inventory.py         # Comparison/verification tool
+│   └── README.md                    # Detailed generation docs
+│
 ├── converted_csv_files/         # Source data (converted from Excel)
 │   ├── Batch-*_*.csv          # Batch specification files
 │   └── kshitij_wc-product-export-29-8-2025.csv  # WooCommerce export
 │
+├── vendor-data/                 # Original vendor Excel files & media
+│   └── Batch-*/                # Batch folders with Excel & images
+│
+├── ecommerce-website/          # Next.js frontend application
+│
+├── inventory_master_all_batches.csv  # Master inventory (897 products)
 ├── *.py                        # Python processing scripts
 ├── *.md                        # Documentation files
 └── .gitignore                  # Excludes media files
@@ -71,13 +83,37 @@ This project contains a complete database architecture for Rare Regalia's jewelr
    pip install pandas openpyxl
    ```
 
-3. Import database:
+3. Generate inventory master file (if needed):
+   ```bash
+   cd inventory-generation
+   python test_inventory_gen.py
+   ```
+   This reads vendor Excel files and media folders to create `inventory_master_all_batches.csv`
+
+4. Import database:
    ```sql
    -- Import CSV files into your database
    LOAD DATA INFILE 'products.csv' INTO TABLE products;
    LOAD DATA INFILE 'product_variants.csv' INTO TABLE product_variants;
    -- ... (repeat for all tables)
    ```
+
+## 📦 Inventory Generation
+
+The `inventory-generation/` folder contains scripts to generate the master inventory CSV from vendor data:
+
+- **`generate_inventory_master.py`** - Core logic for parsing Excel files and discovering media
+- **`test_inventory_gen.py`** - Main script to process all batches
+- **`compare_inventory.py`** - Compare generated output with original
+
+### Usage:
+```bash
+cd inventory-generation
+python test_inventory_gen.py  # Generates ../inventory_master_all_batches.csv
+python compare_inventory.py   # Verify output matches original
+```
+
+See `inventory-generation/README.md` for detailed documentation.
 
 ## 📊 Database Schema
 
