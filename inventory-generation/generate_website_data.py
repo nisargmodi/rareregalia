@@ -125,6 +125,34 @@ def build_image_paths(style_num: str, variant_images: str) -> tuple:
     primary_image = web_images[0] if web_images else ""
     return primary_image, web_images
 
+def build_video_paths(style_num: str, variant_videos: str) -> list:
+    """Convert vendor video paths to web paths"""
+    web_videos = []
+    
+    if pd.notna(variant_videos) and variant_videos:
+        # Split by pipe separator
+        video_list = str(variant_videos).split('|')
+        
+        for video_path in video_list:
+            video_path = video_path.strip()
+            if not video_path:
+                continue
+                
+            # Convert backslashes to forward slashes
+            video_path = video_path.replace('\\', '/')
+            
+            # Extract the relevant parts: vendor-data/Batch-N/XXXX/file.mp4
+            # Convert to: /videos/products/XXXX/file.mp4
+            parts = video_path.split('/')
+            if len(parts) >= 2:
+                filename = parts[-1]
+                # Get the style folder (0016, 0024, etc.)
+                style_folder = str(style_num).zfill(4)
+                web_path = f"/videos/products/{style_folder}/{filename}"
+                web_videos.append(web_path)
+    
+    return web_videos
+
 def generate_products_data(inventory_df: pd.DataFrame, products_df: pd.DataFrame, variants_df: pd.DataFrame) -> List[Dict[str, Any]]:
     """Generate products data from inventory and database sources"""
     print("Generating products data...")
@@ -207,6 +235,9 @@ def generate_products_data(inventory_df: pd.DataFrame, products_df: pd.DataFrame
             # Build images
             primary_image, all_images = build_image_paths(style_num, row['variant_images'])
             
+            # Build videos
+            all_videos = build_video_paths(style_num, row.get('variant_videos', ''))
+            
             # Generate variant name
             variant_name = f"{product_name} - {metal_type}"
             if size_str != "Standard":
@@ -245,6 +276,8 @@ def generate_products_data(inventory_df: pd.DataFrame, products_df: pd.DataFrame
                 "primaryImage": primary_image,
                 "allImages": all_images,
                 "totalImages": len(all_images),
+                "allVideos": all_videos,
+                "totalVideos": len(all_videos),
                 "styleNumber": style_no,
                 "description": f"Exquisite {category.lower().rstrip('s')} featuring premium diamonds and {metal_type.lower()}.",
                 "createdDate": "2025-09-28",

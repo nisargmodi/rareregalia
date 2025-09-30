@@ -114,6 +114,7 @@ export function ProductDetailClient({ productGroup, relatedProducts }: ProductDe
       <div className="space-y-4">
         <VariantImageGallery
           allImages={selectedVariant.allImages}
+          allVideos={selectedVariant.allVideos}
           selectedMetalType={selectedVariant.metalType}
           productName={productGroup.name}
           className="w-full"

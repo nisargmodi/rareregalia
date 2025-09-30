@@ -46,11 +46,25 @@ def run_populate_names():
     )
 
 def run_website_generation():
-    """Generate website JSON data"""
-    return run_command(
+    """Generate website JSON data and copy videos"""
+    # Generate website data
+    result = run_command(
         'python generate_website_data.py',
         'Step 3: Generating website JSON data'
     )
+    if not result:
+        return False
+    
+    # Copy videos to public folder
+    print("\n" + "=" * 70)
+    print("📹 Copying videos to public folder")
+    print("=" * 70 + "\n")
+    
+    result = run_command(
+        'python copy_videos.py',
+        'Step 3b: Copying product videos'
+    )
+    return result
 
 def main():
     parser = argparse.ArgumentParser(

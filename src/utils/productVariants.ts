@@ -11,6 +11,7 @@ export interface ProductVariant {
   priceINR: number;
   primaryImage: string;
   allImages: string[];
+  allVideos?: string[];
   stockQuantity: number;
   goldPurity?: string;
   variantName: string;

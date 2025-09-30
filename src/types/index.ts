@@ -31,6 +31,8 @@ export interface Product {
   primaryImage?: string;
   allImages?: string[];
   totalImages?: number;
+  allVideos?: string[];
+  totalVideos?: number;
   styleNumber?: string;
   description?: string;
   createdDate?: string;
