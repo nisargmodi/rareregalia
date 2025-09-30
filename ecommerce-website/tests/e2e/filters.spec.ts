@@ -1,7 +1,7 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, Page } from '@playwright/test';
 
 // Utility to get product card titles
-async function getProductTitles(page) {
+async function getProductTitles(page: Page) {
   const titles = page.locator('.product-card h3');
   const count = await titles.count();
   const out: string[] = [];

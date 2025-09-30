@@ -12,9 +12,25 @@ This project contains a complete database architecture for Rare Regalia's jewelr
 - **Technical Specifications** (detailed product attributes)
 - **Price Calculation Engine** (components breakdown)
 
-## 🗂️ Project Structure
+## � Documentation
+
+**Comprehensive documentation is available in the `docs/` directory:**
+
+- **[Documentation Index](docs/README.md)** - Complete guide to all documentation
+- **[Testing Results](docs/testing/)** - Test execution reports and results
+- **[Maintenance Guides](docs/maintenance/)** - Procedures for common tasks
+- **[Maintenance Log](docs/maintenance/MAINTENANCE_LOG.md)** - Record of all maintenance actions
+
+For quick reference on testing, data generation, and troubleshooting, start with the documentation index.
+
+## �🗂️ Project Structure
 
 ```
+├── docs/                       # 📚 Project documentation
+│   ├── README.md              # Documentation index and quick reference
+│   ├── testing/               # Test results and procedures
+│   └── maintenance/           # Maintenance guides and logs
+│
 ├── ecommerce_database/          # Final normalized database (CSV format)
 │   ├── products.csv            # Main product catalog (126 products)
 │   ├── product_variants.csv    # Product variations (858 variants)

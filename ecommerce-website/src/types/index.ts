@@ -17,7 +17,7 @@ export interface Product {
   stockQuantity: number;
   goldWeight: number;
   goldPurity?: string;
-  goldWeightVendor: number;
+  goldWeightVendor?: number;
   diamondWeight?: number;
   diamondWeightVendor?: number;
   diamondCount?: number;

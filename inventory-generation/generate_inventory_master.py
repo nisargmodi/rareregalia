@@ -18,6 +18,7 @@ def extract_sku_from_style(style_no: str) -> str:
     
     # Try different patterns in order of specificity
     patterns = [
+        r'R-?(\d{5})\(',          # Batch-19 format: 'S R-19001(0.50)' -> '19001'
         r'TB-?(\d{4,5})',         # TB prefix: 'TB-14078' or 'TB14078' -> '14078'
         r'ER-?(\d{2,5})',         # ER prefix: 'ER-17001' or 'S ER-35' -> '17001' or '35'
         r'PD-?(\d{2,5})',         # PD prefix
@@ -30,6 +31,20 @@ def extract_sku_from_style(style_no: str) -> str:
         match = re.search(pattern, style_str)
         if match:
             return match.group(1)
+    
+    return ""
+
+def extract_size_from_style(style_no: str) -> str:
+    """Extract size from style number like 'S R-19001(0.50)' -> '0.50'"""
+    if pd.isna(style_no) or not style_no:
+        return ""
+    
+    style_str = str(style_no).strip()
+    
+    # Look for size in parentheses
+    match = re.search(r'\((\d+\.?\d*)\)', style_str)
+    if match:
+        return match.group(1)
     
     return ""
 
@@ -242,46 +257,91 @@ def process_excel_file(excel_path: Path, batch_name: str) -> pd.DataFrame:
     records = []
     batch_path = excel_path.parent
     
-    # Group consecutive rows by style number
-    current_style = None
-    current_gold_weight = None
-    current_diamond_rows = []
+    # Special handling for Batch-19: group by base SKU (without size)
+    is_batch_19 = batch_name == 'Batch-19'
     
-    for idx, row in df.iterrows():
-        style_no = row[style_col]
+    if is_batch_19:
+        # For Batch-19, group all size variants together
+        sku_groups = {}
         
-        # Skip empty rows
-        if pd.isna(style_no) or str(style_no).strip() == '':
-            # This might be a continuation row for diamond details
-            if current_style:
-                current_diamond_rows.append(row)
-            continue
+        for idx, row in df.iterrows():
+            style_no = row[style_col]
+            
+            # Skip empty rows
+            if pd.isna(style_no) or str(style_no).strip() == '':
+                continue
+            
+            # Extract base SKU (without size)
+            base_sku = extract_sku_from_style(style_no)
+            if not base_sku:
+                continue
+            
+            # Get size from style
+            size = extract_size_from_style(style_no)
+            
+            # Group by base SKU
+            if base_sku not in sku_groups:
+                sku_groups[base_sku] = {
+                    'style_base': style_no,  # Use first occurrence as base style
+                    'gold_weight': row[gold_col] if gold_col and pd.notna(row[gold_col]) else 0,
+                    'sizes': {},
+                    'diamond_rows': []
+                }
+            
+            # Store size-specific data
+            if size:
+                sku_groups[base_sku]['sizes'][size] = row
+            sku_groups[base_sku]['diamond_rows'].append(row)
         
-        # Process previous style if we have one
+        # Process each SKU group
+        for base_sku, group_data in sku_groups.items():
+            records.extend(create_variant_records(
+                batch_name, group_data['style_base'], group_data['gold_weight'],
+                group_data['diamond_rows'], batch_path, size_data=group_data['sizes']
+            ))
+    else:
+        # Original logic for other batches: group consecutive rows by style number
+        current_style = None
+        current_gold_weight = None
+        current_diamond_rows = []
+        
+        for idx, row in df.iterrows():
+            style_no = row[style_col]
+            
+            # Skip empty rows
+            if pd.isna(style_no) or str(style_no).strip() == '':
+                # This might be a continuation row for diamond details
+                if current_style:
+                    current_diamond_rows.append(row)
+                continue
+            
+            # Process previous style if we have one
+            if current_style and current_gold_weight:
+                records.extend(create_variant_records(
+                    batch_name, current_style, current_gold_weight,
+                    current_diamond_rows, batch_path
+                ))
+            
+            # Start new style
+            current_style = style_no
+            current_gold_weight = row[gold_col] if gold_col and pd.notna(row[gold_col]) else 0
+            current_diamond_rows = [row]
+        
+        # Process last style
         if current_style and current_gold_weight:
             records.extend(create_variant_records(
                 batch_name, current_style, current_gold_weight,
                 current_diamond_rows, batch_path
             ))
-        
-        # Start new style
-        current_style = style_no
-        current_gold_weight = row[gold_col] if gold_col and pd.notna(row[gold_col]) else 0
-        current_diamond_rows = [row]
-    
-    # Process last style
-    if current_style and current_gold_weight:
-        records.extend(create_variant_records(
-            batch_name, current_style, current_gold_weight,
-            current_diamond_rows, batch_path
-        ))
     
     return pd.DataFrame(records)
 
 def create_variant_records(batch_name: str, style_no: str, gold_weight: float,
-                          diamond_rows: List[pd.Series], batch_path: Path) -> List[Dict]:
+                          diamond_rows: List[pd.Series], batch_path: Path, 
+                          size_data: Optional[Dict] = None) -> List[Dict]:
     """
     Create variant records (White, Rose, Yellow) for a single style
+    For Batch-19, also create size variants (0.50, 1.00, 1.50, 2.00 ct) using size_data
     """
     sku = extract_sku_from_style(style_no)
     if not sku:
@@ -313,6 +373,13 @@ def create_variant_records(batch_name: str, style_no: str, gold_weight: float,
             seen.add(key)
             unique_diamond_types.append(dt)
     
+    # Determine size variants
+    if size_data and batch_name == 'Batch-19':
+        # Use the actual sizes from the Excel data
+        size_variants = sorted(size_data.keys())
+    else:
+        size_variants = ['']
+    
     # Create variant records
     variants = []
     variant_colors = ['White', 'Rose', 'Yellow']
@@ -325,39 +392,47 @@ def create_variant_records(batch_name: str, style_no: str, gold_weight: float,
         # Get variant-specific videos
         variant_vids = [v for v in all_videos if color in v]
         
-        # Create record
-        record = {
-            'batch': batch_name,
-            'style_no': style_no,
-            'sku_numeric': sku,
-            'product_id': f"{sku}-{suffix}",
-            'gold_weight_gms': gold_weight,
-            'diamond_weight_ct': total_diamond_weight,
-            'diamond_type_total': len(unique_diamond_types),
-            'variant_color': color,
-            'variant_size': '',
-            'variant_images': ' | '.join(variant_imgs),
-            'variant_image_count': len(variant_imgs),
-            'variant_videos': ' | '.join(variant_vids),
-            'variant_video_count': len(variant_vids),
-            'variant_total': 3,  # Always 3 variants per product
-            'image_file_count': len(all_images),
-            'video_file_count': len(all_videos),
-        }
-        
-        # Add diamond type details (up to 13 types)
-        for i in range(13):
-            if i < len(unique_diamond_types):
-                dt = unique_diamond_types[i]
-                record[f'diamond_type{i+1}'] = dt['shape']
-                record[f'diamond_type{i+1}_count'] = dt['count']
-                record[f'diamond_type{i+1}_dimensions'] = dt['dimensions']
+        # Create records for each size variant
+        for size in size_variants:
+            # Adjust product_id to include size if applicable
+            if size:
+                product_id = f"{sku}-{suffix}-{size}"
             else:
-                record[f'diamond_type{i+1}'] = ''
-                record[f'diamond_type{i+1}_count'] = ''
-                record[f'diamond_type{i+1}_dimensions'] = ''
-        
-        variants.append(record)
+                product_id = f"{sku}-{suffix}"
+            
+            # Create record
+            record = {
+                'batch': batch_name,
+                'style_no': style_no,
+                'sku_numeric': sku,
+                'product_id': product_id,
+                'gold_weight_gms': gold_weight,
+                'diamond_weight_ct': total_diamond_weight,
+                'diamond_type_total': len(unique_diamond_types),
+                'variant_color': color,
+                'variant_size': size,
+                'variant_images': ' | '.join(variant_imgs),
+                'variant_image_count': len(variant_imgs),
+                'variant_videos': ' | '.join(variant_vids),
+                'variant_video_count': len(variant_vids),
+                'variant_total': 3 * len(size_variants),  # 3 colors × number of sizes
+                'image_file_count': len(all_images),
+                'video_file_count': len(all_videos),
+            }
+            
+            # Add diamond type details (up to 13 types)
+            for i in range(13):
+                if i < len(unique_diamond_types):
+                    dt = unique_diamond_types[i]
+                    record[f'diamond_type{i+1}'] = dt['shape']
+                    record[f'diamond_type{i+1}_count'] = dt['count']
+                    record[f'diamond_type{i+1}_dimensions'] = dt['dimensions']
+                else:
+                    record[f'diamond_type{i+1}'] = ''
+                    record[f'diamond_type{i+1}_count'] = ''
+                    record[f'diamond_type{i+1}_dimensions'] = ''
+            
+            variants.append(record)
     
     return variants
 

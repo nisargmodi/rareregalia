@@ -122,7 +122,7 @@ def fix_product_image_paths():
     """Fix image paths in products.json to use local vendor images"""
     
     # Paths
-    vendor_data_path = Path('vendor-data/18-06-2025_Rare Regalia_Jayesh ji')
+    vendor_data_path = Path('vendor-data')
     website_path = Path('ecommerce-website')
     products_file = website_path / 'src' / 'data' / 'products.json'
     
