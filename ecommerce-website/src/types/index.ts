@@ -2,6 +2,7 @@ export interface Product {
   id: string;
   sku: string;
   productId: string;
+  baseProductId?: string; // Just the numeric part for images
   variantId: number;
   name: string;
   variantName: string;

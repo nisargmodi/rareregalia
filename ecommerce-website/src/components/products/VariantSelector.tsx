@@ -107,49 +107,23 @@ export function VariantSelector({
       </div>
 
       {/* Gold Purity Selection (if multiple purities available for selected metal type) */}
-      {metalTypeGroups[selectedVariant.metalType]?.length > 1 && (
-        <div>
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">Gold Purity</h3>
-          <div className="flex flex-wrap gap-2">
-            {metalTypeGroups[selectedVariant.metalType].map((variant) => {
-              const isSelected = selectedVariant.id === variant.id;
-              const purityDisplay = variant.goldPurity || variant.metalKarat;
-              
-              return (
-                <button
-                  key={variant.id}
-                  className={`
-                    px-4 py-2 rounded-md border text-sm font-medium transition-all duration-200
-                    ${isSelected
-                      ? 'border-amber-500 bg-amber-500 text-white'
-                      : 'border-gray-300 text-gray-700 hover:border-amber-300 hover:bg-amber-50'
-                    }
-                  `}
-                  onClick={() => onVariantChange(variant)}
-                >
-                  {purityDisplay}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      )}
+      {/* REMOVED: Gold purity selection is now handled by dedicated GoldPuritySelector component */}
 
       {/* Price Display */}
       <div className="bg-gray-50 rounded-lg p-4">
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-sm text-gray-600">Selected Option</p>
+            <p className="text-sm text-gray-600">Selected Metal</p>
             <p className="font-medium text-gray-900">
-              {getMetalDisplayName(selectedVariant.metalType)} • {selectedVariant.goldPurity || selectedVariant.metalKarat}
+              {getMetalDisplayName(selectedVariant.metalType)}
             </p>
           </div>
           <div className="text-right">
             <p className="text-2xl font-bold text-gray-900">
-              ₹{selectedVariant.priceINR.toLocaleString('en-IN')}
+              ₹{Math.round(selectedVariant.priceINR).toLocaleString('en-IN')}
             </p>
             <p className="text-sm text-gray-500">
-              SKU: {selectedVariant.sku}
+              {selectedVariant.sku}
             </p>
           </div>
         </div>

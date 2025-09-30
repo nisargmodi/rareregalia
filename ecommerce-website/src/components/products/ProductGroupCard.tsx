@@ -9,6 +9,7 @@ import { ProductGroup } from '@/utils/productVariants';
 import { useCartStore } from '@/store/cartStore';
 import { formatPrice, getMetalTypeColor } from '@/utils/productUtils';
 import { BasicProductImage } from '@/app/products/[id]/BasicProductImage';
+import { WorkingLink } from '@/utils/navigation';
 import toast from 'react-hot-toast';
 
 interface ProductGroupCardProps {
@@ -63,12 +64,12 @@ export function ProductGroupCard({ productGroup, className = '' }: ProductGroupC
   };
 
   const primaryImage = productGroup.baseVariant?.primaryImage || 
-    `/images/products/${productGroup.baseVariant?.sku}/main.jpg` || 
+    `/images/products/${productGroup.baseVariant?.sku?.split('-')[0]}/main.jpg` || 
     '/images/placeholder.jpg';
 
   return (
     // Added `product-card` class for test selectors consistency with ProductCard component
-    <Link href={`/products/${productGroup.productId}`} className={`product-card group block ${className}`} data-testid="product-group-card">
+    <WorkingLink href={`/products/${productGroup.productId}`} className={`product-card group block ${className}`} data-testid="product-group-card">
       <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
         {/* Product Image */}
         <div className="relative aspect-square overflow-hidden bg-gray-100">
@@ -118,11 +119,10 @@ export function ProductGroupCard({ productGroup, className = '' }: ProductGroupC
         <div className="p-4">
           <div className="mb-2">
             <h3 className="text-lg font-semibold text-gray-900 truncate group-hover:text-amber-600 transition-colors">
-              {productGroup.name}
+              {productGroup.name.replace(/\s+\d+$/, '')}
             </h3>
-            <p className="text-sm text-gray-500 mt-1">{productGroup.category}</p>
-            {productGroup.styleNumber && (
-              <p className="text-xs text-gray-400">Style: {productGroup.styleNumber}</p>
+            {productGroup.productId && (
+              <p className="text-xs text-gray-400">{productGroup.productId}</p>
             )}
           </div>
 
@@ -175,6 +175,6 @@ export function ProductGroupCard({ productGroup, className = '' }: ProductGroupC
           </button>
         </div>
       </div>
-    </Link>
+    </WorkingLink>
   );
 }

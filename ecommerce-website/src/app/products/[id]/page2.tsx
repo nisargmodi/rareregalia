@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       description: productGroup.description || `Shop ${productGroup.name} - Premium jewelry from Rare Regalia`,
       images: [
         {
-          url: productGroup.baseVariant.primaryImage || `/images/products/${productGroup.baseVariant.sku}/main.jpg`,
+          url: productGroup.baseVariant.primaryImage || `/images/products/${productGroup.baseVariant.sku.split('-')[0]}/main.jpg`,
           width: 800,
           height: 800,
           alt: productGroup.name,

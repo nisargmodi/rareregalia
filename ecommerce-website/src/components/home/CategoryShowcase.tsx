@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { getCategoryIcon } from '@/utils/productUtils';
+import { WorkingLink } from '@/utils/navigation';
 
 const categories = [
   {
@@ -47,7 +48,7 @@ export function CategoryShowcase() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {categories.map((category) => (
-          <Link
+          <WorkingLink
             key={category.name}
             href={category.href}
             className="group relative overflow-hidden rounded-lg bg-gray-100 aspect-square"
@@ -84,13 +85,13 @@ export function CategoryShowcase() {
                 </span>
               </div>
             </div>
-          </Link>
+          </WorkingLink>
         ))}
       </div>
 
       {/* View All Link */}
       <div className="text-center mt-12">
-        <Link
+        <WorkingLink
           href="/products"
           className="inline-flex items-center px-6 py-3 border border-primary-600 text-primary-600 font-medium rounded-lg hover:bg-primary-600 hover:text-white transition-colors"
         >
@@ -98,7 +99,7 @@ export function CategoryShowcase() {
           <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
-        </Link>
+        </WorkingLink>
       </div>
     </section>
   );

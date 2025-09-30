@@ -5,9 +5,13 @@ import { ShoppingCartIcon, HeartIcon, MinusIcon, PlusIcon } from '@heroicons/rea
 import { HeartIcon as HeartSolidIcon } from '@heroicons/react/24/solid';
 import { Product } from '@/types';
 import { useCartStore } from '@/store/cartStore';
+import { useWishlistStore } from '@/store/wishlistStore';
 import { ProductGroup, ProductVariant } from '@/utils/productVariants';
 import { VariantSelector } from '@/components/products/VariantSelector';
+import { SizeSelector } from '@/components/products/SizeSelector';
 import { VariantImageGallery } from '@/components/products/VariantImageGallery';
+import { GoldPuritySelector } from '@/components/products/GoldPuritySelector';
+import { calculatePriceWithGoldPurity, getPriceFromEnhancedProduct } from '@/utils/goldPricing';
 import { BasicProductImage } from './BasicProductImage';
 
 interface ProductDetailClientProps {
@@ -17,9 +21,16 @@ interface ProductDetailClientProps {
 
 export function ProductDetailClient({ productGroup, relatedProducts }: ProductDetailClientProps) {
   const [selectedVariant, setSelectedVariant] = useState<ProductVariant>(productGroup.baseVariant);
-  const [isWishlisted, setIsWishlisted] = useState(false);
   const [quantity, setQuantity] = useState(1);
+  const [selectedGoldKarat, setSelectedGoldKarat] = useState<number>(18); // Default to 18kt
+  const [currentPrice, setCurrentPrice] = useState<number>(
+    getPriceFromEnhancedProduct(selectedVariant, 18)
+  );
   const addItem = useCartStore((state) => state.addItem);
+  const { addItem: addToWishlist, removeItem: removeFromWishlist, isInWishlist } = useWishlistStore();
+  
+  // Check if current variant is in wishlist
+  const isWishlisted = isInWishlist(selectedVariant.sku);
 
   const handleAddToCart = () => {
     // Convert variant back to product format for cart
@@ -55,13 +66,46 @@ export function ProductDetailClient({ productGroup, relatedProducts }: ProductDe
   };
 
   const handleWishlist = () => {
-    setIsWishlisted(!isWishlisted);
-    // TODO: Implement wishlist functionality
+    // Convert variant back to product format for wishlist
+    const productForWishlist: Product = {
+      ...selectedVariant,
+      name: productGroup.name,
+      category: productGroup.category,
+      description: productGroup.description || '',
+      status: 'active' as const,
+      featured: productGroup.featured,
+      basePrice: null,
+      productId: productGroup.productId || '',
+      size: '', // Default empty size
+      goldWeight: 0, // Default weight
+      goldWeightVendor: 0,
+      diamondWeightVendor: 0,
+      diamondCount: 0,
+      diamondCountOther: 0,
+      diamondShapes: '',
+      diamondCuts: '',
+      diamondQuality: '',
+      allImages: selectedVariant.allImages || []
+    };
+
+    if (isWishlisted) {
+      removeFromWishlist(selectedVariant.sku);
+    } else {
+      addToWishlist(productForWishlist);
+    }
   };
 
   const handleVariantChange = (variant: ProductVariant) => {
     setSelectedVariant(variant);
     setQuantity(1); // Reset quantity when variant changes
+    // Recalculate price with current gold purity using enhanced pricing
+    const newPrice = getPriceFromEnhancedProduct(variant, selectedGoldKarat);
+    setCurrentPrice(newPrice);
+  };
+
+  const handleGoldKaratChange = (karat: number, newPrice: number) => {
+    setSelectedGoldKarat(karat);
+    setCurrentPrice(newPrice);
   };
 
   return (
@@ -80,22 +124,17 @@ export function ProductDetailClient({ productGroup, relatedProducts }: ProductDe
       <div className="space-y-6">
         {/* Product Title */}
         <div>
-          <h1 className="text-3xl font-bold text-gray-900">{productGroup.name}</h1>
-          <p className="text-lg text-gray-600 mt-2">{selectedVariant.variantName}</p>
-          <p className="text-sm text-gray-500 mt-1">{productGroup.category}</p>
-          {productGroup.styleNumber && (
-            <p className="text-sm text-gray-500">Style: {productGroup.styleNumber}</p>
-          )}
+          <h1 className="text-3xl font-bold text-gray-900">{productGroup.name.replace(/\s+\d+$/, '')}</h1>
         </div>
 
         {/* Price Display */}
         <div className="space-y-2">
           <p className="text-3xl font-bold text-gray-900">
-            ₹{selectedVariant.priceINR.toLocaleString('en-IN')}
+            ₹{Math.round(currentPrice).toLocaleString('en-IN')}
           </p>
           {productGroup.variants.length > 1 && (
             <p className="text-sm text-gray-500">
-              Price range: ₹{productGroup.priceRange.min.toLocaleString('en-IN')} - ₹{productGroup.priceRange.max.toLocaleString('en-IN')}
+              Base price range: ₹{Math.round(productGroup.priceRange.min).toLocaleString('en-IN')} - ₹{Math.round(productGroup.priceRange.max).toLocaleString('en-IN')}
             </p>
           )}
         </div>
@@ -117,6 +156,22 @@ export function ProductDetailClient({ productGroup, relatedProducts }: ProductDe
           />
         )}
 
+        {/* Size Selection */}
+        <SizeSelector
+          variants={productGroup.variants}
+          selectedVariant={selectedVariant}
+          selectedMetalType={selectedVariant.metalType}
+          onVariantChange={handleVariantChange}
+        />
+
+        {/* Gold Purity Selection */}
+        <GoldPuritySelector
+          basePrice={selectedVariant.priceINR}
+          selectedKarat={selectedGoldKarat}
+          onKaratChange={handleGoldKaratChange}
+          product={selectedVariant}
+        />
+
         {/* Product Specifications */}
         <div className="space-y-4">
           <h3 className="text-lg font-semibold text-gray-900">Specifications</h3>
@@ -125,18 +180,12 @@ export function ProductDetailClient({ productGroup, relatedProducts }: ProductDe
               <dt className="font-medium text-gray-900">Metal:</dt>
               <dd className="text-gray-700">{selectedVariant.metalType}</dd>
             </div>
-            {selectedVariant.goldPurity && (
-              <div className="flex justify-between">
-                <dt className="font-medium text-gray-900">Gold Purity:</dt>
-                <dd className="text-gray-700">{selectedVariant.goldPurity}</dd>
-              </div>
-            )}
             <div className="flex justify-between">
-              <dt className="font-medium text-gray-900">Karat:</dt>
-              <dd className="text-gray-700">{selectedVariant.metalKarat}</dd>
+              <dt className="font-medium text-gray-900">Gold Purity:</dt>
+              <dd className="text-gray-700">{selectedGoldKarat}kt</dd>
             </div>
             <div className="flex justify-between">
-              <dt className="font-medium text-gray-900">SKU:</dt>
+              <dt className="font-medium text-gray-900">Product ID:</dt>
               <dd className="text-gray-700">{selectedVariant.sku}</dd>
             </div>
           </dl>
@@ -232,7 +281,7 @@ export function ProductDetailClient({ productGroup, relatedProducts }: ProductDe
                 <div className="aspect-square bg-white rounded-lg overflow-hidden shadow-md mb-4">
                   <a href={`/products/${relatedProduct.productId}`}>
                     <BasicProductImage
-                      src={relatedProduct.primaryImage || `/images/products/${relatedProduct.id}/main.jpg`}
+                      src={relatedProduct.primaryImage || `/images/products/${relatedProduct.id.split('-')[0]}/main.jpg`}
                       alt={relatedProduct.name}
                       className="group-hover:scale-105 transition-transform duration-300"
                     />
@@ -246,7 +295,7 @@ export function ProductDetailClient({ productGroup, relatedProducts }: ProductDe
                   </h3>
                   <p className="text-sm text-gray-600">{relatedProduct.category}</p>
                   <p className="font-bold text-gray-900">
-                    ₹{relatedProduct.priceINR.toLocaleString('en-IN')}
+                    ₹{Math.round(relatedProduct.priceINR).toLocaleString('en-IN')}
                   </p>
                 </div>
               </div>

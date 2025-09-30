@@ -8,6 +8,7 @@ import { HeartIcon as HeartSolidIcon } from '@heroicons/react/24/solid';
 import { Product } from '@/types';
 import { useCartStore } from '@/store/cartStore';
 import { formatPrice, getMetalTypeColor } from '@/utils/productUtils';
+import { WorkingLink } from '@/utils/navigation';
 import toast from 'react-hot-toast';
 
 interface ProductCardProps {
@@ -39,7 +40,20 @@ export function ProductCard({ product, className = '' }: ProductCardProps) {
     : product.primaryImage;
 
   return (
-    <Link href={`/products/${product.id}`} className={`product-card ${className}`}>
+    <div className={`product-card ${className} relative`}>
+      {/* Invisible link overlay that covers the whole card */}
+      <Link 
+        href={`/products/${product.id}`}
+        className="absolute inset-0 z-10"
+        onClick={(e) => {
+          // Use window.location for reliable navigation
+          e.preventDefault();
+          console.log(`Navigating to product: ${product.id}, href: /products/${product.id}`);
+          window.location.href = `/products/${product.id}`;
+        }}
+        aria-label={`View ${product.name} details`}
+      />
+      
       <div className="relative">
         {/* Product Image */}
         <div className="aspect-square overflow-hidden bg-gray-100 rounded-t-lg">
@@ -57,7 +71,7 @@ export function ProductCard({ product, className = '' }: ProductCardProps) {
             <div className="flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <button
                 onClick={handleAddToCart}
-                className="p-2 bg-white rounded-full shadow-lg hover:bg-primary-50 transition-colors"
+                className="p-2 bg-white rounded-full shadow-lg hover:bg-primary-50 transition-colors relative z-20"
                 title="Add to Cart"
               >
                 <ShoppingBagIcon className="h-5 w-5 text-primary-600" />
@@ -65,7 +79,7 @@ export function ProductCard({ product, className = '' }: ProductCardProps) {
               
               <button
                 onClick={handleLike}
-                className="p-2 bg-white rounded-full shadow-lg hover:bg-red-50 transition-colors"
+                className="p-2 bg-white rounded-full shadow-lg hover:bg-red-50 transition-colors relative z-20"
                 title={isLiked ? "Remove from Wishlist" : "Add to Wishlist"}
               >
                 {isLiked ? (
@@ -128,8 +142,8 @@ export function ProductCard({ product, className = '' }: ProductCardProps) {
                 
                 <div className="text-right">
                   <p className="text-xs text-gray-500">{product.category}</p>
-                  {product.styleNumber && (
-                    <p className="text-xs text-gray-400">#{product.styleNumber}</p>
+                  {product.productId && (
+                    <p className="text-xs text-gray-400">#{product.productId}</p>
                   )}
                 </div>
               </div>
@@ -151,6 +165,6 @@ export function ProductCard({ product, className = '' }: ProductCardProps) {
           )}
         </div>
       </div>
-    </Link>
+    </div>
   );
 }

@@ -4,20 +4,25 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ShoppingBagIcon, HeartIcon, MagnifyingGlassIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useCartStore } from '@/store/cartStore';
+import { useWishlistStore } from '@/store/wishlistStore';
+import { WorkingLink } from '@/utils/navigation';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const { getTotalItems, toggleCart } = useCartStore();
+  const { getTotalItems: getWishlistTotalItems } = useWishlistStore();
 
   useEffect(() => {
     setIsClient(true);
     // Manually trigger hydration for cart store
     useCartStore.persist.rehydrate();
+    useWishlistStore.persist.rehydrate();
   }, []);
 
   const cartItemCount = isClient ? getTotalItems() : 0;
+  const wishlistItemCount = isClient ? getWishlistTotalItems() : 0;
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -45,13 +50,13 @@ export function Header() {
           <nav className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navigation.map((item) => (
-                <Link
+                <WorkingLink
                   key={item.name}
                   href={item.href}
                   className="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors"
                 >
                   {item.name}
-                </Link>
+                </WorkingLink>
               ))}
             </div>
           </nav>
@@ -65,8 +70,13 @@ export function Header() {
               <MagnifyingGlassIcon className="h-5 w-5" />
             </button>
             
-            <button className="p-2 text-gray-600 hover:text-primary-600 transition-colors">
+            <button className="p-2 text-gray-600 hover:text-primary-600 transition-colors relative">
               <HeartIcon className="h-5 w-5" />
+              {wishlistItemCount > 0 && (
+                <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                  {wishlistItemCount}
+                </span>
+              )}
             </button>
             
             <button
@@ -87,6 +97,8 @@ export function Header() {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 text-gray-600 hover:text-primary-600"
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              data-testid="mobile-menu-button"
             >
               {isMenuOpen ? (
                 <XMarkIcon className="h-6 w-6" />
@@ -117,14 +129,14 @@ export function Header() {
         <div className="md:hidden bg-white border-t border-gray-200">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navigation.map((item) => (
-              <Link
+              <WorkingLink
                 key={item.name}
                 href={item.href}
                 className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
-              </Link>
+              </WorkingLink>
             ))}
           </div>
           
@@ -140,7 +152,7 @@ export function Header() {
               
               <button className="flex items-center space-x-2 text-gray-700 hover:text-primary-600">
                 <HeartIcon className="h-5 w-5" />
-                <span>Wishlist</span>
+                <span>Wishlist ({getWishlistTotalItems()})</span>
               </button>
             </div>
           </div>

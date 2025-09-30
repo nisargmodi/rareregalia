@@ -11,6 +11,7 @@
     "type-check": "tsc --noEmit",
     "test": "npm run test:e2e",
     "test:e2e": "playwright test",
+    "test:links": "node scripts/test-links.js",
     "test:install-browsers": "npx playwright install --with-deps"
   },
   "dependencies": {

@@ -3,9 +3,11 @@ import { Product } from '@/types';
 export interface ProductVariant {
   id: string;
   sku: string;
+  baseProductId?: string; // Just the numeric part for images
   variantId: number;
   metalType: string;
   metalKarat: string;
+  size: string;
   priceINR: number;
   primaryImage: string;
   allImages: string[];
@@ -23,6 +25,7 @@ export interface ProductGroup {
   baseVariant: ProductVariant;
   variants: ProductVariant[];
   availableMetalTypes: string[];
+  availableSizes: string[];
   priceRange: {
     min: number;
     max: number;
@@ -51,6 +54,7 @@ export function groupProductVariants(products: Product[]): ProductGroup[] {
         baseVariant: createVariantFromProduct(product),
         variants: [],
         availableMetalTypes: [],
+        availableSizes: [],
         priceRange: { min: product.priceINR, max: product.priceINR },
         totalImages: product.totalImages || 0,
         featured: product.featured || false,
@@ -70,11 +74,16 @@ export function groupProductVariants(products: Product[]): ProductGroup[] {
       group.availableMetalTypes.push(product.metalType);
     }
     
+    // Update available sizes
+    if (!group.availableSizes.includes(product.size)) {
+      group.availableSizes.push(product.size);
+    }
+    
     // Update price range
     group.priceRange.min = Math.min(group.priceRange.min, product.priceINR);
     group.priceRange.max = Math.max(group.priceRange.max, product.priceINR);
     
-    // Update featured status (if any variant is featured)
+    // Updated featured status (if any variant is featured)
     group.featured = group.featured || product.featured;
     
     // Sort variants by price
@@ -91,9 +100,11 @@ function createVariantFromProduct(product: Product): ProductVariant {
   return {
     id: product.id,
     sku: product.sku,
+    baseProductId: product.baseProductId,
     variantId: product.variantId,
     metalType: product.metalType,
     metalKarat: product.metalKarat,
+    size: product.size,
     priceINR: product.priceINR,
     primaryImage: product.primaryImage || '',
     allImages: product.allImages || [],

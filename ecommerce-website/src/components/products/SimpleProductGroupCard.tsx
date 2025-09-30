@@ -112,11 +112,10 @@ export function SimpleProductGroupCard({ productGroup, className = '' }: SimpleP
         <div className="p-4">
           <div className="mb-2">
             <h3 className="text-lg font-semibold text-gray-900 truncate group-hover:text-amber-600 transition-colors">
-              {productGroup.name || 'Unknown Product'}
+              {(productGroup.name || 'Unknown Product').replace(/\s+\d+$/, '')}
             </h3>
-            <p className="text-sm text-gray-500 mt-1">{productGroup.category || 'Unknown Category'}</p>
-            {productGroup.styleNumber && (
-              <p className="text-xs text-gray-400">Style: {productGroup.styleNumber}</p>
+            {productGroup.productId && (
+              <p className="text-xs text-gray-400">{productGroup.productId}</p>
             )}
           </div>
 

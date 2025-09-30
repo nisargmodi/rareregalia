@@ -62,6 +62,17 @@ yarn-error.log*
 package-lock.json
 yarn.lock
 
+# Next.js Build Files
+.next/
+out/
+*.next/
+
+# Playwright Test Results
+test-results/
+playwright-report/
+playwright/.cache/
+**/error-context.md
+
 # Environment Variables
 .env
 .env.local

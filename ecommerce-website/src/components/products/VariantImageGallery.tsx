@@ -91,15 +91,15 @@ export function VariantImageGallery({
 
       {/* Thumbnail Navigation */}
       {currentImages.length > 1 && (
-        <div className="grid grid-cols-4 gap-2">
+        <div className="grid grid-cols-2 gap-4">
           {currentImages.map((image, index) => (
             <button
               key={`${image}-${index}`}
               onClick={() => setSelectedImageIndex(index)}
               className={`
                 aspect-square rounded-lg overflow-hidden border-2 transition-all duration-200
-                ${index === selectedImageIndex 
-                  ? 'border-amber-500 ring-2 ring-amber-200' 
+                ${index === selectedImageIndex
+                  ? 'border-amber-500 ring-2 ring-amber-200'
                   : 'border-gray-200 hover:border-gray-300'
                 }
               `}
