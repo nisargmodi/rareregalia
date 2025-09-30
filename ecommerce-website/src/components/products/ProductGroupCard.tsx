@@ -63,9 +63,8 @@ export function ProductGroupCard({ productGroup, className = '' }: ProductGroupC
     toast.success(isLiked ? 'Removed from wishlist' : 'Added to wishlist');
   };
 
-  const primaryImage = productGroup.baseVariant?.primaryImage || 
-    `/images/products/${productGroup.baseVariant?.sku?.split('-')[0]}/main.jpg` || 
-    '/images/placeholder.jpg';
+  // Use only actual images from inventory - no fallback to non-existent files
+  const primaryImage = productGroup.baseVariant?.primaryImage || '/images/placeholder.jpg';
 
   return (
     // Added `product-card` class for test selectors consistency with ProductCard component

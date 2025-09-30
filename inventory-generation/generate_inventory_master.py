@@ -406,6 +406,8 @@ def create_variant_records(batch_name: str, style_no: str, gold_weight: float,
                 'style_no': style_no,
                 'sku_numeric': sku,
                 'product_id': product_id,
+                'product_name': '',  # Will be populated by populate_product_info.py
+                'description': '',   # Will be populated by populate_product_info.py
                 'gold_weight_gms': gold_weight,
                 'diamond_weight_ct': total_diamond_weight,
                 'diamond_type_total': len(unique_diamond_types),

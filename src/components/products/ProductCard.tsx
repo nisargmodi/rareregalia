@@ -35,8 +35,9 @@ export function ProductCard({ product, className = '' }: ProductCardProps) {
     toast.success(isLiked ? 'Removed from wishlist' : 'Added to wishlist');
   };
 
+  // Use only actual images from inventory - no fallback to non-existent files
   const productImage = imageError || !product.primaryImage
-    ? `/images/products/${product.sku}/placeholder.jpg`
+    ? '/images/placeholder.jpg'
     : product.primaryImage;
 
   return (

@@ -3,24 +3,24 @@
     "id": "rings",
     "name": "Rings",
     "slug": "rings",
-    "productCount": 414
+    "productCount": 63
   },
   {
     "id": "earrings",
     "name": "Earrings",
     "slug": "earrings",
-    "productCount": 246
+    "productCount": 40
   },
   {
     "id": "pendants",
     "name": "Pendants",
     "slug": "pendants",
-    "productCount": 234
+    "productCount": 39
   },
   {
     "id": "bracelets",
     "name": "Bracelets",
     "slug": "bracelets",
-    "productCount": 3
+    "productCount": 1
   }
 ]

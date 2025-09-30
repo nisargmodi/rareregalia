@@ -232,7 +232,7 @@ export function ProductDetailClient({ productGroup, relatedProducts }: ProductDe
                 <div className="aspect-square bg-white rounded-lg overflow-hidden shadow-md mb-4">
                   <a href={`/products/${relatedProduct.productId}`}>
                     <BasicProductImage
-                      src={relatedProduct.primaryImage || `/images/products/${relatedProduct.id.split('-')[0]}/main.jpg`}
+                      src={relatedProduct.primaryImage || '/images/placeholder.jpg'}
                       alt={relatedProduct.name}
                       className="group-hover:scale-105 transition-transform duration-300"
                     />

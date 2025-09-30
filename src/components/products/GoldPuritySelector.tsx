@@ -30,7 +30,7 @@ export function GoldPuritySelector({
   };
 
   const getKaratStyle = (purityConfig: GoldPurityConfig, isSelected: boolean) => {
-    const baseClasses = "px-4 py-3 rounded-lg border-2 transition-all duration-200 cursor-pointer";
+    const baseClasses = "px-3 py-2 rounded-lg border-2 transition-all duration-200 cursor-pointer";
     
     if (isSelected) {
       return `${baseClasses} border-amber-500 bg-amber-50 text-amber-900`;
@@ -66,10 +66,10 @@ export function GoldPuritySelector({
   return (
     <div className={`space-y-4 ${className}`}>
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">Gold Purity</h3>
+        <h3 className="text-sm font-medium text-gray-900 mb-2">Gold Purity</h3>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
         {availablePurities.map((purityConfig) => {
           const isSelected = selectedKarat === purityConfig.karat;
           const isHovered = hoveredKarat === purityConfig.karat;
@@ -85,14 +85,14 @@ export function GoldPuritySelector({
             >
               {/* Karat Display */}
               <div className="text-center">
-                <div className={`text-lg font-bold ${isSelected ? 'text-amber-900' : 'text-gray-900'}`}>
+                <div className={`text-sm font-medium ${isSelected ? 'text-amber-900' : 'text-gray-900'}`}>
                   {purityConfig.displayName}
                 </div>
               </div>
 
               {/* Price Display */}
-              <div className="mt-2 text-center">
-                <div className={`text-lg font-semibold ${isSelected ? 'text-amber-900' : 'text-gray-900'}`}>
+              <div className="mt-1 text-center">
+                <div className={`text-sm font-medium ${isSelected ? 'text-amber-900' : 'text-gray-900'}`}>
                   {getPriceDisplay(purityConfig.karat)}
                 </div>
                 {getPriceDifference(purityConfig.karat) && (

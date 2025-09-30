@@ -11,8 +11,10 @@
     "type-check": "tsc --noEmit",
     "test": "npm run test:e2e",
     "test:e2e": "playwright test",
+    "test:images": "playwright test tests/image-paths.test.ts",
     "test:links": "node scripts/test-links.js",
-    "test:install-browsers": "npx playwright install --with-deps"
+    "test:install-browsers": "npx playwright install --with-deps",
+    "generate:placeholder": "node scripts/generate-placeholder.js"
   },
   "dependencies": {
     "next": "^14.0.0",

@@ -155,7 +155,7 @@ export function ProductsPageClient({
           <div className="flex items-center justify-between mb-6 pb-4 border-b border-gray-200">
             <div className="flex items-center space-x-4">
               <p className="text-sm text-gray-600">
-                {filteredProductGroups.length} product groups found
+                {filteredProductGroups.length} products found
               </p>
             </div>
 
@@ -196,8 +196,8 @@ export function ProductsPageClient({
           {filteredProductGroups.length > 0 ? (
             <div className={
               viewMode === 'grid' 
-                ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'
-                : 'space-y-6'
+                ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'
+                : 'space-y-4'
             }>
               {filteredProductGroups.map((productGroup) => (
                 <ProductGroupCard

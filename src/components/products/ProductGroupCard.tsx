@@ -63,9 +63,8 @@ export function ProductGroupCard({ productGroup, className = '' }: ProductGroupC
     toast.success(isLiked ? 'Removed from wishlist' : 'Added to wishlist');
   };
 
-  const primaryImage = productGroup.baseVariant?.primaryImage || 
-    `/images/products/${productGroup.baseVariant?.sku?.split('-')[0]}/main.jpg` || 
-    '/images/placeholder.jpg';
+  // Use only actual images from inventory - no fallback to non-existent files
+  const primaryImage = productGroup.baseVariant?.primaryImage || '/images/placeholder.jpg';
 
   return (
     // Added `product-card` class for test selectors consistency with ProductCard component
@@ -137,24 +136,10 @@ export function ProductGroupCard({ productGroup, className = '' }: ProductGroupC
                 {formatPrice(productGroup.priceRange?.min || 0)} - {formatPrice(productGroup.priceRange?.max || 0)}
               </p>
             )}
-            {productGroup.variants && productGroup.variants.length > 1 && (
-              <p className="text-sm text-gray-500">
-                {productGroup.variants.length} variations available
-              </p>
-            )}
           </div>
 
-          {/* Metal Type and Stock Info */}
-          <div className="flex items-center justify-between mb-3">
-            <div className="flex items-center space-x-2">
-              <span className="text-xs px-2 py-1 bg-gray-100 rounded-full text-gray-600">
-                {productGroup.baseVariant?.metalType || 'Unknown'}
-              </span>
-              <span className="text-xs px-2 py-1 bg-gray-100 rounded-full text-gray-600">
-                {productGroup.baseVariant?.metalKarat || 'Unknown'}
-              </span>
-            </div>
-            
+          {/* Stock Info */}
+          <div className="flex items-center justify-end mb-3">
             {(productGroup.baseVariant?.stockQuantity || 0) > 0 ? (
               <span className="text-xs text-green-600 font-medium">In Stock</span>
             ) : (

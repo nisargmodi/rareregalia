@@ -33,14 +33,14 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     openGraph: {
       title: productGroup.name,
       description: productGroup.description || `Shop ${productGroup.name} - Premium jewelry from Rare Regalia`,
-      images: [
+      images: productGroup.baseVariant.primaryImage ? [
         {
-          url: productGroup.baseVariant.primaryImage || `/images/products/${productGroup.baseVariant.sku.split('-')[0]}/main.jpg`,
+          url: productGroup.baseVariant.primaryImage,
           width: 800,
           height: 800,
           alt: productGroup.name,
         },
-      ],
+      ] : [],
     },
   };
 }

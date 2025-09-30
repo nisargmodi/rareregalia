@@ -16,13 +16,16 @@ def load_source_data():
     """Load all source data files"""
     print("Loading source data files...")
     
+    # Get paths relative to project root
+    base_dir = Path(__file__).resolve().parent.parent  # Go up to rareregalia root
+    
     # Load inventory master
-    inventory_df = pd.read_csv('inventory_master_all_batches.csv')
+    inventory_df = pd.read_csv(base_dir / 'inventory_master_all_batches.csv')
     print(f"Loaded {len(inventory_df)} inventory records")
     
     # Load ecommerce database files
-    products_df = pd.read_csv('ecommerce_database/products.csv')
-    variants_df = pd.read_csv('ecommerce_database/product_variants.csv')
+    products_df = pd.read_csv(base_dir / 'ecommerce_database' / 'products.csv')
+    variants_df = pd.read_csv(base_dir / 'ecommerce_database' / 'product_variants.csv')
     print(f"Loaded {len(products_df)} products, {len(variants_df)} variants")
     
     return inventory_df, products_df, variants_df
@@ -82,29 +85,6 @@ def deduce_category_from_style(style_no: str, sku_numeric: int) -> str:
     
     return "Uncategorized"
 
-def generate_product_name(style_no: str, category: str, sku_numeric: int) -> str:
-    """Generate a product name from style info"""
-    style_num = extract_style_number(style_no)
-    
-    # Base names by category
-    category_names = {
-        "Rings": ["Radiant Ring", "Elegant Ring", "Classic Ring", "Luxury Ring", "Diamond Ring"],
-        "Pendants": ["Graceful Pendant", "Elegant Pendant", "Classic Pendant", "Diamond Pendant", "Luxury Pendant"],
-        "Earrings": ["Stunning Earrings", "Elegant Earrings", "Diamond Earrings", "Classic Earrings", "Luxury Earrings"],
-        "Bracelets": ["Diamond Bracelet", "Elegant Bracelet", "Tennis Bracelet", "Classic Bracelet", "Luxury Bracelet"]
-    }
-    
-    base_names = category_names.get(category, ["Premium Jewelry"])
-    
-    # Use style number to pick consistent name
-    if isinstance(sku_numeric, (int, float)) and not pd.isna(sku_numeric):
-        name_index = int(sku_numeric) % len(base_names)
-        base_name = base_names[name_index]
-    else:
-        base_name = base_names[0]
-    
-    return f"{base_name} {style_num}" if style_num else base_name
-
 def map_metal_color_to_type(color: str) -> str:
     """Map variant color to metal type"""
     if pd.isna(color):
@@ -141,7 +121,8 @@ def build_image_paths(style_num: str, variant_images: str) -> tuple:
                 web_path = f"/images/products/{style_folder}/{filename}"
                 web_images.append(web_path)
     
-    primary_image = web_images[0] if web_images else f"/images/products/{style_num}/main.jpg"
+    # Only use actual images from inventory - no fallback to non-existent main.jpg
+    primary_image = web_images[0] if web_images else ""
     return primary_image, web_images
 
 def generate_products_data(inventory_df: pd.DataFrame, products_df: pd.DataFrame, variants_df: pd.DataFrame) -> List[Dict[str, Any]]:
@@ -158,12 +139,49 @@ def generate_products_data(inventory_df: pd.DataFrame, products_df: pd.DataFrame
         style_no = group['style_no'].iloc[0]
         style_num = extract_style_number(style_no)
         
-        # Deduce category and generate name
+        # Deduce category
         category = deduce_category_from_style(style_no, sku_numeric)
-        product_name = generate_product_name(style_no, category, sku_numeric)
         
         # Create product ID
         product_id = f"{len(products_data) + 1}-{style_num}"
+        
+        # Try to get product name from inventory CSV first, then products.csv, otherwise generate
+        product_name = None
+        description = ""
+        
+        # Check if product_name column exists in inventory and has a value
+        if 'product_name' in group.columns and pd.notna(group['product_name'].iloc[0]) and str(group['product_name'].iloc[0]).strip():
+            product_name = str(group['product_name'].iloc[0]).strip()
+            
+        # Check if description column exists in inventory
+        if 'description' in group.columns and pd.notna(group['description'].iloc[0]):
+            description = str(group['description'].iloc[0]).strip()
+        
+        # Fallback to products.csv if name not in inventory
+        if not product_name and products_df is not None and len(products_df) > 0:
+            # Look for matching product by style number in product_id column
+            matching_products = products_df[products_df['product_id'].str.contains(f'-{style_num}', na=False, regex=False)]
+            if len(matching_products) > 0:
+                product_name = matching_products['product_name'].iloc[0]
+                # Also update category from products.csv if available
+                if pd.notna(matching_products['category'].iloc[0]):
+                    csv_category = matching_products['category'].iloc[0]
+                    # Use first category if multiple are listed
+                    if ',' in csv_category:
+                        csv_category = csv_category.split(',')[0].strip()
+                    # Map common category names
+                    if 'Bracelet' in csv_category:
+                        category = 'Bracelets'
+                    elif 'Earring' in csv_category:
+                        category = 'Earrings'
+                    elif 'Pendant' in csv_category or 'Necklace' in csv_category:
+                        category = 'Pendants'
+                    elif 'Ring' in csv_category:
+                        category = 'Rings'
+        
+        # If still no name found, leave it empty (will be populated later)
+        if not product_name:
+            product_name = f"Product {style_num}"  # Temporary placeholder using SKU
         
         # Get pricing data from variants if available
         existing_variants = variants_df[variants_df['sku'].str.contains(str(style_num), na=False)]
@@ -243,18 +261,23 @@ def generate_categories_data(products_data: List[Dict[str, Any]]) -> List[Dict[s
     """Generate categories data from products"""
     print("Generating categories data...")
     
-    category_counts = {}
+    # Count unique product groups (by productId) per category, not all variations
+    category_product_ids = {}
     for product in products_data:
         category = product['category']
-        category_counts[category] = category_counts.get(category, 0) + 1
+        product_id = product.get('productId', product.get('id'))
+        
+        if category not in category_product_ids:
+            category_product_ids[category] = set()
+        category_product_ids[category].add(product_id)
     
     categories = []
-    for category, count in category_counts.items():
+    for category, product_ids in category_product_ids.items():
         categories.append({
             "id": category.lower().replace(' ', '-'),
             "name": category,
             "slug": category.lower().replace(' ', '-'),
-            "productCount": count
+            "productCount": len(product_ids)  # Count unique product IDs
         })
     
     return sorted(categories, key=lambda x: x['productCount'], reverse=True)
@@ -286,8 +309,9 @@ def save_website_data(products_data: List[Dict[str, Any]], categories_data: List
     """Save all data to website directory"""
     print("Saving website data files...")
     
-    # Create data directory
-    data_dir = Path('src/data')  # Current directory is now the ecommerce-website directory
+    # Create data directory relative to project root
+    base_dir = Path(__file__).resolve().parent.parent  # Go up to rareregalia root
+    data_dir = base_dir / 'src' / 'data'
     data_dir.mkdir(parents=True, exist_ok=True)
     
     # Save products
