@@ -1,0 +1,23 @@
+{
+  "totalProducts": 897,
+  "totalCategories": 4,
+  "priceRange": {
+    "min": 8386.6,
+    "max": 212793.85600000003,
+    "average": 43611.022492961485
+  },
+  "metalTypes": [
+    "Rose Gold",
+    "White Gold",
+    "Yellow Gold"
+  ],
+  "metalKarats": [
+    "14kt"
+  ],
+  "categories": [
+    "Rings",
+    "Earrings",
+    "Pendants",
+    "Bracelets"
+  ]
+}

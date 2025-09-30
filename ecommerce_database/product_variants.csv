@@ -1,0 +1,700 @@
+variant_id,product_id,sku,variant_name,metal_type,metal_karat,size,price,weight_gold,weight_diamond,stock_quantity,status
+1,1-0111,0111-Ro-1,"Celesto Ring - VVS VS - Solitaire, Gold 14ct",Rose Gold,14kt,Standard,23100.0,4.23,2.89,10,active
+2,1-0111,0111-Ro-2,"Celesto Ring - VVS VS - Solitaire, Gold 22ct",Rose Gold,14kt,Standard,60600.0,4.23,2.89,10,active
+3,2-14078,14078-Ro-3,"Lumière Gold Tennis Bracelet - 14kt Gold, Rose Gold",Rose Gold,14kt,Standard,168177.0,0.0,0.0,10,active
+4,2-14078,14078-Wh-4,"Lumière Gold Tennis Bracelet - 14kt Gold, White Gold",White Gold,14kt,Standard,,0.0,0.0,10,active
+5,2-14078,14078-Ye-5,"Lumière Gold Tennis Bracelet - 14kt Gold, Yellow Gold",Yellow Gold,14kt,Standard,168177.0,0.0,0.0,10,active
+6,2-14078,14078-Ro-6,"Lumière Gold Tennis Bracelet - 18kt Gold, Rose Gold",Rose Gold,14kt,Standard,174092.0,0.0,0.0,10,active
+7,2-14078,14078-Wh-7,"Lumière Gold Tennis Bracelet - 18kt Gold, White Gold",White Gold,14kt,Standard,173888.0,0.0,0.0,10,active
+8,2-14078,14078-Ye-8,"Lumière Gold Tennis Bracelet - 18kt Gold, Yellow Gold",Yellow Gold,14kt,Standard,146892.0,0.0,0.0,10,active
+9,3-17026,17026-Ro-9,"Infinity Grace Dangler Earrings - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,26080.0,0.0,0.0,10,active
+10,3-17026,17026-Ye-10,"Infinity Grace Dangler Earrings - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,26080.0,0.0,0.0,10,active
+11,4-17033,17033-Ye-11,Stellar Spark Dangler Earrings,Yellow Gold,14kt,Standard,,0.0,0.0,10,active
+12,5-17035,17035-Ye-12,Blossom Aura Dangler Earrings,Yellow Gold,14kt,Standard,,0.0,0.0,10,active
+13,6-17045,17045-Ro-13,Luna Halo Dangler Earrings,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+14,7-17046,17046-Ro-14,Eternal Love Dangler Earrings,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+15,8-17051,17051-Ro-15,Celeste Curve Dangler Earrings,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+16,9-17082,17082-Ro-16,LoveLine Dangler Earrings,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+17,10-17001,17001-Ro-17,Eterna Luxe Hoop Earrings,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+18,11-17002,17002-Ro-18,Radiant Eternity Hoop Earrings,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+19,12-17005,17005-Ro-19,Infinity Spark Hoop Earrings,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+20,13-17007,17007-Ro-20,GlowVault Huggie Earrings,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+21,14-17012,17012-Ro-21,Starlight Rows Huggie Earrings,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+22,15-17017,17017-Ro-22,Luna Arc Hoops,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+23,16-17021,17021-Ro-23,Aurora Luxe Hoops,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+24,17-17022,17022-Ro-24,"Celestia Spark Hoops - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,49820.0,0.0,0.0,10,active
+25,17-17022,17022-Ro-25,"Celestia Spark Hoops - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,57170.0,0.0,0.0,10,active
+26,17-17022,17022-Ye-26,"Celestia Spark Hoops - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,49820.0,0.0,0.0,10,active
+27,17-17022,17022-Ye-27,"Celestia Spark Hoops - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,57170.0,0.0,0.0,10,active
+28,18-17023,17023-Ro-28,Luna Dew Hoops,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+29,19-17027,17027-Ro-29,Soleil Spark Hoops,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+30,20-16003,16003-Ro-30,Vow Radiance,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+31,21-16019,16019-Ro-31,"Celeste Drop Earrings - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,,0.0,0.0,10,active
+32,21-16019,16019-Ro-32,"Celeste Drop Earrings - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,,0.0,0.0,10,active
+33,21-16019,16019-Wh-33,"Celeste Drop Earrings - White Gold, Gold 14ct",White Gold,14kt,Standard,,0.0,0.0,10,active
+34,21-16019,16019-Wh-34,"Celeste Drop Earrings - White Gold, Gold 18ct",White Gold,14kt,Standard,,0.0,0.0,10,active
+35,21-16019,16019-Ye-35,"Celeste Drop Earrings - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,,0.0,0.0,10,active
+36,21-16019,16019-Ye-36,"Celeste Drop Earrings - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,,0.0,0.0,10,active
+37,22-16020,16020-Ro-37,"Aurora Halo Drops - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,,0.0,0.0,10,active
+38,22-16020,16020-Ro-38,"Aurora Halo Drops - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,,0.0,0.0,10,active
+39,22-16020,16020-Ye-39,"Aurora Halo Drops - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,,0.0,0.0,10,active
+40,22-16020,16020-Ye-40,"Aurora Halo Drops - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,,0.0,0.0,10,active
+41,23-16034,16034-Ro-41,"Elysian Bloom Earrings - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,0.0,0.0,0.0,10,active
+42,23-16034,16034-Ro-42,"Elysian Bloom Earrings - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,0.0,0.0,0.0,10,active
+43,23-16034,16034-Ye-43,"Elysian Bloom Earrings - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,,0.0,0.0,10,active
+44,23-16034,16034-Ye-44,"Elysian Bloom Earrings - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,,0.0,0.0,10,active
+45,24-16034,16034-Ro-45,"Celeste Flora Earring - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,,0.0,0.0,10,active
+46,24-16034,16034-Ro-46,"Celeste Flora Earring - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,,0.0,0.0,10,active
+47,24-16034,16034-Wh-47,"Celeste Flora Earring - White Gold, Gold 14ct",White Gold,14kt,Standard,,0.0,0.0,10,active
+48,24-16034,16034-Wh-48,"Celeste Flora Earring - White Gold, Gold 18ct",White Gold,14kt,Standard,,0.0,0.0,10,active
+49,24-16034,16034-Ye-49,"Celeste Flora Earring - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,,0.0,0.0,10,active
+50,24-16034,16034-Ye-50,"Celeste Flora Earring - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,,0.0,0.0,10,active
+51,25-17037,17037-Ro-51,"Aurora Royale Earring - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,0.0,0.0,0.0,10,active
+52,25-17037,17037-Ro-52,"Aurora Royale Earring - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,0.0,0.0,0.0,10,active
+53,25-17037,17037-Wh-53,"Aurora Royale Earring - White Gold, Gold 14ct",White Gold,14kt,Standard,0.0,0.0,0.0,10,active
+54,25-17037,17037-Wh-54,"Aurora Royale Earring - White Gold, Gold 18ct",White Gold,14kt,Standard,0.0,0.0,0.0,10,active
+55,25-17037,17037-Ye-55,"Aurora Royale Earring - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,0.0,0.0,0.0,10,active
+56,25-17037,17037-Ye-56,"Aurora Royale Earring - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,0.0,0.0,0.0,10,active
+57,26-17051,17051-Ro-57,"Celeste Loops Earrings - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,0.0,0.0,0.0,10,active
+58,26-17051,17051-Ro-58,"Celeste Loops Earrings - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,0.0,0.0,0.0,10,active
+59,26-17051,17051-Wh-59,"Celeste Loops Earrings - White Gold, Gold 14ct",White Gold,14kt,Standard,0.0,0.0,0.0,10,active
+60,26-17051,17051-Wh-60,"Celeste Loops Earrings - White Gold, Gold 18ct",White Gold,14kt,Standard,0.0,0.0,0.0,10,active
+61,26-17051,17051-Ye-61,"Celeste Loops Earrings - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,0.0,0.0,0.0,10,active
+62,26-17051,17051-Ye-62,"Celeste Loops Earrings - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,0.0,0.0,0.0,10,active
+63,27-17073,17073-Ro-63,"Orla Spark Earring - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,0.0,0.0,0.0,10,active
+64,27-17073,17073-Ro-64,"Orla Spark Earring - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,0.0,0.0,0.0,10,active
+65,27-17073,17073-Wh-65,"Orla Spark Earring - White Gold, Gold 14ct",White Gold,14kt,Standard,0.0,0.0,0.0,10,active
+66,27-17073,17073-Wh-66,"Orla Spark Earring - White Gold, Gold 18ct",White Gold,14kt,Standard,0.0,0.0,0.0,10,active
+67,27-17073,17073-Ye-67,"Orla Spark Earring - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,0.0,0.0,0.0,10,active
+68,27-17073,17073-Ye-68,"Orla Spark Earring - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,0.0,0.0,0.0,10,active
+69,28-18048,18048-Ro-69,"Pixel love pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,12651.0,0.0,0.0,10,active
+70,28-18048,18048-Ro-70,"Pixel love pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,14856.0,0.0,0.0,10,active
+71,28-18048,18048-Wh-71,"Pixel love pendant - White Gold, Gold 14ct",White Gold,14kt,Standard,12651.0,0.0,0.0,10,active
+72,28-18048,18048-Wh-72,"Pixel love pendant - White Gold, Gold 18ct",White Gold,14kt,Standard,14856.0,0.0,0.0,10,active
+73,28-18048,18048-Ye-73,"Pixel love pendant - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,12651.0,0.0,0.0,10,active
+74,28-18048,18048-Ye-74,"Pixel love pendant - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,14856.0,0.0,0.0,10,active
+75,29-18049,18049-Ro-75,"Soul Spark Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,11556.0,0.0,0.0,10,active
+76,29-18049,18049-Ro-76,"Soul Spark Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,13536.0,0.0,0.0,10,active
+77,29-18049,18049-Wh-77,"Soul Spark Pendant - White Gold, Gold 14ct",White Gold,14kt,Standard,11556.0,0.0,0.0,10,active
+78,29-18049,18049-Wh-78,"Soul Spark Pendant - White Gold, Gold 18ct",White Gold,14kt,Standard,13536.0,0.0,0.0,10,active
+79,29-18049,18049-Ye-79,"Soul Spark Pendant - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,11556.0,0.0,0.0,10,active
+80,29-18049,18049-Ye-80,"Soul Spark Pendant - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,13536.0,0.0,0.0,10,active
+81,30-18004,18004-Ro-81,"Half of My Heart Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,8258.0,0.0,0.0,10,active
+82,30-18004,18004-Ro-82,"Half of My Heart Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,9398.0,0.0,0.0,10,active
+83,30-18004,18004-Wh-83,"Half of My Heart Pendant - White Gold, Gold 14ct",White Gold,14kt,Standard,8258.0,0.0,0.0,10,active
+84,30-18004,18004-Wh-84,"Half of My Heart Pendant - White Gold, Gold 18ct",White Gold,14kt,Standard,9398.0,0.0,0.0,10,active
+85,30-18004,18004-Ye-85,"Half of My Heart Pendant - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,8258.0,0.0,0.0,10,active
+86,30-18004,18004-Ye-86,"Half of My Heart Pendant - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,9398.0,0.0,0.0,10,active
+87,31-18013,18013-Ro-87,"Trinity of Love Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,14384.0,0.0,0.0,10,active
+88,31-18013,18013-Ro-88,"Trinity of Love Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,16604.0,0.0,0.0,10,active
+89,31-18013,18013-Wh-89,"Trinity of Love Pendant - White Gold, Gold 14ct",White Gold,14kt,Standard,14384.0,0.0,0.0,10,active
+90,31-18013,18013-Wh-90,"Trinity of Love Pendant - White Gold, Gold 18ct",White Gold,14kt,Standard,16604.0,0.0,0.0,10,active
+91,31-18013,18013-Ye-91,"Trinity of Love Pendant - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,14384.0,0.0,0.0,10,active
+92,31-18013,18013-Ye-92,"Trinity of Love Pendant - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,16604.0,0.0,0.0,10,active
+93,32-18037,18037-Ro-93,"Entwined Hearts Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,20076.0,0.0,0.0,10,active
+94,32-18037,18037-Ro-94,"Entwined Hearts Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,23406.0,0.0,0.0,10,active
+95,32-18037,18037-Wh-95,"Entwined Hearts Pendant - White Gold, Gold 14ct",White Gold,14kt,Standard,20076.0,0.0,0.0,10,active
+96,32-18037,18037-Wh-96,"Entwined Hearts Pendant - White Gold, Gold 18ct",White Gold,14kt,Standard,23406.0,0.0,0.0,10,active
+97,32-18037,18037-Ye-97,"Entwined Hearts Pendant - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,20076.0,0.0,0.0,10,active
+98,32-18037,18037-Ye-98,"Entwined Hearts Pendant - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,23406.0,0.0,0.0,10,active
+99,33-18047,18047-Ro-99,"Edge of Heart Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,9746.0,0.0,0.0,10,active
+100,33-18047,18047-Ro-100,"Edge of Heart Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,11426.0,0.0,0.0,10,active
+101,33-18047,18047-Wh-101,"Edge of Heart Pendant - White Gold, Gold 14ct",White Gold,14kt,Standard,9746.0,0.0,0.0,10,active
+102,33-18047,18047-Wh-102,"Edge of Heart Pendant - White Gold, Gold 18ct",White Gold,14kt,Standard,11426.0,0.0,0.0,10,active
+103,33-18047,18047-Ye-103,"Edge of Heart Pendant - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,9746.0,0.0,0.0,10,active
+104,33-18047,18047-Ye-104,"Edge of Heart Pendant - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,11426.0,0.0,0.0,10,active
+105,34-18050,18050-Ro-105,"HeartSwing Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,16430.0,0.0,0.0,10,active
+106,34-18050,18050-Ro-106,"HeartSwing Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,18830.0,0.0,0.0,10,active
+107,34-18050,18050-Wh-107,"HeartSwing Pendant - White Gold, Gold 14ct",White Gold,14kt,Standard,16430.0,0.0,0.0,10,active
+108,34-18050,18050-Wh-108,"HeartSwing Pendant - White Gold, Gold 18ct",White Gold,14kt,Standard,18830.0,0.0,0.0,10,active
+109,34-18050,18050-Ye-109,"HeartSwing Pendant - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,16430.0,0.0,0.0,10,active
+110,34-18050,18050-Ye-110,"HeartSwing Pendant - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,18830.0,0.0,0.0,10,active
+111,35-15045,15045-Ro-111,Aurelia Glow Pendant,Rose Gold,14kt,Standard,18338.0,0.0,0.0,10,active
+112,35-15045,15045-Ro-112,Aurelia Glow Pendant,Rose Gold,14kt,Standard,29886.0,0.0,0.0,10,active
+113,35-15045,15045-Ro-113,Aurelia Glow Pendant,Rose Gold,14kt,Standard,42050.0,0.0,0.0,10,active
+114,35-15045,15045-Ro-114,Aurelia Glow Pendant,Rose Gold,14kt,Standard,51970.0,0.0,0.0,10,active
+115,35-15045,15045-Ro-115,Aurelia Glow Pendant,Rose Gold,14kt,Standard,20378.0,0.0,0.0,10,active
+116,35-15045,15045-Ro-116,Aurelia Glow Pendant,Rose Gold,14kt,Standard,32766.0,0.0,0.0,10,active
+117,35-15045,15045-Ro-117,Aurelia Glow Pendant,Rose Gold,14kt,Standard,45800.0,0.0,0.0,10,active
+118,35-15045,15045-Ro-118,Aurelia Glow Pendant,Rose Gold,14kt,Standard,56320.0,0.0,0.0,10,active
+119,35-15045,15045-Wh-119,Aurelia Glow Pendant,White Gold,14kt,Standard,18338.0,0.0,0.0,10,active
+120,35-15045,15045-Wh-120,Aurelia Glow Pendant,White Gold,14kt,Standard,29886.0,0.0,0.0,10,active
+121,35-15045,15045-Wh-121,Aurelia Glow Pendant,White Gold,14kt,Standard,42050.0,0.0,0.0,10,active
+122,35-15045,15045-Wh-122,Aurelia Glow Pendant,White Gold,14kt,Standard,51970.0,0.0,0.0,10,active
+123,35-15045,15045-Wh-123,Aurelia Glow Pendant,White Gold,14kt,Standard,20378.0,0.0,0.0,10,active
+124,35-15045,15045-Wh-124,Aurelia Glow Pendant,White Gold,14kt,Standard,32766.0,0.0,0.0,10,active
+125,35-15045,15045-Wh-125,Aurelia Glow Pendant,White Gold,14kt,Standard,45800.0,0.0,0.0,10,active
+126,35-15045,15045-Wh-126,Aurelia Glow Pendant,White Gold,14kt,Standard,56320.0,0.0,0.0,10,active
+127,35-15045,15045-Ye-127,Aurelia Glow Pendant,Yellow Gold,14kt,Standard,18338.0,0.0,0.0,10,active
+128,35-15045,15045-Ye-128,Aurelia Glow Pendant,Yellow Gold,14kt,Standard,29886.0,0.0,0.0,10,active
+129,35-15045,15045-Ye-129,Aurelia Glow Pendant,Yellow Gold,14kt,Standard,42050.0,0.0,0.0,10,active
+130,35-15045,15045-Ye-130,Aurelia Glow Pendant,Yellow Gold,14kt,Standard,51970.0,0.0,0.0,10,active
+131,35-15045,15045-Ye-131,Aurelia Glow Pendant,Yellow Gold,14kt,Standard,20378.0,0.0,0.0,10,active
+132,35-15045,15045-Ye-132,Aurelia Glow Pendant,Yellow Gold,14kt,Standard,32766.0,0.0,0.0,10,active
+133,35-15045,15045-Ye-133,Aurelia Glow Pendant,Yellow Gold,14kt,Standard,45800.0,0.0,0.0,10,active
+134,35-15045,15045-Ye-134,Aurelia Glow Pendant,Yellow Gold,14kt,Standard,56320.0,0.0,0.0,10,active
+135,36-15046,15046-Ro-135,Regal Radiance,Rose Gold,14kt,Standard,17045.0,0.0,0.0,10,active
+136,36-15046,15046-Ro-136,Regal Radiance,Rose Gold,14kt,Standard,9201.0,0.0,0.0,10,active
+137,36-15046,15046-Ro-137,Regal Radiance,Rose Gold,14kt,Standard,31485.0,0.0,0.0,10,active
+138,36-15046,15046-Ro-138,Regal Radiance,Rose Gold,14kt,Standard,34410.0,0.0,0.0,10,active
+139,36-15046,15046-Ro-139,Regal Radiance,Rose Gold,14kt,Standard,47422.0,0.0,0.0,10,active
+140,36-15046,15046-Ro-140,Regal Radiance,Rose Gold,14kt,Standard,51682.0,0.0,0.0,10,active
+141,36-15046,15046-Ro-141,Regal Radiance,Rose Gold,14kt,Standard,60633.0,0.0,0.0,10,active
+142,36-15046,15046-Ro-142,Regal Radiance,Rose Gold,14kt,Standard,65898.0,0.0,0.0,10,active
+143,36-15046,15046-Wh-143,Regal Radiance,White Gold,14kt,Standard,17045.0,0.0,0.0,10,active
+144,36-15046,15046-Wh-144,Regal Radiance,White Gold,14kt,Standard,18770.0,0.0,0.0,10,active
+145,36-15046,15046-Wh-145,Regal Radiance,White Gold,14kt,Standard,31485.0,0.0,0.0,10,active
+146,36-15046,15046-Wh-146,Regal Radiance,White Gold,14kt,Standard,34410.0,0.0,0.0,10,active
+147,36-15046,15046-Wh-147,Regal Radiance,White Gold,14kt,Standard,47422.0,0.0,0.0,10,active
+148,36-15046,15046-Wh-148,Regal Radiance,White Gold,14kt,Standard,51682.0,0.0,0.0,10,active
+149,36-15046,15046-Wh-149,Regal Radiance,White Gold,14kt,Standard,60633.0,0.0,0.0,10,active
+150,36-15046,15046-Wh-150,Regal Radiance,White Gold,14kt,Standard,65898.0,0.0,0.0,10,active
+151,36-15046,15046-Ye-151,Regal Radiance,Yellow Gold,14kt,Standard,17045.0,0.0,0.0,10,active
+152,36-15046,15046-Ye-152,Regal Radiance,Yellow Gold,14kt,Standard,18770.0,0.0,0.0,10,active
+153,36-15046,15046-Ye-153,Regal Radiance,Yellow Gold,14kt,Standard,31485.0,0.0,0.0,10,active
+154,36-15046,15046-Ye-154,Regal Radiance,Yellow Gold,14kt,Standard,34410.0,0.0,0.0,10,active
+155,36-15046,15046-Ye-155,Regal Radiance,Yellow Gold,14kt,Standard,47422.0,0.0,0.0,10,active
+156,36-15046,15046-Ye-156,Regal Radiance,Yellow Gold,14kt,Standard,51682.0,0.0,0.0,10,active
+157,36-15046,15046-Ye-157,Regal Radiance,Yellow Gold,14kt,Standard,60633.0,0.0,0.0,10,active
+158,36-15046,15046-Ye-158,Regal Radiance,Yellow Gold,14kt,Standard,65898.0,0.0,0.0,10,active
+159,37-15048,15048-Ro-159,Eternal Glow,Rose Gold,14kt,Standard,16761.0,0.0,0.0,10,active
+160,37-15048,15048-Ro-160,Eternal Glow,Rose Gold,14kt,Standard,29474.0,0.0,0.0,10,active
+161,37-15048,15048-Ro-161,Eternal Glow,Rose Gold,14kt,Standard,37597.0,0.0,0.0,10,active
+162,37-15048,15048-Ro-162,Eternal Glow,Rose Gold,14kt,Standard,50224.0,0.0,0.0,10,active
+163,37-15048,15048-Ro-163,Eternal Glow,Rose Gold,14kt,Standard,18516.0,0.0,0.0,10,active
+164,37-15048,15048-Ro-164,Eternal Glow,Rose Gold,14kt,Standard,32144.0,0.0,0.0,10,active
+165,37-15048,15048-Ro-165,Eternal Glow,Rose Gold,14kt,Standard,40732.0,0.0,0.0,10,active
+166,37-15048,15048-Ro-166,Eternal Glow,Rose Gold,14kt,Standard,54394.0,0.0,0.0,10,active
+167,37-15048,15048-Wh-167,Eternal Glow,White Gold,14kt,Standard,16761.0,0.0,0.0,10,active
+168,37-15048,15048-Wh-168,Eternal Glow,White Gold,14kt,Standard,29474.0,0.0,0.0,10,active
+169,37-15048,15048-Wh-169,Eternal Glow,White Gold,14kt,Standard,37597.0,0.0,0.0,10,active
+170,37-15048,15048-Wh-170,Eternal Glow,White Gold,14kt,Standard,50224.0,0.0,0.0,10,active
+171,37-15048,15048-Wh-171,Eternal Glow,White Gold,14kt,Standard,18516.0,0.0,0.0,10,active
+172,37-15048,15048-Wh-172,Eternal Glow,White Gold,14kt,Standard,32144.0,0.0,0.0,10,active
+173,37-15048,15048-Wh-173,Eternal Glow,White Gold,14kt,Standard,40732.0,0.0,0.0,10,active
+174,37-15048,15048-Wh-174,Eternal Glow,White Gold,14kt,Standard,54394.0,0.0,0.0,10,active
+175,37-15048,15048-Ye-175,Eternal Glow,Yellow Gold,14kt,Standard,16761.0,0.0,0.0,10,active
+176,37-15048,15048-Ye-176,Eternal Glow,Yellow Gold,14kt,Standard,29474.0,0.0,0.0,10,active
+177,37-15048,15048-Ye-177,Eternal Glow,Yellow Gold,14kt,Standard,37597.0,0.0,0.0,10,active
+178,37-15048,15048-Ye-178,Eternal Glow,Yellow Gold,14kt,Standard,50224.0,0.0,0.0,10,active
+179,37-15048,15048-Ye-179,Eternal Glow,Yellow Gold,14kt,Standard,18516.0,0.0,0.0,10,active
+180,37-15048,15048-Ye-180,Eternal Glow,Yellow Gold,14kt,Standard,32144.0,0.0,0.0,10,active
+181,37-15048,15048-Ye-181,Eternal Glow,Yellow Gold,14kt,Standard,40732.0,0.0,0.0,10,active
+182,37-15048,15048-G-182,Eternal Glow,Gold,18kt,Standard,54394.0,0.0,0.0,10,active
+183,38-15050,15050-Ro-183,Lustre Drop,Rose Gold,14kt,Standard,18609.0,0.0,0.0,10,active
+184,38-15050,15050-Ro-184,Lustre Drop,Rose Gold,14kt,Standard,18354.0,0.0,0.0,10,active
+185,38-15050,15050-Ro-185,Lustre Drop,Rose Gold,14kt,Standard,29583.0,0.0,0.0,10,active
+186,38-15050,15050-Ro-186,Lustre Drop,Rose Gold,14kt,Standard,32598.0,0.0,0.0,10,active
+187,38-15050,15050-Ro-187,Lustre Drop,Rose Gold,14kt,Standard,37652.0,0.0,0.0,10,active
+188,38-15050,15050-Ro-188,Lustre Drop,Rose Gold,14kt,Standard,41312.0,0.0,0.0,10,active
+189,38-15050,15050-Ro-189,Lustre Drop,Rose Gold,14kt,Standard,46219.0,0.0,0.0,10,active
+190,38-15050,15050-Ro-190,Lustre Drop,Rose Gold,14kt,Standard,50614.0,0.0,0.0,10,active
+191,38-15050,15050-Wh-191,Lustre Drop,White Gold,14kt,Standard,16509.0,0.0,0.0,10,active
+192,38-15050,15050-Wh-192,Lustre Drop,White Gold,14kt,Standard,18354.0,0.0,0.0,10,active
+193,38-15050,15050-Wh-193,Lustre Drop,White Gold,14kt,Standard,29583.0,0.0,0.0,10,active
+194,38-15050,15050-Wh-194,Lustre Drop,White Gold,14kt,Standard,32598.0,0.0,0.0,10,active
+195,38-15050,15050-Wh-195,Lustre Drop,White Gold,14kt,Standard,37652.0,0.0,0.0,10,active
+196,38-15050,15050-Wh-196,Lustre Drop,White Gold,14kt,Standard,41312.0,0.0,0.0,10,active
+197,38-15050,15050-Wh-197,Lustre Drop,White Gold,14kt,Standard,46219.0,0.0,0.0,10,active
+198,38-15050,15050-Wh-198,Lustre Drop,White Gold,14kt,Standard,50614.0,0.0,0.0,10,active
+199,38-15050,15050-Ye-199,Lustre Drop,Yellow Gold,14kt,Standard,0.0,0.0,0.0,10,active
+200,38-15050,15050-G-200,Lustre Drop,Gold,18kt,Standard,,0.0,0.0,10,active
+201,38-15050,15050-G-201,Lustre Drop,Gold,18kt,Standard,,0.0,0.0,10,active
+202,38-15050,15050-G-202,Lustre Drop,Gold,18kt,Standard,,0.0,0.0,10,active
+203,38-15050,15050-Ye-203,Lustre Drop,Yellow Gold,14kt,Standard,37652.0,0.0,0.0,10,active
+204,38-15050,15050-Ye-204,Lustre Drop,Yellow Gold,14kt,Standard,41312.0,0.0,0.0,10,active
+205,38-15050,15050-Ye-205,Lustre Drop,Yellow Gold,14kt,Standard,46219.0,0.0,0.0,10,active
+206,38-15050,15050-Ye-206,Lustre Drop,Yellow Gold,14kt,Standard,50614.0,0.0,0.0,10,active
+207,39-15051,15051-Ro-207,Celeste Amour,Rose Gold,14kt,Standard,20499.0,0.0,0.0,10,active
+208,39-15051,15051-Ro-208,Celeste Amour,Rose Gold,14kt,Standard,22794.0,0.0,0.0,10,active
+209,39-15051,15051-Ro-209,Celeste Amour,Rose Gold,14kt,Standard,31715.0,0.0,0.0,10,active
+210,39-15051,15051-Ro-210,Celeste Amour,Rose Gold,14kt,Standard,34790.0,0.0,0.0,10,active
+211,39-15051,15051-Ro-211,Celeste Amour,Rose Gold,14kt,Standard,43180.0,0.0,0.0,10,active
+212,39-15051,15051-Ro-212,Celeste Amour,Rose Gold,14kt,Standard,47080.0,0.0,0.0,10,active
+213,39-15051,15051-Ro-213,Celeste Amour,Rose Gold,14kt,Standard,53656.0,0.0,0.0,10,active
+214,39-15051,15051-Ro-214,Celeste Amour,Rose Gold,14kt,Standard,58636.0,0.0,0.0,10,active
+215,39-15051,15051-Wh-215,Celeste Amour,White Gold,14kt,Standard,20499.0,0.0,0.0,10,active
+216,39-15051,15051-Wh-216,Celeste Amour,White Gold,14kt,Standard,22794.0,0.0,0.0,10,active
+217,39-15051,15051-Wh-217,Celeste Amour,White Gold,14kt,Standard,31715.0,0.0,0.0,10,active
+218,39-15051,15051-Wh-218,Celeste Amour,White Gold,14kt,Standard,34790.0,0.0,0.0,10,active
+219,39-15051,15051-Wh-219,Celeste Amour,White Gold,14kt,Standard,43180.0,0.0,0.0,10,active
+220,39-15051,15051-Wh-220,Celeste Amour,White Gold,14kt,Standard,47080.0,0.0,0.0,10,active
+221,39-15051,15051-Wh-221,Celeste Amour,White Gold,14kt,Standard,53656.0,0.0,0.0,10,active
+222,39-15051,15051-Wh-222,Celeste Amour,White Gold,14kt,Standard,58636.0,0.0,0.0,10,active
+223,39-15051,15051-Ye-223,Celeste Amour,Yellow Gold,14kt,Standard,20499.0,0.0,0.0,10,active
+224,39-15051,15051-Ye-224,Celeste Amour,Yellow Gold,14kt,Standard,22794.0,0.0,0.0,10,active
+225,39-15051,15051-Ye-225,Celeste Amour,Yellow Gold,14kt,Standard,31715.0,0.0,0.0,10,active
+226,39-15051,15051-Ye-226,Celeste Amour,Yellow Gold,14kt,Standard,34790.0,0.0,0.0,10,active
+227,39-15051,15051-Ye-227,Celeste Amour,Yellow Gold,14kt,Standard,43180.0,0.0,0.0,10,active
+228,39-15051,15051-Ye-228,Celeste Amour,Yellow Gold,14kt,Standard,47080.0,0.0,0.0,10,active
+229,39-15051,15051-Ye-229,Celeste Amour,Yellow Gold,14kt,Standard,53656.0,0.0,0.0,10,active
+230,39-15051,15051-Ye-230,Celeste Amour,Yellow Gold,14kt,Standard,58636.0,0.0,0.0,10,active
+231,40-1201,1201-Ro-231,"Luna Frame Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,15463.0,1.61,0.14,10,active
+232,40-1201,1201-Ro-232,"Luna Frame Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,17878.0,1.61,0.14,10,active
+233,40-1201,1201-Ro-233,"Luna Frame Pendant - White Gold, Gold 14ct",Rose Gold,14kt,Standard,15463.0,1.61,0.14,10,active
+234,40-1201,1201-Ro-234,"Luna Frame Pendant - White Gold, Gold 18ct",Rose Gold,14kt,Standard,17878.0,1.61,0.14,10,active
+235,40-1201,1201-Ro-235,"Luna Frame Pendant - Yellow Gold, Gold 14ct",Rose Gold,14kt,Standard,15463.0,1.61,0.14,10,active
+236,40-1201,1201-Ro-236,"Luna Frame Pendant - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,14980.0,1.61,0.14,10,active
+237,41-1203,1203-Ro-237,"Solara Link Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,14250.0,1.5,0.12,10,active
+238,41-1203,1203-Ro-238,"Solara Link Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,16500.0,1.5,0.12,10,active
+239,41-1203,1203-Ro-239,"Solara Link Pendant - White Gold, Gold 14ct",Rose Gold,14kt,Standard,14250.0,1.5,0.12,10,active
+240,41-1203,1203-Ro-240,"Solara Link Pendant - White Gold, Gold 18ct",Rose Gold,14kt,Standard,16500.0,1.5,0.12,10,active
+241,41-1203,1203-Ro-241,"Solara Link Pendant - Yellow Gold, Gold 14ct",Rose Gold,14kt,Standard,14250.0,1.5,0.12,10,active
+242,41-1203,1203-Ro-242,"Solara Link Pendant - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,16500.0,1.5,0.12,10,active
+243,42-1204,1204-Ro-243,"Vertaire Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,13915.0,1.55,0.07,10,active
+244,42-1204,1204-Ro-244,"Vertaire Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,16240.0,1.55,0.07,10,active
+245,42-1204,1204-Ro-245,"Vertaire Pendant - White Gold, Gold 14ct",Rose Gold,14kt,Standard,13915.0,1.55,0.07,10,active
+246,42-1204,1204-Ro-246,"Vertaire Pendant - White Gold, Gold 18ct",Rose Gold,14kt,Standard,16240.0,1.55,0.07,10,active
+247,42-1204,1204-Ro-247,"Vertaire Pendant - Yellow Gold, Gold 14ct",Rose Gold,14kt,Standard,13915.0,1.55,0.07,10,active
+248,42-1204,1204-Ro-248,"Vertaire Pendant - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,16240.0,1.55,0.07,10,active
+249,43-1207,1207-Ro-249,"Lustre Loop Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,25269.0,2.43,0.34,10,active
+250,43-1207,1207-Ro-250,"Lustre Loop Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,28914.0,2.43,0.34,10,active
+251,43-1207,1207-Ro-251,"Lustre Loop Pendant - White Gold, Gold 14ct",Rose Gold,14kt,Standard,25269.0,2.43,0.34,10,active
+252,43-1207,1207-Ro-252,"Lustre Loop Pendant - White Gold, Gold 18ct",Rose Gold,14kt,Standard,28914.0,2.43,0.34,10,active
+253,43-1207,1207-Ro-253,"Lustre Loop Pendant - Yellow Gold, Gold 14ct",Rose Gold,14kt,Standard,25269.0,2.43,0.34,10,active
+254,43-1207,1207-Ro-254,"Lustre Loop Pendant - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,28914.0,2.43,0.34,10,active
+255,44-1208,1208-Ro-255,"Aurelia Halo Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,28025.0,2.75,0.26,10,active
+256,44-1208,1208-Ro-256,"Aurelia Halo Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,32150.0,2.75,0.26,10,active
+257,44-1208,1208-Ro-257,"Aurelia Halo Pendant - White Gold, Gold 14ct",Rose Gold,14kt,Standard,28025.0,2.75,0.26,10,active
+258,44-1208,1208-Ro-258,"Aurelia Halo Pendant - White Gold, Gold 18ct",Rose Gold,14kt,Standard,32150.0,2.75,0.26,10,active
+259,44-1208,1208-Ro-259,"Aurelia Halo Pendant - Yellow Gold, Gold 14ct",Rose Gold,14kt,Standard,28025.0,2.75,0.26,10,active
+260,44-1208,1208-Ro-260,"Aurelia Halo Pendant - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,30850.0,2.75,0.26,10,active
+261,45-1210,1210-Ro-261,"Everglow Dancing Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,15361.0,1.67,0.1,10,active
+262,45-1210,1210-Ro-262,"Everglow Dancing Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,17866.0,1.67,0.1,10,active
+263,45-1210,1210-Wh-263,"Everglow Dancing Pendant - White Gold, Gold 14ct",White Gold,14kt,Standard,15361.0,1.67,0.1,10,active
+264,45-1210,1210-Wh-264,"Everglow Dancing Pendant - White Gold, Gold 18ct",White Gold,14kt,Standard,17866.0,1.67,0.1,10,active
+265,45-1210,1210-Ye-265,"Everglow Dancing Pendant - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,15361.0,1.67,0.1,10,active
+266,45-1210,1210-Ye-266,"Everglow Dancing Pendant - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,17866.0,1.67,0.1,10,active
+267,46-1226,1226-Ro-267,"Kinetic Sparkle Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,15814.0,1.58,0.18,10,active
+268,46-1226,1226-Ro-268,"Kinetic Sparkle Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,18184.0,1.58,0.18,10,active
+269,46-1226,1226-Ro-269,"Kinetic Sparkle Pendant - White Gold, Gold 14ct",Rose Gold,14kt,Standard,15814.0,1.58,0.18,10,active
+270,46-1226,1226-Ro-270,"Kinetic Sparkle Pendant - White Gold, Gold 18ct",Rose Gold,14kt,Standard,18184.0,1.58,0.18,10,active
+271,46-1226,1226-Wh-271,"Kinetic Sparkle Pendant - White Gold, Gold 22ct",White Gold,14kt,Standard,,1.58,0.18,10,active
+272,46-1226,1226-Ro-272,"Kinetic Sparkle Pendant - Yellow Gold, Gold 14ct",Rose Gold,14kt,Standard,15814.0,1.58,0.18,10,active
+273,46-1226,1226-Ro-273,"Kinetic Sparkle Pendant - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,18184.0,1.58,0.18,10,active
+274,46-1226,1226-Ye-274,"Kinetic Sparkle Pendant - Yellow Gold, Gold 22ct",Yellow Gold,14kt,Standard,,1.58,0.18,10,active
+275,47-1228,1228-Ro-275,"Rhythm Rose Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,29811.0,2.67,0.51,10,active
+276,47-1228,1228-Ro-276,"Rhythm Rose Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,33816.0,2.67,0.51,10,active
+277,47-1228,1228-Ro-277,"Rhythm Rose Pendant - White Gold, Gold 14ct",Rose Gold,14kt,Standard,29811.0,2.67,0.51,10,active
+278,47-1228,1228-Ro-278,"Rhythm Rose Pendant - White Gold, Gold 18ct",Rose Gold,14kt,Standard,33816.0,2.67,0.51,10,active
+279,47-1228,1228-Ro-279,"Rhythm Rose Pendant - Yellow Gold, Gold 14ct",Rose Gold,14kt,Standard,29811.0,2.67,0.51,10,active
+280,47-1228,1228-Ro-280,"Rhythm Rose Pendant - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,33816.0,2.67,0.51,10,active
+281,48-1229,1229-Ro-281,"Harmony Sway Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,24392.0,2.24,0.29,10,active
+282,48-1229,1229-Ro-282,"Harmony Sway Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,27752.0,2.24,0.29,10,active
+283,48-1229,1229-Ro-283,"Harmony Sway Pendant - White Gold, Gold 14ct",Rose Gold,14kt,Standard,22942.0,2.24,0.29,10,active
+284,48-1229,1229-Ro-284,"Harmony Sway Pendant - White Gold, Gold 18ct",Rose Gold,14kt,Standard,26302.0,2.24,0.29,10,active
+285,48-1229,1229-Ro-285,"Harmony Sway Pendant - Yellow Gold, Gold 14ct",Rose Gold,14kt,Standard,22942.0,2.24,0.29,10,active
+286,48-1229,1229-Ro-286,"Harmony Sway Pendant - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,26302.0,2.24,0.29,10,active
+287,49-1245,1245-Ro-287,"Celestial Charm Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,38589.0,3.83,0.34,10,active
+288,49-1245,1245-Ro-288,"Celestial Charm Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,42634.0,3.83,0.34,10,active
+289,49-1245,1245-Ro-289,"Celestial Charm Pendant - White Gold, Gold 14ct",Rose Gold,14kt,Standard,36889.0,3.83,0.34,10,active
+290,49-1245,1245-Ro-290,"Celestial Charm Pendant - White Gold, Gold 18ct",Rose Gold,14kt,Standard,42634.0,3.83,0.34,10,active
+291,49-1245,1245-Ro-291,"Celestial Charm Pendant - Yellow Gold, Gold 14ct",Rose Gold,14kt,Standard,36889.0,3.83,0.34,10,active
+292,49-1245,1245-Ro-292,"Celestial Charm Pendant - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,42634.0,3.83,0.34,10,active
+293,50-1259,1259-Ro-293,"Luminance Locket Pendent - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,23172.0,2.34,0.25,10,active
+294,50-1259,1259-Ro-294,"Luminance Locket Pendent - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,26682.0,2.34,0.25,10,active
+295,50-1259,1259-Ro-295,"Luminance Locket Pendent - White Gold, Gold 14ct",Rose Gold,14kt,Standard,23172.0,2.34,0.25,10,active
+296,50-1259,1259-Ro-296,"Luminance Locket Pendent - White Gold, Gold 18ct",Rose Gold,14kt,Standard,26682.0,2.34,0.25,10,active
+297,50-1259,1259-Ro-297,"Luminance Locket Pendent - Yellow Gold, Gold 14ct",Rose Gold,14kt,Standard,23172.0,2.34,0.25,10,active
+298,50-1259,1259-Ro-298,"Luminance Locket Pendent - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,26682.0,2.34,0.25,10,active
+299,51-1262,1262-Ro-299,"Solitaire Serenade Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,88864.0,1.58,5.05,10,active
+300,51-1262,1262-Ro-300,"Solitaire Serenade Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,91234.0,1.58,5.05,10,active
+301,51-1262,1262-Ro-301,"Solitaire Serenade Pendant - White Gold, Gold 14ct",Rose Gold,14kt,Standard,88864.0,1.58,5.05,10,active
+302,51-1262,1262-Ro-302,"Solitaire Serenade Pendant - White Gold, Gold 18ct",Rose Gold,14kt,Standard,91234.0,1.58,5.05,10,active
+303,51-1262,1262-Ro-303,"Solitaire Serenade Pendant - Yellow Gold, Gold 14ct",Rose Gold,14kt,Standard,88864.0,1.58,5.05,10,active
+304,51-1262,1262-Ro-304,"Solitaire Serenade Pendant - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,91234.0,1.58,5.05,10,active
+305,52-15001,15001-Ro-305,"Starlight Radiance Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,30722.0,0.0,0.0,10,active
+306,52-15001,15001-Ro-306,"Starlight Radiance Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,33482.0,0.0,0.0,10,active
+307,52-15001,15001-Wh-307,"Starlight Radiance Pendant - White Gold, Gold 14ct",White Gold,14kt,Standard,30722.0,0.0,0.0,10,active
+308,52-15001,15001-Wh-308,"Starlight Radiance Pendant - White Gold, Gold 18ct",White Gold,14kt,Standard,33482.0,0.0,0.0,10,active
+309,52-15001,15001-Ye-309,"Starlight Radiance Pendant - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,30722.0,0.0,0.0,10,active
+310,52-15001,15001-Ye-310,"Starlight Radiance Pendant - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,33482.0,0.0,0.0,10,active
+311,53-15002,15002-Ro-311,"Eternal Sparkle Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,24829.0,0.0,0.0,10,active
+312,53-15002,15002-Ro-312,"Eternal Sparkle Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,26524.0,0.0,0.0,10,active
+313,53-15002,15002-Wh-313,"Eternal Sparkle Pendant - White Gold, Gold 14ct",White Gold,14kt,Standard,24829.0,0.0,0.0,10,active
+314,53-15002,15002-Wh-314,"Eternal Sparkle Pendant - White Gold, Gold 18ct",White Gold,14kt,Standard,26524.0,0.0,0.0,10,active
+315,53-15002,15002-Ye-315,"Eternal Sparkle Pendant - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,24829.0,0.0,0.0,10,active
+316,53-15002,15002-Ye-316,"Eternal Sparkle Pendant - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,26524.0,0.0,0.0,10,active
+317,54-15003,15003-Ro-317,"Infinity Halo Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,33142.0,0.0,0.0,10,active
+318,54-15003,15003-Ro-318,"Infinity Halo Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,36502.0,0.0,0.0,10,active
+319,54-15003,15003-Wh-319,"Infinity Halo Pendant - White Gold, Gold 14ct",White Gold,14kt,Standard,33142.0,0.0,0.0,10,active
+320,54-15003,15003-Wh-320,"Infinity Halo Pendant - White Gold, Gold 18ct",White Gold,14kt,Standard,36502.0,0.0,0.0,10,active
+321,54-15003,15003-Ye-321,"Infinity Halo Pendant - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,33142.0,0.0,0.0,10,active
+322,54-15003,15003-Ye-322,"Infinity Halo Pendant - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,36502.0,0.0,0.0,10,active
+323,55-15005,15005-Ro-323,"Circling Radiance Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,31728.0,0.0,0.0,10,active
+324,55-15005,15005-Ro-324,"Circling Radiance Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,34968.0,0.0,0.0,10,active
+325,55-15005,15005-Wh-325,"Circling Radiance Pendant - White Gold, Gold 14ct",White Gold,14kt,Standard,31728.0,0.0,0.0,10,active
+326,55-15005,15005-Wh-326,"Circling Radiance Pendant - White Gold, Gold 18ct",White Gold,14kt,Standard,34968.0,0.0,0.0,10,active
+327,55-15005,15005-Ye-327,"Circling Radiance Pendant - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,31728.0,0.0,0.0,10,active
+328,55-15005,15005-Ye-328,"Circling Radiance Pendant - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,34968.0,0.0,0.0,10,active
+329,56-15019,15019-Ro-329,"Teardrop Embrace Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,37840.0,0.0,0.0,10,active
+330,56-15019,15019-Ro-330,"Teardrop Embrace Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,41290.0,0.0,0.0,10,active
+331,56-15019,15019-Wh-331,"Teardrop Embrace Pendant - White Gold, Gold 14ct",White Gold,14kt,Standard,37840.0,0.0,0.0,10,active
+332,56-15019,15019-Wh-332,"Teardrop Embrace Pendant - White Gold, Gold 18ct",White Gold,14kt,Standard,41290.0,0.0,0.0,10,active
+333,56-15019,15019-Ye-333,"Teardrop Embrace Pendant - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,37840.0,0.0,0.0,10,active
+334,56-15019,15019-Ye-334,"Teardrop Embrace Pendant - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,41290.0,0.0,0.0,10,active
+335,57-15020,15020-Ro-335,"Cascade of Radiance Pendant - Rose Gold, Gold 14ct",Rose Gold,14kt,Standard,43538.0,0.0,0.0,10,active
+336,57-15020,15020-Ro-336,"Cascade of Radiance Pendant - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,47828.0,0.0,0.0,10,active
+337,57-15020,15020-Wh-337,"Cascade of Radiance Pendant - White Gold, Gold 14ct",White Gold,14kt,Standard,43538.0,0.0,0.0,10,active
+338,57-15020,15020-Wh-338,"Cascade of Radiance Pendant - White Gold, Gold 18ct",White Gold,14kt,Standard,47828.0,0.0,0.0,10,active
+339,57-15020,15020-Ye-339,"Cascade of Radiance Pendant - Yellow Gold, Gold 14ct",Yellow Gold,14kt,Standard,38588.0,0.0,0.0,10,active
+340,57-15020,15020-Ye-340,"Cascade of Radiance Pendant - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,42878.0,0.0,0.0,10,active
+341,58-15035,15035-G-341,Classic Grace Pendant,Gold,18kt,Standard,,0.0,0.0,10,active
+342,58-15035,15035-G-342,Classic Grace Pendant,Gold,18kt,Standard,,0.0,0.0,10,active
+343,58-15035,15035-G-343,Classic Grace Pendant,Gold,18kt,Standard,,0.0,0.0,10,active
+344,58-15035,15035-G-344,Classic Grace Pendant,Gold,18kt,Standard,,0.0,0.0,10,active
+345,58-15035,15035-G-345,Classic Grace Pendant,Gold,18kt,Standard,,0.0,0.0,10,active
+346,58-15035,15035-G-346,Classic Grace Pendant,Gold,18kt,Standard,,0.0,0.0,10,active
+347,58-15035,15035-Ro-347,Classic Grace Pendant,Rose Gold,14kt,Standard,8310.0,0.0,0.0,10,active
+348,58-15035,15035-Ro-348,Classic Grace Pendant,Rose Gold,14kt,Standard,13922.0,0.0,0.0,10,active
+349,58-15035,15035-Ro-349,Classic Grace Pendant,Rose Gold,14kt,Standard,23682.0,0.0,0.0,10,active
+350,58-15035,15035-Ro-350,Classic Grace Pendant,Rose Gold,14kt,Standard,34658.0,0.0,0.0,10,active
+351,58-15035,15035-Wh-351,Classic Grace Pendant,White Gold,14kt,Standard,7635.0,0.0,0.0,10,active
+352,58-15035,15035-Wh-352,Classic Grace Pendant,White Gold,14kt,Standard,12962.0,0.0,0.0,10,active
+353,58-15035,15035-Wh-353,Classic Grace Pendant,White Gold,14kt,Standard,22422.0,0.0,0.0,10,active
+354,58-15035,15035-Wh-354,Classic Grace Pendant,White Gold,14kt,Standard,24543.0,0.0,0.0,10,active
+355,58-15035,15035-Wh-355,Classic Grace Pendant,White Gold,14kt,Standard,8310.0,0.0,0.0,10,active
+356,58-15035,15035-Wh-356,Classic Grace Pendant,White Gold,14kt,Standard,12770.0,0.0,0.0,10,active
+357,58-15035,15035-Wh-357,Classic Grace Pendant,White Gold,14kt,Standard,22170.0,0.0,0.0,10,active
+358,58-15035,15035-Wh-358,Classic Grace Pendant,White Gold,14kt,Standard,34658.0,0.0,0.0,10,active
+359,58-15035,15035-Ye-359,Classic Grace Pendant,Yellow Gold,14kt,Standard,7635.0,0.0,0.0,10,active
+360,58-15035,15035-Ye-360,Classic Grace Pendant,Yellow Gold,14kt,Standard,7650.0,0.0,0.0,10,active
+361,58-15035,15035-Ye-361,Classic Grace Pendant,Yellow Gold,14kt,Standard,22422.0,0.0,0.0,10,active
+362,58-15035,15035-Ye-362,Classic Grace Pendant,Yellow Gold,14kt,Standard,32843.0,0.0,0.0,10,active
+363,58-15035,15035-Ye-363,Classic Grace Pendant,Yellow Gold,14kt,Standard,8310.0,0.0,0.0,10,active
+364,58-15035,15035-Ye-364,Classic Grace Pendant,Yellow Gold,14kt,Standard,13922.0,0.0,0.0,10,active
+365,58-15035,15035-Ye-365,Classic Grace Pendant,Yellow Gold,14kt,Standard,23682.0,0.0,0.0,10,active
+366,58-15035,15035-Ye-366,Classic Grace Pendant,Yellow Gold,14kt,Standard,34508.0,0.0,0.0,10,active
+367,58-15035,15035-Ro-367,Classic Grace Pendant,Rose Gold,14kt,Standard,8935.0,0.0,0.0,10,active
+368,58-15035,15035-Ro-368,Classic Grace Pendant,Rose Gold,14kt,Standard,12962.0,0.0,0.0,10,active
+369,58-15035,15035-Ro-369,Classic Grace Pendant,Rose Gold,14kt,Standard,22422.0,0.0,0.0,10,active
+370,58-15035,15035-Ro-370,Classic Grace Pendant,Rose Gold,14kt,Standard,32843.0,0.0,0.0,10,active
+371,59-0016,0016-Ro-371,"Eterna Oval - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,45854.0,3.04,1.01,10,active
+372,59-0016,0016-Ro-372,"Eterna Oval - White Gold, Gold 18ct",Rose Gold,14kt,Standard,45854.0,3.04,1.01,10,active
+373,59-0016,0016-Ro-373,"Eterna Oval - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,45854.0,3.04,1.01,10,active
+374,60-0024,0024-Ro-374,"Radiant Whisper - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,50768.0,2.68,1.58,10,active
+375,60-0024,0024-Ro-375,"Radiant Whisper - White Gold, Gold 18ct",Rose Gold,14kt,Standard,50768.0,2.68,1.58,10,active
+376,60-0024,0024-Ro-376,"Radiant Whisper - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,50768.0,2.68,1.58,10,active
+377,61-0025,0025-Ro-377,"Lustrous Bloom - Gold 18ct, Rose Gold",Rose Gold,14kt,Standard,58340.0,3.4,1.6,10,active
+378,61-0025,0025-Ro-378,"Lustrous Bloom - Gold 18ct, White Gold",Rose Gold,14kt,Standard,58340.0,3.4,1.6,10,active
+379,61-0025,0025-Ro-379,"Lustrous Bloom - Gold 18ct, Yellow Gold",Rose Gold,14kt,Standard,58340.0,3.4,1.6,10,active
+380,62-0103,0103-Ro-380,"Celestial Grandeu - Gold 18ct, Rose Gold",Rose Gold,14kt,Standard,87259.0,3.59,3.4,10,active
+381,62-0103,0103-Ro-381,"Celestial Grandeu - Gold 18ct, White Gold",Rose Gold,14kt,Standard,87259.0,3.59,3.4,10,active
+382,62-0103,0103-Ro-382,"Celestial Grandeu - Gold 18ct, Yellow Gold",Rose Gold,14kt,Standard,87259.0,3.59,3.4,10,active
+383,63-0111,0111-Ro-383,"Radiant Vow - Gold 18ct, Rose Gold",Rose Gold,14kt,Standard,86073.0,4.23,2.89,10,active
+384,63-0111,0111-Ro-384,"Radiant Vow - Gold 18ct, White Gold",Rose Gold,14kt,Standard,86073.0,4.23,2.89,10,active
+385,63-0111,0111-Ro-385,"Radiant Vow - Gold 18ct, Yellow Gold",Rose Gold,14kt,Standard,86073.0,4.23,2.89,10,active
+386,64-0132,0132-Ro-386,"Eternal Grace - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,86073.0,3.81,1.18,10,active
+387,64-0132,0132-Ro-387,"Eternal Grace - White Gold, Gold 18ct",Rose Gold,14kt,Standard,86073.0,3.81,1.18,10,active
+388,64-0132,0132-Ro-388,"Eternal Grace - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,86073.0,3.81,1.18,10,active
+389,65-0133,0133-Ro-389,"Radiant Embrace - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,65874.0,4.45,1.2,10,active
+390,65-0133,0133-Ro-390,"Radiant Embrace - White Gold, Gold 18ct",Rose Gold,14kt,Standard,65874.0,4.45,1.2,10,active
+391,65-0133,0133-Ro-391,"Radiant Embrace - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,65874.0,4.45,1.2,10,active
+392,66-0134,0134-Ro-392,"Celeste Solitaire - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,65874.0,4.74,1.2,10,active
+393,66-0134,0134-Ro-393,"Celeste Solitaire - White Gold, Gold 18ct",Rose Gold,14kt,Standard,65874.0,4.74,1.2,10,active
+394,66-0134,0134-Ro-394,"Celeste Solitaire - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,65874.0,4.74,1.2,10,active
+395,67-0139,0139-Ro-395,"Aurora Embrace - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,53552.0,3.52,1.2,10,active
+396,67-0139,0139-Ro-396,"Aurora Embrace - White Gold, Gold 18ct",Rose Gold,14kt,Standard,53552.0,3.52,1.2,10,active
+397,67-0139,0139-Ro-397,"Aurora Embrace - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,53552.0,3.52,1.2,10,active
+398,68-0135,0135-Ro-398,"Radiant Embrace - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,68803.0,5.03,1.2,10,active
+399,68-0135,0135-Ro-399,"Radiant Embrace - White Gold, Gold 18ct",Rose Gold,14kt,Standard,68803.0,5.03,1.2,10,active
+400,68-0135,0135-Ro-400,"Radiant Embrace - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,68803.0,5.03,1.2,10,active
+401,69-0162,0162-Ro-401,"Celeste Halo - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,79233.0,3.33,3.04,10,active
+402,69-0162,0162-Ro-402,"Celeste Halo - White Gold, Gold 18ct",Rose Gold,14kt,Standard,79233.0,3.33,3.04,10,active
+403,69-0162,0162-Ro-403,"Celeste Halo - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,79233.0,3.33,3.04,10,active
+404,70-0184,0184-Ro-404,"Aegis Bold - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,90974.0,7.24,1.19,10,active
+405,70-0184,0184-Ro-405,"Aegis Bold - White Gold, Gold 18ct",Rose Gold,14kt,Standard,90974.0,7.24,1.19,10,active
+406,70-0184,0184-Ro-406,"Aegis Bold - Yellow Gold, Gold 18ct",Rose Gold,14kt,Standard,90974.0,7.24,1.19,10,active
+407,71-0631,0631-Ro-407,"Aura Band - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,20479.0,1.79,0.16,10,active
+408,71-0631,0631-Wh-408,"Aura Band - White Gold, Gold 18ct",White Gold,14kt,Standard,20479.0,1.79,0.16,10,active
+409,71-0631,0631-Ye-409,"Aura Band - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,20479.0,1.79,0.16,10,active
+410,72-19001,19001-Ro-410,Everlume Engagement Ring,Rose Gold,14kt,Standard,44293.0,0.0,0.0,10,active
+411,72-19001,19001-Ro-411,Everlume Engagement Ring,Rose Gold,14kt,Standard,75043.0,0.0,0.0,10,active
+412,72-19001,19001-Ro-412,Everlume Engagement Ring,Rose Gold,14kt,Standard,77893.0,0.0,0.0,10,active
+413,72-19001,19001-Ro-413,Everlume Engagement Ring,Rose Gold,14kt,Standard,80593.0,0.0,0.0,10,active
+414,72-19001,19001-Wh-414,Everlume Engagement Ring,White Gold,14kt,Standard,37243.0,0.0,0.0,10,active
+415,72-19001,19001-Wh-415,Everlume Engagement Ring,White Gold,14kt,Standard,45303.0,0.0,0.0,10,active
+416,72-19001,19001-Wh-416,Everlume Engagement Ring,White Gold,14kt,Standard,54122.0,0.0,0.0,10,active
+417,72-19001,19001-Wh-417,Everlume Engagement Ring,White Gold,14kt,Standard,63140.0,0.0,0.0,10,active
+418,72-19001,19001-Ye-418,Everlume Engagement Ring,Yellow Gold,14kt,Standard,37243.0,0.0,0.0,10,active
+419,72-19001,19001-Ye-419,Everlume Engagement Ring,Yellow Gold,14kt,Standard,45303.0,0.0,0.0,10,active
+420,72-19001,19001-Ye-420,Everlume Engagement Ring,Yellow Gold,14kt,Standard,54122.0,0.0,0.0,10,active
+421,72-19001,19001-Ye-421,Everlume Engagement Ring,Yellow Gold,14kt,Standard,63140.0,0.0,0.0,10,active
+422,73-19002,19002-Ro-422,Regalia Engagement Ring,Rose Gold,14kt,Standard,37843.0,0.0,0.0,10,active
+423,73-19002,19002-Ro-423,Regalia Engagement Ring,Rose Gold,14kt,Standard,47415.0,0.0,0.0,10,active
+424,73-19002,19002-Ro-424,Regalia Engagement Ring,Rose Gold,14kt,Standard,60039.0,0.0,0.0,10,active
+425,73-19002,19002-Ro-425,Regalia Engagement Ring,Rose Gold,14kt,Standard,68408.0,0.0,0.0,10,active
+426,73-19002,19002-Wh-426,Regalia Engagement Ring,White Gold,14kt,Standard,37843.0,0.0,0.0,10,active
+427,73-19002,19002-Wh-427,Regalia Engagement Ring,White Gold,14kt,Standard,47415.0,0.0,0.0,10,active
+428,73-19002,19002-Wh-428,Regalia Engagement Ring,White Gold,14kt,Standard,60039.0,0.0,0.0,10,active
+429,73-19002,19002-Wh-429,Regalia Engagement Ring,White Gold,14kt,Standard,68408.0,0.0,0.0,10,active
+430,73-19002,19002-Ye-430,Regalia Engagement Ring,Yellow Gold,14kt,Standard,37843.0,0.0,0.0,10,active
+431,73-19002,19002-Ye-431,Regalia Engagement Ring,Yellow Gold,14kt,Standard,47415.0,0.0,0.0,10,active
+432,73-19002,19002-Ye-432,Regalia Engagement Ring,Yellow Gold,14kt,Standard,60039.0,0.0,0.0,10,active
+433,73-19002,19002-Ye-433,Regalia Engagement Ring,Yellow Gold,14kt,Standard,68408.0,0.0,0.0,10,active
+434,74-19003,19003-Ro-434,Aurora Engagement Ring,Rose Gold,14kt,Standard,50362.0,0.0,0.0,10,active
+435,74-19003,19003-Ro-435,Aurora Engagement Ring,Rose Gold,14kt,Standard,54286.0,0.0,0.0,10,active
+436,74-19003,19003-Ro-436,Aurora Engagement Ring,Rose Gold,14kt,Standard,62942.0,0.0,0.0,10,active
+437,74-19003,19003-Ro-437,Aurora Engagement Ring,Rose Gold,14kt,Standard,60737.0,0.0,0.0,10,active
+438,74-19003,19003-Wh-438,Aurora Engagement Ring,White Gold,14kt,Standard,50362.0,0.0,0.0,10,active
+439,74-19003,19003-Wh-439,Aurora Engagement Ring,White Gold,14kt,Standard,50362.0,0.0,0.0,10,active
+440,74-19003,19003-Wh-440,Aurora Engagement Ring,White Gold,14kt,Standard,43604.0,0.0,0.0,10,active
+441,74-19003,19003-Wh-441,Aurora Engagement Ring,White Gold,14kt,Standard,68528.0,0.0,0.0,10,active
+442,74-19003,19003-Ye-442,Aurora Engagement Ring,Yellow Gold,14kt,Standard,50362.0,0.0,0.0,10,active
+443,74-19003,19003-Ye-443,Aurora Engagement Ring,Yellow Gold,14kt,Standard,54286.0,0.0,0.0,10,active
+444,74-19003,19003-Ye-444,Aurora Engagement Ring,Yellow Gold,14kt,Standard,54024.0,0.0,0.0,10,active
+445,74-19003,19003-Ye-445,Aurora Engagement Ring,Yellow Gold,14kt,Standard,60737.0,0.0,0.0,10,active
+446,75-19004,19004-Ro-446,Elysia Engagement Ring,Rose Gold,14kt,Standard,34791.0,0.0,0.0,10,active
+447,75-19004,19004-Ro-447,Elysia Engagement Ring,Rose Gold,14kt,Standard,44152.0,0.0,0.0,10,active
+448,75-19004,19004-Ro-448,Elysia Engagement Ring,Rose Gold,14kt,Standard,52518.0,0.0,0.0,10,active
+449,75-19004,19004-Ro-449,Elysia Engagement Ring,Rose Gold,14kt,Standard,53225.0,0.0,0.0,10,active
+450,75-19004,19004-Wh-450,Elysia Engagement Ring,White Gold,14kt,Standard,54491.0,0.0,0.0,10,active
+451,75-19004,19004-Wh-451,Elysia Engagement Ring,White Gold,14kt,Standard,52518.0,0.0,0.0,10,active
+452,75-19004,19004-Wh-452,Elysia Engagement Ring,White Gold,14kt,Standard,57875.0,0.0,0.0,10,active
+453,75-19004,19004-Wh-453,Elysia Engagement Ring,White Gold,14kt,Standard,57875.0,0.0,0.0,10,active
+454,75-19004,19004-Ye-454,Elysia Engagement Ring,Yellow Gold,14kt,Standard,57875.0,0.0,0.0,10,active
+455,75-19004,19004-Ye-455,Elysia Engagement Ring,Yellow Gold,14kt,Standard,44152.0,0.0,0.0,10,active
+456,75-19004,19004-Ye-456,Elysia Engagement Ring,Yellow Gold,14kt,Standard,37810.0,0.0,0.0,10,active
+457,75-19004,19004-Ye-457,Elysia Engagement Ring,Yellow Gold,14kt,Standard,57875.0,0.0,0.0,10,active
+458,76-19005,19005-Ro-458,Solara Engagement Ring,Rose Gold,14kt,Standard,39695.0,0.0,0.0,10,active
+459,76-19005,19005-Ro-459,Solara Engagement Ring,Rose Gold,14kt,Standard,49258.0,0.0,0.0,10,active
+460,76-19005,19005-Ro-460,Solara Engagement Ring,Rose Gold,14kt,Standard,56767.0,0.0,0.0,10,active
+461,76-19005,19005-Ro-461,Solara Engagement Ring,Rose Gold,14kt,Standard,64545.0,0.0,0.0,10,active
+462,76-19005,19005-Wh-462,Solara Engagement Ring,White Gold,14kt,Standard,39695.0,0.0,0.0,10,active
+463,76-19005,19005-Wh-463,Solara Engagement Ring,White Gold,14kt,Standard,49258.0,0.0,0.0,10,active
+464,76-19005,19005-Wh-464,Solara Engagement Ring,White Gold,14kt,Standard,56767.0,0.0,0.0,10,active
+465,76-19005,19005-Wh-465,Solara Engagement Ring,White Gold,14kt,Standard,64545.0,0.0,0.0,10,active
+466,76-19005,19005-Ye-466,Solara Engagement Ring,Yellow Gold,14kt,Standard,39695.0,0.0,0.0,10,active
+467,76-19005,19005-Ye-467,Solara Engagement Ring,Yellow Gold,14kt,Standard,49258.0,0.0,0.0,10,active
+468,76-19005,19005-Ye-468,Solara Engagement Ring,Yellow Gold,14kt,Standard,56767.0,0.0,0.0,10,active
+469,76-19005,19005-Ye-469,Solara Engagement Ring,Yellow Gold,14kt,Standard,71748.0,0.0,0.0,10,active
+470,77-19007,19007-Ro-470,Aurora Grace Engagement Ring,Rose Gold,14kt,Standard,38994.0,0.0,0.0,10,active
+471,77-19007,19007-Ro-471,Aurora Grace Engagement Ring,Rose Gold,14kt,Standard,43604.0,0.0,0.0,10,active
+472,77-19007,19007-Ro-472,Aurora Grace Engagement Ring,Rose Gold,14kt,Standard,54024.0,0.0,0.0,10,active
+473,77-19007,19007-Wh-473,Aurora Grace Engagement Ring,White Gold,14kt,Standard,38994.0,0.0,0.0,10,active
+474,77-19007,19007-Wh-474,Aurora Grace Engagement Ring,White Gold,14kt,Standard,43604.0,0.0,0.0,10,active
+475,77-19007,19007-Wh-475,Aurora Grace Engagement Ring,White Gold,14kt,Standard,54024.0,0.0,0.0,10,active
+476,77-19007,19007-Wh-476,Aurora Grace Engagement Ring,White Gold,14kt,Standard,60737.0,0.0,0.0,10,active
+477,77-19007,19007-Ye-477,Aurora Grace Engagement Ring,Yellow Gold,14kt,Standard,38994.0,0.0,0.0,10,active
+478,77-19007,19007-Ye-478,Aurora Grace Engagement Ring,Yellow Gold,14kt,Standard,43604.0,0.0,0.0,10,active
+479,77-19007,19007-Ye-479,Aurora Grace Engagement Ring,Yellow Gold,14kt,Standard,54024.0,0.0,0.0,10,active
+480,77-19007,19007-Ye-480,Aurora Grace Engagement Ring,Yellow Gold,14kt,Standard,60737.0,0.0,0.0,10,active
+481,78-19008,19008-Ro-481,Amour Éternel Engagement Ring,Rose Gold,14kt,Standard,36389.0,0.0,0.0,10,active
+482,78-19008,19008-Ro-482,Amour Éternel Engagement Ring,Rose Gold,14kt,Standard,45456.0,0.0,0.0,10,active
+483,78-19008,19008-Ro-483,Amour Éternel Engagement Ring,Rose Gold,14kt,Standard,53271.0,0.0,0.0,10,active
+484,78-19008,19008-Ro-484,Amour Éternel Engagement Ring,Rose Gold,14kt,Standard,59084.0,0.0,0.0,10,active
+485,78-19008,19008-Wh-485,Amour Éternel Engagement Ring,White Gold,14kt,Standard,36389.0,0.0,0.0,10,active
+486,78-19008,19008-Wh-486,Amour Éternel Engagement Ring,White Gold,14kt,Standard,45456.0,0.0,0.0,10,active
+487,78-19008,19008-Wh-487,Amour Éternel Engagement Ring,White Gold,14kt,Standard,53271.0,0.0,0.0,10,active
+488,78-19008,19008-Wh-488,Amour Éternel Engagement Ring,White Gold,14kt,Standard,59084.0,0.0,0.0,10,active
+489,78-19008,19008-Ye-489,Amour Éternel Engagement Ring,Yellow Gold,14kt,Standard,36389.0,0.0,0.0,10,active
+490,78-19008,19008-Ye-490,Amour Éternel Engagement Ring,Yellow Gold,14kt,Standard,45456.0,0.0,0.0,10,active
+491,78-19008,19008-Ye-491,Amour Éternel Engagement Ring,Yellow Gold,14kt,Standard,53271.0,0.0,0.0,10,active
+492,78-19008,19008-Ye-492,Amour Éternel Engagement Ring,Yellow Gold,14kt,Standard,59084.0,0.0,0.0,10,active
+493,79-19010,19010-Ro-493,Celeste Tear Engagement Ring,Rose Gold,14kt,Standard,36649.0,0.0,0.0,10,active
+494,79-19010,19010-Ro-494,Celeste Tear Engagement Ring,Rose Gold,14kt,Standard,46368.0,0.0,0.0,10,active
+495,79-19010,19010-Ro-495,Celeste Tear Engagement Ring,Rose Gold,14kt,Standard,55092.0,0.0,0.0,10,active
+496,79-19010,19010-Ro-496,Celeste Tear Engagement Ring,Rose Gold,14kt,Standard,63106.0,0.0,0.0,10,active
+497,79-19010,19010-Wh-497,Celeste Tear Engagement Ring,White Gold,14kt,Standard,36649.0,0.0,0.0,10,active
+498,79-19010,19010-Wh-498,Celeste Tear Engagement Ring,White Gold,14kt,Standard,,0.0,0.0,10,active
+499,79-19010,19010-Wh-499,Celeste Tear Engagement Ring,White Gold,14kt,Standard,52668.0,0.0,0.0,10,active
+500,79-19010,19010-Wh-500,Celeste Tear Engagement Ring,White Gold,14kt,Standard,55092.0,0.0,0.0,10,active
+501,79-19010,19010-Ye-501,Celeste Tear Engagement Ring,Yellow Gold,14kt,Standard,36649.0,0.0,0.0,10,active
+502,79-19010,19010-Ye-502,Celeste Tear Engagement Ring,Yellow Gold,14kt,Standard,46368.0,0.0,0.0,10,active
+503,79-19010,19010-Ye-503,Celeste Tear Engagement Ring,Yellow Gold,14kt,Standard,55092.0,0.0,0.0,10,active
+504,79-19010,19010-Ye-504,Celeste Tear Engagement Ring,Yellow Gold,14kt,Standard,63106.0,0.0,0.0,10,active
+505,80-19011,19011-Ro-505,Celeste Glow Engagement Ring,Rose Gold,14kt,Standard,32147.0,0.0,0.0,10,active
+506,80-19011,19011-Ro-506,Celeste Glow Engagement Ring,Rose Gold,14kt,Standard,40363.0,0.0,0.0,10,active
+507,80-19011,19011-Ro-507,Celeste Glow Engagement Ring,Rose Gold,14kt,Standard,57432.0,0.0,0.0,10,active
+508,80-19011,19011-Ro-508,Celeste Glow Engagement Ring,Rose Gold,14kt,Standard,32147.0,0.0,0.0,10,active
+509,80-19011,19011-Wh-509,Celeste Glow Engagement Ring,White Gold,14kt,Standard,32147.0,0.0,0.0,10,active
+510,80-19011,19011-Wh-510,Celeste Glow Engagement Ring,White Gold,14kt,Standard,40363.0,0.0,0.0,10,active
+511,80-19011,19011-Wh-511,Celeste Glow Engagement Ring,White Gold,14kt,Standard,50532.0,0.0,0.0,10,active
+512,80-19011,19011-Wh-512,Celeste Glow Engagement Ring,White Gold,14kt,Standard,59250.0,0.0,0.0,10,active
+513,80-19011,19011-Ye-513,Celeste Glow Engagement Ring,Yellow Gold,14kt,Standard,32147.0,0.0,0.0,10,active
+514,80-19011,19011-Ye-514,Celeste Glow Engagement Ring,Yellow Gold,14kt,Standard,40363.0,0.0,0.0,10,active
+515,80-19011,19011-Ye-515,Celeste Glow Engagement Ring,Yellow Gold,14kt,Standard,50532.0,0.0,0.0,10,active
+516,80-19011,19011-Ye-516,Celeste Glow Engagement Ring,Yellow Gold,14kt,Standard,59250.0,0.0,0.0,10,active
+517,81-19012,19012-Ro-517,Regal Radiance Engagement Ring,Rose Gold,14kt,Standard,32147.0,0.0,0.0,10,active
+518,81-19012,19012-Ro-518,Regal Radiance Engagement Ring,Rose Gold,14kt,Standard,43574.0,0.0,0.0,10,active
+519,81-19012,19012-Ro-519,Regal Radiance Engagement Ring,Rose Gold,14kt,Standard,52895.0,0.0,0.0,10,active
+520,81-19012,19012-Ro-520,Regal Radiance Engagement Ring,Rose Gold,14kt,Standard,62764.0,0.0,0.0,10,active
+521,81-19012,19012-Wh-521,Regal Radiance Engagement Ring,White Gold,14kt,Standard,32147.0,0.0,0.0,10,active
+522,81-19012,19012-Wh-522,Regal Radiance Engagement Ring,White Gold,14kt,Standard,43574.0,0.0,0.0,10,active
+523,81-19012,19012-Wh-523,Regal Radiance Engagement Ring,White Gold,14kt,Standard,52895.0,0.0,0.0,10,active
+524,81-19012,19012-Wh-524,Regal Radiance Engagement Ring,White Gold,14kt,Standard,62764.0,0.0,0.0,10,active
+525,81-19012,19012-Ye-525,Regal Radiance Engagement Ring,Yellow Gold,14kt,Standard,32147.0,0.0,0.0,10,active
+526,81-19012,19012-Ye-526,Regal Radiance Engagement Ring,Yellow Gold,14kt,Standard,43574.0,0.0,0.0,10,active
+527,81-19012,19012-Ye-527,Regal Radiance Engagement Ring,Yellow Gold,14kt,Standard,52895.0,0.0,0.0,10,active
+528,81-19012,19012-Ye-528,Regal Radiance Engagement Ring,Yellow Gold,14kt,Standard,62764.0,0.0,0.0,10,active
+529,82-19013,19013-Ro-529,Celestia Flow Engagement Ring,Rose Gold,14kt,Standard,31844.0,0.0,0.0,10,active
+530,82-19013,19013-Ro-530,Celestia Flow Engagement Ring,Rose Gold,14kt,Standard,40770.0,0.0,0.0,10,active
+531,82-19013,19013-Ro-531,Celestia Flow Engagement Ring,Rose Gold,14kt,Standard,48031.0,0.0,0.0,10,active
+532,82-19013,19013-Ro-532,Celestia Flow Engagement Ring,Rose Gold,14kt,Standard,55895.0,0.0,0.0,10,active
+533,82-19013,19013-Wh-533,Celestia Flow Engagement Ring,White Gold,14kt,Standard,31844.0,0.0,0.0,10,active
+534,82-19013,19013-Wh-534,Celestia Flow Engagement Ring,White Gold,14kt,Standard,40770.0,0.0,0.0,10,active
+535,82-19013,19013-Wh-535,Celestia Flow Engagement Ring,White Gold,14kt,Standard,48031.0,0.0,0.0,10,active
+536,82-19013,19013-Wh-536,Celestia Flow Engagement Ring,White Gold,14kt,Standard,55895.0,0.0,0.0,10,active
+537,82-19013,19013-Ye-537,Celestia Flow Engagement Ring,Yellow Gold,14kt,Standard,31844.0,0.0,0.0,10,active
+538,82-19013,19013-Ye-538,Celestia Flow Engagement Ring,Yellow Gold,14kt,Standard,40770.0,0.0,0.0,10,active
+539,82-19013,19013-Ye-539,Celestia Flow Engagement Ring,Yellow Gold,14kt,Standard,48031.0,0.0,0.0,10,active
+540,82-19013,19013-Ye-540,Celestia Flow Engagement Ring,Yellow Gold,14kt,Standard,55895.0,0.0,0.0,10,active
+541,83-19014,19014-Ro-541,Eterna Oval Engagement Ring,Rose Gold,14kt,Standard,31746.0,0.0,0.0,10,active
+542,83-19014,19014-Ro-542,Eterna Oval Engagement Ring,Rose Gold,14kt,Standard,39515.0,0.0,0.0,10,active
+543,83-19014,19014-Ro-543,Eterna Oval Engagement Ring,Rose Gold,14kt,Standard,47633.0,0.0,0.0,10,active
+544,83-19014,19014-Ro-544,Eterna Oval Engagement Ring,Rose Gold,14kt,Standard,53991.0,0.0,0.0,10,active
+545,83-19014,19014-Wh-545,Eterna Oval Engagement Ring,White Gold,14kt,Standard,31746.0,0.0,0.0,10,active
+546,83-19014,19014-Wh-546,Eterna Oval Engagement Ring,White Gold,14kt,Standard,39515.0,0.0,0.0,10,active
+547,83-19014,19014-Wh-547,Eterna Oval Engagement Ring,White Gold,14kt,Standard,47633.0,0.0,0.0,10,active
+548,83-19014,19014-Wh-548,Eterna Oval Engagement Ring,White Gold,14kt,Standard,53991.0,0.0,0.0,10,active
+549,83-19014,19014-Ye-549,Eterna Oval Engagement Ring,Yellow Gold,14kt,Standard,31746.0,0.0,0.0,10,active
+550,83-19014,19014-Ye-550,Eterna Oval Engagement Ring,Yellow Gold,14kt,Standard,39515.0,0.0,0.0,10,active
+551,83-19014,19014-Ye-551,Eterna Oval Engagement Ring,Yellow Gold,14kt,Standard,47633.0,0.0,0.0,10,active
+552,83-19014,19014-Ye-552,Eterna Oval Engagement Ring,Yellow Gold,14kt,Standard,53991.0,0.0,0.0,10,active
+553,84-19015,19015-Ro-553,Aurora Emerald Engagement Ring,Rose Gold,14kt,Standard,32046.0,0.0,0.0,10,active
+554,84-19015,19015-Ro-554,Aurora Emerald Engagement Ring,Rose Gold,14kt,Standard,41419.0,0.0,0.0,10,active
+555,84-19015,19015-Ro-555,Aurora Emerald Engagement Ring,Rose Gold,14kt,Standard,48637.0,0.0,0.0,10,active
+556,84-19015,19015-Ro-556,Aurora Emerald Engagement Ring,Rose Gold,14kt,Standard,58552.0,0.0,0.0,10,active
+557,84-19015,19015-Wh-557,Aurora Emerald Engagement Ring,White Gold,14kt,Standard,32046.0,0.0,0.0,10,active
+558,84-19015,19015-Wh-558,Aurora Emerald Engagement Ring,White Gold,14kt,Standard,41419.0,0.0,0.0,10,active
+559,84-19015,19015-Wh-559,Aurora Emerald Engagement Ring,White Gold,14kt,Standard,48637.0,0.0,0.0,10,active
+560,84-19015,19015-Wh-560,Aurora Emerald Engagement Ring,White Gold,14kt,Standard,58552.0,0.0,0.0,10,active
+561,84-19015,19015-Ye-561,Aurora Emerald Engagement Ring,Yellow Gold,14kt,Standard,32046.0,0.0,0.0,10,active
+562,84-19015,19015-Ye-562,Aurora Emerald Engagement Ring,Yellow Gold,14kt,Standard,41419.0,0.0,0.0,10,active
+563,84-19015,19015-Ye-563,Aurora Emerald Engagement Ring,Yellow Gold,14kt,Standard,48637.0,0.0,0.0,10,active
+564,84-19015,19015-Ye-564,Aurora Emerald Engagement Ring,Yellow Gold,14kt,Standard,64187.0,0.0,0.0,10,active
+565,85-19016,19016-Ro-565,Radiant Rose Engagement Ring,Rose Gold,14kt,Standard,31492.0,0.0,0.0,10,active
+566,85-19016,19016-Ro-566,Radiant Rose Engagement Ring,Rose Gold,14kt,Standard,38863.0,0.0,0.0,10,active
+567,85-19016,19016-Ro-567,Radiant Rose Engagement Ring,Rose Gold,14kt,Standard,47832.0,0.0,0.0,10,active
+568,85-19016,19016-Ro-568,Radiant Rose Engagement Ring,Rose Gold,14kt,Standard,56853.0,0.0,0.0,10,active
+569,85-19016,19016-Ro-569,Radiant Rose Engagement Ring,Rose Gold,14kt,Standard,31492.0,0.0,0.0,10,active
+570,85-19016,19016-Ro-570,Radiant Rose Engagement Ring,Rose Gold,14kt,Standard,38863.0,0.0,0.0,10,active
+571,85-19016,19016-Ro-571,Radiant Rose Engagement Ring,Rose Gold,14kt,Standard,47832.0,0.0,0.0,10,active
+572,85-19016,19016-Ro-572,Radiant Rose Engagement Ring,Rose Gold,14kt,Standard,50490.0,0.0,0.0,10,active
+573,85-19016,19016-Ro-573,Radiant Rose Engagement Ring,Rose Gold,14kt,Standard,31492.0,0.0,0.0,10,active
+574,85-19016,19016-Ro-574,Radiant Rose Engagement Ring,Rose Gold,14kt,Standard,38863.0,0.0,0.0,10,active
+575,85-19016,19016-Ro-575,Radiant Rose Engagement Ring,Rose Gold,14kt,Standard,47832.0,0.0,0.0,10,active
+576,85-19016,19016-Ro-576,Radiant Rose Engagement Ring,Rose Gold,14kt,Standard,56853.0,0.0,0.0,10,active
+577,86-19017,19017-Ro-577,Golden Horizon Engagement Ring,Rose Gold,14kt,Standard,32144.0,0.0,0.0,10,active
+578,86-19017,19017-Ro-578,Golden Horizon Engagement Ring,Rose Gold,14kt,Standard,43620.0,0.0,0.0,10,active
+579,86-19017,19017-Ro-579,Golden Horizon Engagement Ring,Rose Gold,14kt,Standard,54285.0,0.0,0.0,10,active
+580,86-19017,19017-Ro-580,Golden Horizon Engagement Ring,Rose Gold,14kt,Standard,57747.0,0.0,0.0,10,active
+581,86-19017,19017-Wh-581,Golden Horizon Engagement Ring,White Gold,14kt,Standard,32144.0,0.0,0.0,10,active
+582,86-19017,19017-Wh-582,Golden Horizon Engagement Ring,White Gold,14kt,Standard,43620.0,0.0,0.0,10,active
+583,86-19017,19017-Wh-583,Golden Horizon Engagement Ring,White Gold,14kt,Standard,54285.0,0.0,0.0,10,active
+584,86-19017,19017-Wh-584,Golden Horizon Engagement Ring,White Gold,14kt,Standard,57747.0,0.0,0.0,10,active
+585,86-19017,19017-Ye-585,Golden Horizon Engagement Ring,Yellow Gold,14kt,Standard,32144.0,0.0,0.0,10,active
+586,86-19017,19017-Ye-586,Golden Horizon Engagement Ring,Yellow Gold,14kt,Standard,43620.0,0.0,0.0,10,active
+587,86-19017,19017-Ye-587,Golden Horizon Engagement Ring,Yellow Gold,14kt,Standard,54285.0,0.0,0.0,10,active
+588,86-19017,19017-Ye-588,Golden Horizon Engagement Ring,Yellow Gold,14kt,Standard,57747.0,0.0,0.0,10,active
+589,87-19018,19018-Ro-589,Eternal Embrace Engagement Ring,Rose Gold,14kt,Standard,31792.0,0.0,0.0,10,active
+590,87-19018,19018-Ro-590,Eternal Embrace Engagement Ring,Rose Gold,14kt,Standard,41419.0,0.0,0.0,10,active
+591,87-19018,19018-Ro-591,Eternal Embrace Engagement Ring,Rose Gold,14kt,Standard,49280.0,0.0,0.0,10,active
+592,87-19018,19018-Ro-592,Eternal Embrace Engagement Ring,Rose Gold,14kt,Standard,55696.0,0.0,0.0,10,active
+593,87-19018,19018-Wh-593,Eternal Embrace Engagement Ring,White Gold,14kt,Standard,31792.0,0.0,0.0,10,active
+594,87-19018,19018-Wh-594,Eternal Embrace Engagement Ring,White Gold,14kt,Standard,35770.0,0.0,0.0,10,active
+595,87-19018,19018-Wh-595,Eternal Embrace Engagement Ring,White Gold,14kt,Standard,49280.0,0.0,0.0,10,active
+596,87-19018,19018-Wh-596,Eternal Embrace Engagement Ring,White Gold,14kt,Standard,55696.0,0.0,0.0,10,active
+597,87-19018,19018-Ye-597,Eternal Embrace Engagement Ring,Yellow Gold,14kt,Standard,31792.0,0.0,0.0,10,active
+598,87-19018,19018-Ye-598,Eternal Embrace Engagement Ring,Yellow Gold,14kt,Standard,41419.0,0.0,0.0,10,active
+599,87-19018,19018-Ye-599,Eternal Embrace Engagement Ring,Yellow Gold,14kt,Standard,49280.0,0.0,0.0,10,active
+600,87-19018,19018-Ye-600,Eternal Embrace Engagement Ring,Yellow Gold,14kt,Standard,55696.0,0.0,0.0,10,active
+601,88-19020,19020-Ro-601,Tear of Eternity Engagement Ring,Rose Gold,14kt,Standard,31948.0,0.0,0.0,10,active
+602,88-19020,19020-Ro-602,Tear of Eternity Engagement Ring,Rose Gold,14kt,Standard,40975.0,0.0,0.0,10,active
+603,88-19020,19020-Ro-603,Tear of Eternity Engagement Ring,Rose Gold,14kt,Standard,50394.0,0.0,0.0,10,active
+604,88-19020,19020-Ro-604,Tear of Eternity Engagement Ring,Rose Gold,14kt,Standard,54306.0,0.0,0.0,10,active
+605,88-19020,19020-Wh-605,Tear of Eternity Engagement Ring,White Gold,14kt,Standard,31948.0,0.0,0.0,10,active
+606,88-19020,19020-Wh-606,Tear of Eternity Engagement Ring,White Gold,14kt,Standard,40975.0,0.0,0.0,10,active
+607,88-19020,19020-Wh-607,Tear of Eternity Engagement Ring,White Gold,14kt,Standard,50394.0,0.0,0.0,10,active
+608,88-19020,19020-Wh-608,Tear of Eternity Engagement Ring,White Gold,14kt,Standard,54306.0,0.0,0.0,10,active
+609,88-19020,19020-Ye-609,Tear of Eternity Engagement Ring,Yellow Gold,14kt,Standard,31948.0,0.0,0.0,10,active
+610,88-19020,19020-Ye-610,Tear of Eternity Engagement Ring,Yellow Gold,14kt,Standard,40975.0,0.0,0.0,10,active
+611,88-19020,19020-Ye-611,Tear of Eternity Engagement Ring,Yellow Gold,14kt,Standard,50394.0,0.0,0.0,10,active
+612,88-19020,19020-Ye-612,Tear of Eternity Engagement Ring,Yellow Gold,14kt,Standard,54306.0,0.0,0.0,10,active
+613,89-19023,19023-Ro-613,Rose Glow Halo Engagement Ring,Rose Gold,14kt,Standard,42100.0,0.0,0.0,10,active
+614,89-19023,19023-Ro-614,Rose Glow Halo Engagement Ring,Rose Gold,14kt,Standard,52982.0,0.0,0.0,10,active
+615,89-19023,19023-Ro-615,Rose Glow Halo Engagement Ring,Rose Gold,14kt,Standard,62725.0,0.0,0.0,10,active
+616,89-19023,19023-Ro-616,Rose Glow Halo Engagement Ring,Rose Gold,14kt,Standard,71590.0,0.0,0.0,10,active
+617,89-19023,19023-Ro-617,Rose Glow Halo Engagement Ring,Rose Gold,14kt,Standard,42100.0,0.0,0.0,10,active
+618,89-19023,19023-Ro-618,Rose Glow Halo Engagement Ring,Rose Gold,14kt,Standard,52982.0,0.0,0.0,10,active
+619,89-19023,19023-Ro-619,Rose Glow Halo Engagement Ring,Rose Gold,14kt,Standard,53800.0,0.0,0.0,10,active
+620,89-19023,19023-Ro-620,Rose Glow Halo Engagement Ring,Rose Gold,14kt,Standard,71590.0,0.0,0.0,10,active
+621,89-19023,19023-Ro-621,Rose Glow Halo Engagement Ring,Rose Gold,14kt,Standard,42100.0,0.0,0.0,10,active
+622,89-19023,19023-Ro-622,Rose Glow Halo Engagement Ring,Rose Gold,14kt,Standard,52982.0,0.0,0.0,10,active
+623,89-19023,19023-Ro-623,Rose Glow Halo Engagement Ring,Rose Gold,14kt,Standard,53800.0,0.0,0.0,10,active
+624,89-19023,19023-Ro-624,Rose Glow Halo Engagement Ring,Rose Gold,14kt,Standard,71590.0,0.0,0.0,10,active
+625,90-19024,19024-Ro-625,Eternal Oval Halo Engagement Ring,Rose Gold,14kt,Standard,41598.0,0.0,0.0,10,active
+626,90-19024,19024-Ro-626,Eternal Oval Halo Engagement Ring,Rose Gold,14kt,Standard,51335.0,0.0,0.0,10,active
+627,90-19024,19024-Ro-627,Eternal Oval Halo Engagement Ring,Rose Gold,14kt,Standard,64540.0,0.0,0.0,10,active
+628,90-19024,19024-Ro-628,Eternal Oval Halo Engagement Ring,Rose Gold,14kt,Standard,74173.0,0.0,0.0,10,active
+629,90-19024,19024-Wh-629,Eternal Oval Halo Engagement Ring,White Gold,14kt,Standard,41598.0,0.0,0.0,10,active
+630,90-19024,19024-Wh-630,Eternal Oval Halo Engagement Ring,White Gold,14kt,Standard,51335.0,0.0,0.0,10,active
+631,90-19024,19024-Wh-631,Eternal Oval Halo Engagement Ring,White Gold,14kt,Standard,64540.0,0.0,0.0,10,active
+632,90-19024,19024-Wh-632,Eternal Oval Halo Engagement Ring,White Gold,14kt,Standard,74173.0,0.0,0.0,10,active
+633,90-19024,19024-Ye-633,Eternal Oval Halo Engagement Ring,Yellow Gold,14kt,Standard,41598.0,0.0,0.0,10,active
+634,90-19024,19024-Ye-634,Eternal Oval Halo Engagement Ring,Yellow Gold,14kt,Standard,51335.0,0.0,0.0,10,active
+635,90-19024,19024-Ye-635,Eternal Oval Halo Engagement Ring,Yellow Gold,14kt,Standard,64540.0,0.0,0.0,10,active
+636,90-19024,19024-Ye-636,Eternal Oval Halo Engagement Ring,Yellow Gold,14kt,Standard,74173.0,0.0,0.0,10,active
+637,91-19028,19028-Ro-637,Heart of Radiance Engagement Ring,Rose Gold,14kt,Standard,41540.0,0.0,0.0,10,active
+638,91-19028,19028-Ro-638,Heart of Radiance Engagement Ring,Rose Gold,14kt,Standard,,0.0,0.0,10,active
+639,91-19028,19028-Ro-639,Heart of Radiance Engagement Ring,Rose Gold,14kt,Standard,63919.0,0.0,0.0,10,active
+640,91-19028,19028-Ro-640,Heart of Radiance Engagement Ring,Rose Gold,14kt,Standard,71712.0,0.0,0.0,10,active
+641,91-19028,19028-Wh-641,Heart of Radiance Engagement Ring,White Gold,14kt,Standard,41540.0,0.0,0.0,10,active
+642,91-19028,19028-Wh-642,Heart of Radiance Engagement Ring,White Gold,14kt,Standard,52878.0,0.0,0.0,10,active
+643,91-19028,19028-Wh-643,Heart of Radiance Engagement Ring,White Gold,14kt,Standard,63919.0,0.0,0.0,10,active
+644,91-19028,19028-Wh-644,Heart of Radiance Engagement Ring,White Gold,14kt,Standard,71712.0,0.0,0.0,10,active
+645,91-19028,19028-Ye-645,Heart of Radiance Engagement Ring,Yellow Gold,14kt,Standard,41540.0,0.0,0.0,10,active
+646,91-19028,19028-Ye-646,Heart of Radiance Engagement Ring,Yellow Gold,14kt,Standard,52878.0,0.0,0.0,10,active
+647,91-19028,19028-Ye-647,Heart of Radiance Engagement Ring,Yellow Gold,14kt,Standard,60148.0,0.0,0.0,10,active
+648,91-19028,19028-Ye-648,Heart of Radiance Engagement Ring,Yellow Gold,14kt,Standard,67554.0,0.0,0.0,10,active
+649,92-19030,19030-Ro-649,The Nova Engagement Ring,Rose Gold,14kt,Standard,38629.0,0.0,0.0,10,active
+650,92-19030,19030-Ro-650,The Nova Engagement Ring,Rose Gold,14kt,Standard,51938.0,0.0,0.0,10,active
+651,92-19030,19030-Ro-651,The Nova Engagement Ring,Rose Gold,14kt,Standard,61188.0,0.0,0.0,10,active
+652,92-19030,19030-Ro-652,The Nova Engagement Ring,Rose Gold,14kt,Standard,70230.0,0.0,0.0,10,active
+653,92-19030,19030-Wh-653,The Nova Engagement Ring,White Gold,14kt,Standard,38629.0,0.0,0.0,10,active
+654,92-19030,19030-Wh-654,The Nova Engagement Ring,White Gold,14kt,Standard,51938.0,0.0,0.0,10,active
+655,92-19030,19030-Wh-655,The Nova Engagement Ring,White Gold,14kt,Standard,61188.0,0.0,0.0,10,active
+656,92-19030,19030-Wh-656,The Nova Engagement Ring,White Gold,14kt,Standard,70230.0,0.0,0.0,10,active
+657,92-19030,19030-Ye-657,The Nova Engagement Ring,Yellow Gold,14kt,Standard,38629.0,0.0,0.0,10,active
+658,92-19030,19030-Ye-658,The Nova Engagement Ring,Yellow Gold,14kt,Standard,51938.0,0.0,0.0,10,active
+659,92-19030,19030-Ye-659,The Nova Engagement Ring,Yellow Gold,14kt,Standard,61188.0,0.0,0.0,10,active
+660,92-19030,19030-Ye-660,The Nova Engagement Ring,Yellow Gold,14kt,Standard,70230.0,0.0,0.0,10,active
+661,93-19033,19033-Ro-661,The Adeline Engagement Ring,Rose Gold,14kt,Standard,39321.0,0.0,0.0,10,active
+662,93-19033,19033-Ro-662,The Adeline Engagement Ring,Rose Gold,14kt,Standard,49101.0,0.0,0.0,10,active
+663,93-19033,19033-Ro-663,The Adeline Engagement Ring,Rose Gold,14kt,Standard,60690.0,0.0,0.0,10,active
+664,93-19033,19033-Ro-664,The Adeline Engagement Ring,Rose Gold,14kt,Standard,70335.0,0.0,0.0,10,active
+665,93-19033,19033-Wh-665,The Adeline Engagement Ring,White Gold,14kt,Standard,39321.0,0.0,0.0,10,active
+666,93-19033,19033-Wh-666,The Adeline Engagement Ring,White Gold,14kt,Standard,49101.0,0.0,0.0,10,active
+667,93-19033,19033-Wh-667,The Adeline Engagement Ring,White Gold,14kt,Standard,60690.0,0.0,0.0,10,active
+668,93-19033,19033-Wh-668,The Adeline Engagement Ring,White Gold,14kt,Standard,70335.0,0.0,0.0,10,active
+669,93-19033,19033-Ye-669,The Adeline Engagement Ring,Yellow Gold,14kt,Standard,39321.0,0.0,0.0,10,active
+670,93-19033,19033-Ye-670,The Adeline Engagement Ring,Yellow Gold,14kt,Standard,35451.0,0.0,0.0,10,active
+671,93-19033,19033-Ye-671,The Adeline Engagement Ring,Yellow Gold,14kt,Standard,60690.0,0.0,0.0,10,active
+672,93-19033,19033-Ye-672,The Adeline Engagement Ring,Yellow Gold,14kt,Standard,70335.0,0.0,0.0,10,active
+673,94-19034,19034-Ro-673,The Lumina Engagement Ring,Rose Gold,14kt,Standard,52796.0,0.0,0.0,10,active
+674,94-19034,19034-Ro-674,The Lumina Engagement Ring,Rose Gold,14kt,Standard,49101.0,0.0,0.0,10,active
+675,94-19034,19034-Ro-675,The Lumina Engagement Ring,Rose Gold,14kt,Standard,60690.0,0.0,0.0,10,active
+676,94-19034,19034-Ro-676,The Lumina Engagement Ring,Rose Gold,14kt,Standard,70335.0,0.0,0.0,10,active
+677,94-19034,19034-Wh-677,The Lumina Engagement Ring,White Gold,14kt,Standard,39321.0,0.0,0.0,10,active
+678,94-19034,19034-Wh-678,The Lumina Engagement Ring,White Gold,14kt,Standard,49101.0,0.0,0.0,10,active
+679,94-19034,19034-Wh-679,The Lumina Engagement Ring,White Gold,14kt,Standard,60690.0,0.0,0.0,10,active
+680,94-19034,19034-Wh-680,The Lumina Engagement Ring,White Gold,14kt,Standard,70335.0,0.0,0.0,10,active
+681,94-19034,19034-Ye-681,The Lumina Engagement Ring,Yellow Gold,14kt,Standard,39321.0,0.0,0.0,10,active
+682,94-19034,19034-Ye-682,The Lumina Engagement Ring,Yellow Gold,14kt,Standard,49101.0,0.0,0.0,10,active
+683,94-19034,19034-Ye-683,The Lumina Engagement Ring,Yellow Gold,14kt,Standard,60690.0,0.0,0.0,10,active
+684,94-19034,19034-Ye-684,The Lumina Engagement Ring,Yellow Gold,14kt,Standard,70335.0,0.0,0.0,10,active
+685,95-19038,19038-Ro-685,The Adora Engagement Ring,Rose Gold,14kt,Standard,39817.0,0.0,0.0,10,active
+686,95-19038,19038-Ro-686,The Adora Engagement Ring,Rose Gold,14kt,Standard,49704.0,0.0,0.0,10,active
+687,95-19038,19038-Ro-687,The Adora Engagement Ring,Rose Gold,14kt,Standard,60491.0,0.0,0.0,10,active
+688,95-19038,19038-Ro-688,The Adora Engagement Ring,Rose Gold,14kt,Standard,68872.0,0.0,0.0,10,active
+689,95-19038,19038-Wh-689,The Adora Engagement Ring,White Gold,14kt,Standard,33160.0,0.0,0.0,10,active
+690,95-19038,19038-Wh-690,The Adora Engagement Ring,White Gold,14kt,Standard,49704.0,0.0,0.0,10,active
+691,95-19038,19038-Wh-691,The Adora Engagement Ring,White Gold,14kt,Standard,60491.0,0.0,0.0,10,active
+692,95-19038,19038-Wh-692,The Adora Engagement Ring,White Gold,14kt,Standard,68872.0,0.0,0.0,10,active
+693,95-19038,19038-Ye-693,The Adora Engagement Ring,Yellow Gold,14kt,Standard,39817.0,0.0,0.0,10,active
+694,95-19038,19038-Ye-694,The Adora Engagement Ring,Yellow Gold,14kt,Standard,49704.0,0.0,0.0,10,active
+695,95-19038,19038-Ye-695,The Adora Engagement Ring,Yellow Gold,14kt,Standard,60491.0,0.0,0.0,10,active
+696,95-19038,19038-Ye-696,The Adora Engagement Ring,Yellow Gold,14kt,Standard,68872.0,0.0,0.0,10,active
+697,96-16004,16004-Ro-697,"Cascada Earring - Rose Gold, Gold 18ct",Rose Gold,14kt,Standard,44856.0,0.0,0.0,10,active
+698,96-16004,16004-Wh-698,"Cascada Earring - White Gold, Gold 18ct",White Gold,14kt,Standard,44856.0,0.0,0.0,10,active
+699,96-16004,16004-Ye-699,"Cascada Earring - Yellow Gold, Gold 18ct",Yellow Gold,14kt,Standard,44856.0,0.0,0.0,10,active

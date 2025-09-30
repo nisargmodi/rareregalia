@@ -1,0 +1,121 @@
+# Media Files - Exclude all images, videos, and CAD files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.webp
+*.ico
+*.mp4
+*.mov
+*.avi
+*.wmv
+*.pdf
+*.dwg
+*.step
+*.iges
+*.stl
+*.3dm
+*.rhl
+
+# Excel and Office Files (original source files)
+*.xlsx
+*.xls
+*.xlsm
+*.doc
+*.docx
+*.ppt
+*.pptx
+
+# Large Source Folders (exclude entire CAD folders)
+18-06-2025_Rare Regalia_Jayesh ji/
+
+# Temporary and Cache Files
+*.tmp
+*.temp
+*.cache
+*.log
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Node.js (if using for frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Next.js Build Files
+.next/
+out/
+*.next/
+
+# Playwright Test Results
+test-results/
+playwright-report/
+playwright/.cache/
+**/error-context.md
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build and Distribution Files
+build/
+dist/
+*.build
+*.dist
+
+# Database Files (exclude actual database files, keep CSVs)
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup Files
+*.bak
+*.backup
+
+# Large Archive Files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Keep Important Files
+!README.md
+!*.py
+!*.csv
+!*.md
+!*.json
+!*.sql
+!*.txt
+!.gitignore
+
+# Private SSH Keys (never commit)
+id_ed25519_nisarg
+id_ed25519_nisarg.pub
+ecommerce-website/id_ed25519_nisarg
+*.pem
+*.key
+id_rsa*
+id_ed25519*

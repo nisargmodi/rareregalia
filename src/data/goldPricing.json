@@ -1,0 +1,48 @@
+{
+  "lastUpdated": "2025-09-29",
+  "marketSource": "Market Based",
+  "diamondPricePerCarat": 50000,
+  "currency": "INR",
+  "goldPricing": {
+    "14kt": {
+      "karat": 14,
+      "purity": 58.5,
+      "pricePerGram": 4500,
+      "makingChargesPercent": 15,
+      "displayName": "14 Karat",
+      "description": "14K Gold - 58.5% pure gold"
+    },
+    "18kt": {
+      "karat": 18,
+      "purity": 75,
+      "pricePerGram": 5500,
+      "makingChargesPercent": 18,
+      "displayName": "18 Karat",
+      "description": "18K Gold - 75% pure gold"
+    },
+    "20kt": {
+      "karat": 20,
+      "purity": 83.3,
+      "pricePerGram": 6000,
+      "makingChargesPercent": 20,
+      "displayName": "20 Karat",
+      "description": "20K Gold - 83.3% pure gold"
+    },
+    "22kt": {
+      "karat": 22,
+      "purity": 91.6,
+      "pricePerGram": 6500,
+      "makingChargesPercent": 22,
+      "displayName": "22 Karat",
+      "description": "22K Gold - 91.6% pure gold"
+    },
+    "24kt": {
+      "karat": 24,
+      "purity": 99.9,
+      "pricePerGram": 7000,
+      "makingChargesPercent": 25,
+      "displayName": "24 Karat",
+      "description": "24K Gold - 99.9% pure gold"
+    }
+  }
+}
