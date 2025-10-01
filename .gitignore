@@ -1,4 +1,4 @@
-# Media Files - Exclude all images, videos, and CAD files
+# Media Files - Exclude all images, videos, and CAD files (except public folder)
 *.jpg
 *.jpeg
 *.png
@@ -19,6 +19,17 @@
 *.stl
 *.3dm
 *.rhl
+
+# Exception: Allow media files in public folder for website
+!public/**/*.jpg
+!public/**/*.jpeg
+!public/**/*.png
+!public/**/*.gif
+!public/**/*.svg
+!public/**/*.webp
+!public/**/*.ico
+!public/**/*.mp4
+!public/**/*.mov
 
 # Excel and Office Files (original source files)
 *.xlsx

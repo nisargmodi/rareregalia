@@ -109,6 +109,7 @@ function createVariantFromProduct(product: Product): ProductVariant {
     priceINR: product.priceINR,
     primaryImage: product.primaryImage || '',
     allImages: product.allImages || [],
+    allVideos: product.allVideos || [],
     stockQuantity: product.stockQuantity,
     goldPurity: product.goldPurity,
     variantName: product.variantName,
