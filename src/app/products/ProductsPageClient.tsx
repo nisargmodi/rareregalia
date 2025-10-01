@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { FunnelIcon, Squares2X2Icon, ListBulletIcon } from '@heroicons/react/24/outline';
+import { FunnelIcon, Squares2X2Icon, ListBulletIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { Product, Category, ProductFilters } from '@/types';
 import { ProductCard } from '@/components/products/ProductCard';
 import { ProductGroupCard } from '@/components/products/ProductGroupCard';
@@ -118,10 +118,35 @@ export function ProductsPageClient({
       {/* Page Header */}
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-4">Jewelry Collection</h1>
-        <p className="text-gray-600 max-w-2xl">
+        <p className="text-gray-600 max-w-2xl mb-4">
           Discover our exquisite collection of handcrafted jewelry featuring premium diamonds, 
           gold, and precious stones. Each piece is crafted with meticulous attention to detail.
         </p>
+        
+        {/* Search Bar */}
+        <div className="mt-6">
+          <div className="relative max-w-xl">
+            <input
+              type="text"
+              placeholder="Search jewelry by name, category, or metal type..."
+              value={filters.searchQuery || ''}
+              onChange={(e) => handleFilterChange({ searchQuery: e.target.value || undefined })}
+              className="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+            />
+            <MagnifyingGlassIcon className="absolute left-3 top-3.5 h-5 w-5 text-gray-400" />
+            {filters.searchQuery && (
+              <button
+                onClick={() => handleFilterChange({ searchQuery: undefined })}
+                className="absolute right-3 top-3.5 text-gray-400 hover:text-gray-600"
+                aria-label="Clear search"
+              >
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            )}
+          </div>
+        </div>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-8">
