@@ -71,12 +71,26 @@ export default function ProductPage({ params }: ProductPageProps) {
   }
 
   // Get related products from the same category (excluding current group)
-  const relatedProducts = products
-    .filter(product => 
-      product.category === productGroup!.category && 
-      product.productId !== productGroup!.productId
-    )
-    .slice(0, 4);
+  // Use only unique products (one per productId) to avoid showing variants
+  const uniqueProductIds = new Set<string>();
+  const relatedProductsCandidates = products
+    .filter(product => {
+      // Same category and not the current product group
+      if (product.category !== productGroup!.category || 
+          product.productId === productGroup!.productId) {
+        return false;
+      }
+      // Only include if we haven't seen this productId yet
+      if (uniqueProductIds.has(product.productId)) {
+        return false;
+      }
+      uniqueProductIds.add(product.productId);
+      return true;
+    });
+  
+  // Shuffle array to get random related products
+  const shuffled = [...relatedProductsCandidates].sort(() => Math.random() - 0.5);
+  const relatedProducts = shuffled.slice(0, 4);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
