@@ -122,6 +122,26 @@ export function ProductsPageClient({
           Discover our exquisite collection of handcrafted jewelry featuring premium diamonds, 
           gold, and precious stones. Each piece is crafted with meticulous attention to detail.
         </p>
+        
+        {/* Active Search Query Display */}
+        {filters.searchQuery && (
+          <div className="mt-4 flex items-center gap-2">
+            <span className="text-sm text-gray-600">Searching for:</span>
+            <div className="flex items-center gap-2 bg-primary-50 text-primary-700 px-3 py-1 rounded-full">
+              <span className="font-medium">{filters.searchQuery}</span>
+              <button
+                onClick={() => handleFilterChange({ searchQuery: undefined })}
+                className="hover:text-primary-900"
+                aria-label="Clear search"
+                data-testid="clear-search-button"
+              >
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="flex flex-col lg:flex-row gap-8">
