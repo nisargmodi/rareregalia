@@ -112,31 +112,65 @@ export function Header() {
           </div>
         </div>
 
-        {/* Search Bar */}
+        {/* Search Overlay */}
         {isSearchOpen && (
-          <div className="border-t border-gray-200 py-4">
-            <form 
-              className="relative"
-              onSubmit={(e) => {
-                e.preventDefault();
-                if (searchQuery.trim()) {
-                  router.push(`/products?search=${encodeURIComponent(searchQuery.trim())}`);
-                  setIsSearchOpen(false);
-                  setSearchQuery('');
-                }
+          <>
+            {/* Backdrop */}
+            <div 
+              className="fixed inset-0 bg-black bg-opacity-50 z-40"
+              onClick={() => {
+                setIsSearchOpen(false);
+                setSearchQuery('');
               }}
-            >
-              <input
-                type="text"
-                placeholder="Search jewelry..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                autoFocus
-              />
-              <MagnifyingGlassIcon className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
-            </form>
-          </div>
+            />
+            
+            {/* Search Modal */}
+            <div className="fixed top-20 left-1/2 -translate-x-1/2 w-full max-w-2xl z-50 px-4">
+              <div className="bg-white rounded-lg shadow-2xl">
+                <form 
+                  className="relative p-4"
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    if (searchQuery.trim()) {
+                      router.push(`/products?search=${encodeURIComponent(searchQuery.trim())}`);
+                      setIsSearchOpen(false);
+                      setSearchQuery('');
+                    }
+                  }}
+                >
+                  <input
+                    type="text"
+                    placeholder="Search jewelry by name, category, or metal type..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-lg"
+                    autoFocus
+                    data-testid="search-input"
+                  />
+                  <MagnifyingGlassIcon className="absolute left-7 top-7 h-5 w-5 text-gray-400" />
+                  {searchQuery && (
+                    <button
+                      type="button"
+                      onClick={() => setSearchQuery('')}
+                      className="absolute right-7 top-7 text-gray-400 hover:text-gray-600"
+                      aria-label="Clear search"
+                    >
+                      <XMarkIcon className="h-5 w-5" />
+                    </button>
+                  )}
+                </form>
+                
+                {/* Search hint */}
+                <div className="px-4 pb-4 text-sm text-gray-500">
+                  {searchQuery ? (
+                    <p>Press Enter to search for "{searchQuery}"</p>
+                  ) : (
+                    <p>Type to search for products...</p>
+                  )}
+                </div>
+              </div>
+            </div>
+          </>
         )}
       </div>
 
