@@ -35,8 +35,8 @@ export function ProductsPageClient({
       const baseVariant = group.baseVariant;
       
       // Apply search query filter
-      if (filters.searchQuery) {
-        const searchLower = filters.searchQuery.toLowerCase();
+      if (filters.searchQuery && filters.searchQuery.trim()) {
+        const searchLower = filters.searchQuery.trim().toLowerCase();
         const matchesSearch = 
           group.name.toLowerCase().includes(searchLower) ||
           group.category.toLowerCase().includes(searchLower) ||
@@ -130,8 +130,12 @@ export function ProductsPageClient({
               type="text"
               placeholder="Search jewelry by name, category, or metal type..."
               value={filters.searchQuery || ''}
-              onChange={(e) => handleFilterChange({ searchQuery: e.target.value || undefined })}
+              onChange={(e) => {
+                const value = e.target.value;
+                handleFilterChange({ searchQuery: value || undefined });
+              }}
               className="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+              data-testid="search-input"
             />
             <MagnifyingGlassIcon className="absolute left-3 top-3.5 h-5 w-5 text-gray-400" />
             {filters.searchQuery && (
@@ -139,6 +143,7 @@ export function ProductsPageClient({
                 onClick={() => handleFilterChange({ searchQuery: undefined })}
                 className="absolute right-3 top-3.5 text-gray-400 hover:text-gray-600"
                 aria-label="Clear search"
+                data-testid="clear-search-button"
               >
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
