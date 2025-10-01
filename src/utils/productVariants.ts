@@ -153,19 +153,41 @@ export function getImagesForMetalType(allImages: string[], metalType: string): s
 
   const suffixes = metalTypeMap[metalType] || ['R1', 'R2', 'R3', 'R4'];
   
+  // Filter images by suffix (R1-R4, W1-W4, Y1-Y4)
   const filteredImages = allImages.filter(image => 
     suffixes.some(suffix => image.includes(`-${suffix}.`))
   );
 
-  // If no specific images found, return model or detail images
-  if (filteredImages.length === 0) {
+  // Determine which color variant to look for in Model images
+  let modelColorKeyword = '';
+  if (metalType.includes('Rose')) {
+    modelColorKeyword = 'Rose';
+  } else if (metalType.includes('White')) {
+    modelColorKeyword = 'White';
+  } else if (metalType.includes('Yellow')) {
+    modelColorKeyword = 'Yellow';
+  }
+
+  // Get Model images that match the metal type
+  const modelImages = allImages.filter(image => {
+    const imageLower = image.toLowerCase();
+    return imageLower.includes('model') && 
+           (modelColorKeyword ? imageLower.includes(modelColorKeyword.toLowerCase()) : true);
+  });
+
+  // Combine filtered images with model images
+  // Put model images first for better display, followed by detail shots
+  const combinedImages = [...modelImages, ...filteredImages];
+
+  // If no specific images found at all, return any model or detail images
+  if (combinedImages.length === 0) {
     const fallbackImages = allImages.filter(image => 
       image.includes('Model') || image.includes('Details') || image.includes('Render')
     );
     return fallbackImages.slice(0, 4);
   }
 
-  return filteredImages;
+  return combinedImages;
 }
 
 /**
