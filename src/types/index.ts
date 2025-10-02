@@ -83,10 +83,24 @@ export interface Order {
   total: number;
   status: 'pending' | 'processing' | 'shipped' | 'delivered' | 'cancelled';
   paymentStatus: 'pending' | 'paid' | 'failed' | 'refunded';
+  paymentIntentId?: string; // Stripe PaymentIntent ID
   createdAt: string;
   updatedAt: string;
   shippingAddress: Customer['address'];
   billingAddress: Customer['address'];
+  customerEmail: string;
+}
+
+export interface CheckoutFormData {
+  email: string;
+  firstName: string;
+  lastName: string;
+  address: string;
+  city: string;
+  state: string;
+  postalCode: string;
+  country: string;
+  phone?: string;
 }
 
 export interface Category {
